@@ -3,14 +3,14 @@ import HeroSection from "@/components/home/HeroSection";
 import TrustedBy from "@/components/home/TrustedBy";
 import ProductSearch from "@/components/home/ProductSearch";
 import MostRequestedProducts from "@/components/home/MostRequestedProducts";
-import CategoryShowcase from "@/components/home/CategoryShowcase";
-import BestSellers from "@/components/home/BestSellers";
+import VisualProductCategories from "@/components/home/VisualProductCategories";
+import QualityShowcase from "@/components/home/QualityShowcase";
+import NeedItFast from "@/components/home/NeedItFast";
 import ProductionFacility from "@/components/home/ProductionFacility";
 import AiTools from "@/components/home/AiTools";
 import MultiStepQuote from "@/components/home/MultiStepQuote";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
 import IndustrySolutions from "@/components/home/IndustrySolutions";
-import ResultsImpact from "@/components/home/ResultsImpact";
 import LocationsSection from "@/components/home/LocationsSection";
 import ContactCTA from "@/components/home/ContactCTA";
 import { heroStats, siteConfig } from "@/lib/data";
@@ -38,17 +38,38 @@ export default function HomePage() {
       />
       <HeroSection stats={heroStats} />
       <TrustedBy />
+      
+      {/* Quick Product Search */}
       <ProductSearch />
+      
+      {/* Popular Products with Prices */}
       <MostRequestedProducts />
-      <CategoryShowcase />
-      <BestSellers />
+      
+      {/* Visual Product Categories Grid */}
+      <VisualProductCategories />
+      
+      {/* Quality Showcase / Close-up Gallery */}
+      <QualityShowcase />
+      
+      {/* Express Services */}
+      <NeedItFast />
+      
+      {/* Production Capabilities */}
       <ProductionFacility />
+      
+      {/* AI Tools Section */}
       <AiTools />
-      <MultiStepQuote />
+      
+      {/* Portfolio / Featured Projects */}
       <FeaturedProjects />
+      
+      {/* Industry Solutions */}
       <IndustrySolutions />
-      <ResultsImpact />
+      
+      {/* Service Areas */}
       <LocationsSection />
+      
+      {/* Final CTA */}
       <ContactCTA />
     </>
   );
