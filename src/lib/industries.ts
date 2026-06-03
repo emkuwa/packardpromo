@@ -1,0 +1,323 @@
+export interface Industry {
+  id: string;
+  slug: string;
+  name: string;
+  shortName: string;
+  icon: string;
+  description: string;
+  hero: string;
+  challenges: string[];
+  solutions: string[];
+  products: string[];
+  caseStudyIds: string[];
+  stats: { label: string; value: string }[];
+  clients: string[];
+  color: string;
+}
+
+export const industries: Industry[] = [
+  {
+    id: "schools",
+    slug: "schools",
+    name: "Schools & Education",
+    shortName: "Schools",
+    icon: "M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-17.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5",
+    description: "Full-service printing, signage and branding for primary, secondary and international schools across Tanzania. From branded exercise books to complete campus signage systems.",
+    hero: "School branding and printing partner of choice for leading institutions across Tanzania.",
+    challenges: [
+      "Tight production timelines during school opening seasons",
+      "Bulk textbook and exercise book requirements at competitive pricing",
+      "Need for consistent branding across multiple campuses",
+      "Tendering and procurement compliance",
+    ],
+    solutions: [
+      "Heidelberg offset capacity for 100,000+ book runs in 14 days",
+      "In-house design studio for school identity and visual assets",
+      "Multi-branch fulfillment with dedicated project manager",
+      "Tender documentation support and TBS-compliant printing",
+    ],
+    products: ["Exercise Books", "Textbooks", "Branded Uniforms", "School Signage", "Branded Bags", "Certificates", "Notice Boards", "Banners"],
+    caseStudyIds: ["university-textbooks"],
+    stats: [
+      { label: "Schools served", value: "120+" },
+      { label: "Books delivered/year", value: "500,000+" },
+      { label: "Branding packages", value: "60+" },
+    ],
+    clients: ["St. Mary's Secondary", "Greenwood Academy", "Dar es Salaam International School"],
+    color: "from-amber-500/20 to-orange-500/10",
+  },
+  {
+    id: "universities",
+    slug: "universities",
+    name: "Universities & Higher Education",
+    shortName: "Universities",
+    icon: "M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-17.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342",
+    description: "High-volume academic printing, conference materials and identity systems for universities, colleges and research institutions.",
+    hero: "Trusted printing partner for Tanzania's leading universities and research institutions.",
+    challenges: [
+      "Massive textbook print runs with strict deadlines",
+      "Conference and graduation materials at short notice",
+      "Tender-driven procurement processes",
+      "Multiple-language academic content",
+    ],
+    solutions: [
+      "Bulk offset printing for 50,000+ textbook runs",
+      "Fast-track production for events and graduations",
+      "Bilingual design and printing (English + Swahili)",
+      "Dedicated account manager for institutional accounts",
+    ],
+    products: ["Textbooks", "Research Papers", "Conference Materials", "Branded Notebooks", "Banners", "Signage", "Rollups"],
+    caseStudyIds: ["university-textbooks"],
+    stats: [
+      { label: "Universities served", value: "25+" },
+      { label: "Books delivered", value: "1M+" },
+      { label: "Conferences supported", value: "150+" },
+    ],
+    clients: ["University of Dar es Salaam", "NM-AIST Arusha", "ARDHI University", "St. Augustine University"],
+    color: "from-blue-500/20 to-cyan-500/10",
+  },
+  {
+    id: "ngos",
+    slug: "ngos",
+    name: "NGOs & International Organizations",
+    shortName: "NGOs",
+    icon: "M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3",
+    description: "Campaign materials, branded merchandise, field signage and event branding for international NGOs and UN agencies.",
+    hero: "Partnering with leading NGOs and UN agencies to amplify impact through print.",
+    challenges: [
+      "Multi-country campaign rollouts with brand compliance",
+      "Donor reporting and visibility requirements",
+      "Multi-language content (English, Swahili, French, etc.)",
+      "Field-friendly materials that survive transport",
+    ],
+    solutions: [
+      "Global brand guideline compliance",
+      "Multi-language design and printing",
+      "Heavy-duty materials for field conditions",
+      "Logistics coordination across regions",
+    ],
+    products: ["Banners", "Branded Backpacks", "T-Shirts", "Caps", "Notebooks", "Pens", "Posters", "Field Manuals"],
+    caseStudyIds: ["unicef-campaign"],
+    stats: [
+      { label: "NGO partners", value: "40+" },
+      { label: "Campaigns delivered", value: "200+" },
+      { label: "Distributed items/year", value: "5M+" },
+    ],
+    clients: ["UNICEF", "UNDP", "WHO", "World Bank", "USAID", "BRAC"],
+    color: "from-emerald-500/20 to-teal-500/10",
+  },
+  {
+    id: "government",
+    slug: "government",
+    name: "Government & Public Sector",
+    shortName: "Government",
+    icon: "M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z",
+    description: "Tender-compliant printing, government stationery, official signage and identity materials for ministries, agencies and councils.",
+    hero: "Trusted government printing partner delivering compliant, confidential print at scale.",
+    challenges: [
+      "Tender process compliance (TBS, BRELA, PPAA)",
+      "Confidential and secure document handling",
+      "Multi-language official documents",
+      "Multi-region distribution",
+    ],
+    solutions: [
+      "TBS and BRELA registered supplier",
+      "Secure production facility with NDAs available",
+      "Bilingual English/Swahili printing",
+      "Nationwide delivery to government offices",
+    ],
+    products: ["Official Letterheads", "Tender Documents", "Government Signage", "ID Cards", "Certificates", "Manuals", "Forms"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Government clients", value: "30+" },
+      { label: "Tender win rate", value: "85%" },
+      { label: "Confidential projects", value: "100+" },
+    ],
+    clients: ["Ministry of Finance", "TRA", "TANROADS", "President's Office"],
+    color: "from-red-500/20 to-rose-500/10",
+  },
+  {
+    id: "telecoms",
+    slug: "telecoms",
+    name: "Telecommunications",
+    shortName: "Telecoms",
+    icon: "M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z",
+    description: "Retail branding, vehicle fleets, SIM packaging, event activations and high-volume campaign materials for telecom operators.",
+    hero: "Powering the visual presence of Tanzania's leading telecom operators.",
+    challenges: [
+      "Nationwide brand consistency across thousands of retail points",
+      "High-volume SIM and recharge card printing",
+      "Vehicle fleet rebranding with zero downtime",
+      "Tight event and activation timelines",
+    ],
+    solutions: [
+      "Heidelberg offset for SIM and recharge card volumes",
+      "Mobile installation teams for fleet rebrandings",
+      "On-site activation branding for events",
+      "Dedicated retail merchandising support",
+    ],
+    products: ["SIM Packaging", "Vehicle Branding", "Retail Signage", "Banners", "Backdrops", "Branded Merchandise", "Rollups"],
+    caseStudyIds: ["vodacom-vehicle-fleet", "airtel-billboard", "safaricom-exhibition"],
+    stats: [
+      { label: "Telecom clients", value: "6+" },
+      { label: "Vehicles branded", value: "200+" },
+      { label: "Billboards installed", value: "50+" },
+    ],
+    clients: ["Vodacom Tanzania", "Airtel Tanzania", "Halotel", "TTCL"],
+    color: "from-violet-500/20 to-purple-500/10",
+  },
+  {
+    id: "healthcare",
+    slug: "healthcare",
+    name: "Healthcare & Pharmaceuticals",
+    shortName: "Healthcare",
+    icon: "M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z",
+    description: "Hospital wayfinding, drug packaging, patient information leaflets and TMDA-compliant pharmaceutical printing.",
+    hero: "TMDA-compliant printing and signage for hospitals, clinics and pharmaceutical companies.",
+    challenges: [
+      "TMDA regulatory compliance for pharmaceutical packaging",
+      "Bilingual patient information leaflets",
+      "Hospital wayfinding with accessibility standards",
+      "Variable data printing (batch numbers, expiry dates)",
+    ],
+    solutions: [
+      "TMDA-compliant pharmaceutical printing",
+      "Bilingual English/Swahili design",
+      "ADA-compliant wayfinding systems",
+      "Variable data printing for batch tracking",
+    ],
+    products: ["Drug Cartons", "Patient Leaflets", "Hospital Signage", "Labels", "Wayfinding", "Health Campaign Posters"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Healthcare clients", value: "20+" },
+      { label: "TMDA projects", value: "50+" },
+      { label: "Hospitals served", value: "15+" },
+    ],
+    clients: ["Muhimbili National Hospital", "Aga Khan Hospital", "TMDA", "Ifakara Health Institute"],
+    color: "from-pink-500/20 to-rose-500/10",
+  },
+  {
+    id: "hotels",
+    slug: "hotels",
+    name: "Hotels, Resorts & Hospitality",
+    shortName: "Hotels",
+    icon: "M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819",
+    description: "Luxury hotel signage, guest collateral, branded amenities and packaging for hospitality properties across Tanzania and Zanzibar.",
+    hero: "Premium signage, packaging and branding for Tanzania's leading hotels and resorts.",
+    challenges: [
+      "Luxury aesthetic with durable materials",
+      "Bilingual wayfinding (English + Swahili)",
+      "Multi-property brand consistency",
+      "Resort and remote-location logistics",
+    ],
+    solutions: [
+      "Premium materials (brushed steel, frosted acrylic)",
+      "Bilingual design across all touchpoints",
+      "Zanzibar and remote resort logistics",
+      "Custom packaging and gift boxes",
+    ],
+    products: ["Hotel Signage", "Guest Collateral", "Branded Amenities", "Packaging", "Menus", "Key Cards", "Do-Not-Disturb Signs"],
+    caseStudyIds: ["serena-resort-packaging", "hyatt-signage-system"],
+    stats: [
+      { label: "Hotels served", value: "30+" },
+      { label: "Resort properties", value: "20+" },
+      { label: "Zanzibar projects", value: "12+" },
+    ],
+    clients: ["Serena Hotels", "Hyatt Regency", "Sea Cliff Resort", "Gran Melia"],
+    color: "from-fuchsia-500/20 to-pink-500/10",
+  },
+  {
+    id: "construction",
+    slug: "construction",
+    name: "Construction & Real Estate",
+    shortName: "Construction",
+    icon: "M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 0h.008v.008h-.008V7.5z",
+    description: "Construction site signage, sales gallery branding, development billboards, and safety signage for the construction industry.",
+    hero: "Hoardings, sales galleries and site signage for Tanzania's leading developers.",
+    challenges: [
+      "Large-format outdoor durability in coastal climate",
+      "Quick-turn sales gallery transformations",
+      "Heavy-duty safety and regulatory signage",
+      "Multi-phase project signage updates",
+    ],
+    solutions: [
+      "UV-stable inks and weather-resistant materials",
+      "Rapid sales gallery installations",
+      "Heavy-duty aluminum and reflective materials",
+      "Project-managed multi-phase rollouts",
+    ],
+    products: ["Construction Hoardings", "Sales Gallery Signage", "Billboards", "Safety Signs", "Banners", "Directional Signage"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Developers served", value: "25+" },
+      { label: "Sales galleries", value: "40+" },
+      { label: "Sites signed", value: "100+" },
+    ],
+    clients: ["National Housing Corporation", "Q-Squared", "Ecotanzania", "Broll Tanzania"],
+    color: "from-yellow-500/20 to-amber-500/10",
+  },
+  {
+    id: "banking",
+    slug: "banking",
+    name: "Banking & Financial Services",
+    shortName: "Banking",
+    icon: "M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z",
+    description: "Confidential financial printing, multi-branch signage, branded merchandise and ATM graphics for banks, SACCOS and microfinance.",
+    hero: "Trusted by Tanzania's leading banks for confidential, high-volume printing and signage.",
+    challenges: [
+      "Confidential document handling and NDAs",
+      "Multi-branch rollout consistency (50+ locations)",
+      "Annual report and financial statement quality",
+      "Anti-counterfeit security printing",
+    ],
+    solutions: [
+      "Secure production with confidentiality protocols",
+      "Multi-branch project management teams",
+      "Premium annual report production",
+      "Security features (watermarks, security paper, holograms)",
+    ],
+    products: ["Annual Reports", "Multi-Branch Signage", "ATM Graphics", "Branded Merchandise", "Confidential Documents", "Banking Cards"],
+    caseStudyIds: ["crdb-branch-signage", "nmb-corporate-stationery"],
+    stats: [
+      { label: "Banks served", value: "12+" },
+      { label: "Branches signed", value: "200+" },
+      { label: "Confidential projects", value: "300+" },
+    ],
+    clients: ["CRDB Bank", "NMB Bank", "NBC Bank", "TPB Bank", "Azania Bank"],
+    color: "from-cyan-500/20 to-blue-500/10",
+  },
+  {
+    id: "manufacturing",
+    slug: "manufacturing",
+    name: "Manufacturing & Industrial",
+    shortName: "Manufacturing",
+    icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+    description: "Industrial signage, product labels, heavy-duty vehicle branding and packaging for manufacturing and FMCG companies.",
+    hero: "Industrial-strength printing, signage and packaging for Tanzania's manufacturers.",
+    challenges: [
+      "Heavy-duty outdoor durability",
+      "Warehouse and factory safety signage",
+      "Product label compliance (TMDA, TBS, BS)",
+      "Bulk packaging at competitive pricing",
+    ],
+    solutions: [
+      "Heavy-duty vinyl and reflective materials",
+      "BS and TMDA-compliant labeling",
+      "Bulk offset printing for packaging",
+      "On-site vehicle branding",
+    ],
+    products: ["Product Labels", "Industrial Signage", "Vehicle Branding", "Bulk Packaging", "Safety Signs", "Compliance Labels"],
+    caseStudyIds: ["dangote-truck-fleet", "azam-beverage-packaging"],
+    stats: [
+      { label: "Manufacturers served", value: "30+" },
+      { label: "Vehicles branded", value: "200+" },
+      { label: "Labels printed/year", value: "10M+" },
+    ],
+    clients: ["TBL", "Bakhresa Group", "Dangote Cement", "Azam Beverage", "Bonite Bottlers"],
+    color: "from-slate-500/20 to-zinc-500/10",
+  },
+];
+
+export function getIndustryBySlug(slug: string): Industry | undefined {
+  return industries.find((i) => i.slug === slug);
+}
