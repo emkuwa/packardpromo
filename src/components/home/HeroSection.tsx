@@ -41,7 +41,7 @@ function AnimatedStat({ value, suffix, label, delay, variant }: { value: number;
       <div className={cn("text-2xl md:text-4xl font-bold", variant === "gradient" ? "text-gradient-promo" : "text-white")}>
         {count}{suffix}
       </div>
-      <div className="text-silver-500 text-[9px] md:text-[10px] uppercase tracking-widest mt-1 font-medium">{label}</div>
+      <div className="text-white/70 text-[10px] md:text-[11px] uppercase tracking-wider mt-1 font-semibold">{label}</div>
     </motion.div>
   );
 }
@@ -136,7 +136,7 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-5 text-sm sm:text-base md:text-lg text-silver-300 max-w-xl leading-relaxed"
+              className="mt-5 text-base sm:text-lg md:text-xl text-white/95 max-w-xl leading-relaxed font-medium"
             >
               Same-Day Printing, Branding &amp; Signage Solutions in Tanzania.
             </motion.p>
@@ -145,7 +145,7 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-3 text-xs sm:text-sm text-silver-400 max-w-xl leading-relaxed"
+              className="mt-3 text-sm sm:text-base text-white/80 max-w-xl leading-relaxed"
             >
               Business Cards &bull; Flyers &bull; Stickers &bull; Banners &bull; Signboards &bull; Corporate Gifts
             </motion.div>
@@ -154,24 +154,24 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-6 flex flex-wrap gap-2"
+              className="mt-6 flex flex-wrap gap-3"
             >
               <Link
                 href="/quote"
-                className="inline-flex items-center justify-center px-6 py-3.5 text-sm md:text-base font-semibold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white shadow-xl shadow-promo-500/30 hover:shadow-promo-500/50 hover:from-promo-400 transition-all"
+                className="inline-flex items-center justify-center px-7 py-4 text-base md:text-lg font-bold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white shadow-2xl shadow-promo-500/40 hover:shadow-promo-500/60 hover:from-promo-400 hover:to-promo-300 ring-1 ring-promo-300/30 transition-all"
               >
                 Get a Quote
-                <svg className="w-4 h-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
               <Link
                 href="https://wa.me/+255716002790?text=Hi%20Packard%20Promo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3.5 text-sm md:text-base font-semibold rounded-full bg-green-500 text-white shadow-xl shadow-green-500/30 hover:bg-green-400 transition-all"
+                className="inline-flex items-center justify-center px-7 py-4 text-base md:text-lg font-semibold rounded-full bg-green-500 text-white shadow-xl shadow-green-500/30 hover:bg-green-400 transition-all"
               >
-                <svg className="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
                 </svg>
                 Chat on WhatsApp
@@ -182,7 +182,7 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-4 text-[11px] sm:text-xs text-silver-400 max-w-xl leading-relaxed"
+              className="mt-5 text-xs sm:text-sm text-white/85 max-w-xl leading-relaxed"
             >
               {trustLine}
             </motion.p>
@@ -191,9 +191,9 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-2 inline-flex items-center gap-1.5 text-[11px] sm:text-xs text-packard-300 font-medium"
+              className="mt-2 inline-flex items-center gap-1.5 text-xs sm:text-sm text-packard-200 font-semibold"
             >
-              <svg className="w-3.5 h-3.5 text-promo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <svg className="w-4 h-4 text-promo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
               </svg>
@@ -226,7 +226,7 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
                 transition={{ duration: 0.6, delay: 0.5 + p.delay }}
                 whileHover={{ scale: 1.1, rotate: 0, zIndex: 10 }}
                 className={cn(
-                  "absolute rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl shadow-black/50",
+                  "absolute rounded-2xl overflow-hidden border-2 border-white/30 shadow-2xl shadow-black/60 ring-1 ring-inset ring-white/10",
                   p.size
                 )}
                 style={{ top: p.top, right: p.right, left: p.left }}
@@ -242,10 +242,10 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="lg:hidden grid grid-cols-3 gap-2 mt-4"
+            className="lg:hidden grid grid-cols-3 gap-3 mt-4"
           >
             {floatingProducts.slice(0, 6).map((p) => (
-              <div key={p.src} className="aspect-square rounded-lg overflow-hidden border border-white/20">
+              <div key={p.src} className="aspect-square rounded-lg overflow-hidden border-2 border-white/30 shadow-lg shadow-black/40">
                 <img src={p.src} alt={p.alt} className="w-full h-full object-cover" loading="lazy" />
               </div>
             ))}
@@ -271,8 +271,8 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                 </svg>
                 <div className="min-w-0">
-                  <div className="text-white font-bold text-[11px] leading-tight">{ind.label}</div>
-                  <div className="text-silver-500 text-[9px] leading-tight">{ind.sublabel}</div>
+                  <div className="text-white font-bold text-[11px] sm:text-xs leading-tight">{ind.label}</div>
+                  <div className="text-white/65 text-[9px] sm:text-[10px] leading-tight font-medium">{ind.sublabel}</div>
                 </div>
               </motion.div>
             ))}
