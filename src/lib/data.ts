@@ -31,9 +31,9 @@ export const siteConfig = {
 };
 
 export const heroStats: Stat[] = [
-  { value: 14, suffix: "+", label: "Years of Production" },
+  { value: 14, suffix: "+", label: "Years Experience" },
   { value: 4500, suffix: "+", label: "Projects Delivered" },
-  { value: 8, suffix: "", label: "Cities Served" },
+  { value: 24, suffix: "hr", label: "Same-Day Printing" },
   { value: 99, suffix: "%", label: "On-Time Delivery" },
 ];
 

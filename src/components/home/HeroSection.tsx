@@ -53,6 +53,9 @@ const trustIndicators = [
   { label: "Fast Quote", sublabel: "Response" },
 ];
 
+const deliveryLine = "Delivery Across Dar es Salaam & Nationwide Tanzania";
+const trustLine = "Trusted by businesses, NGOs, schools, hotels and institutions across Tanzania.";
+
 const productionCapabilities = [
   "Digital Printing",
   "Offset Printing",
@@ -83,10 +86,8 @@ const floatingProducts = [
 ];
 
 export default function HeroSection({ stats }: { stats: { value: number; suffix: string; label: string }[] }) {
-  const [bannerIndex, setBannerIndex] = useState(0);
-
   return (
-    <section className="relative min-h-[88vh] md:min-h-screen flex items-center overflow-hidden pt-24 md:pt-20 pb-6">
+    <section className="relative min-h-[88vh] md:min-h-screen flex items-center overflow-hidden pt-20 pb-6">
       <div className="absolute inset-0">
         <Image
           src={heroBanners[0]}
@@ -107,14 +108,14 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="max-w-2xl">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="inline-flex items-center gap-3 mb-4"
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="inline-flex items-center gap-2 mb-5 px-3 py-1.5 rounded-full bg-promo-500/15 border border-promo-400/30"
             >
-              <span className="h-px w-10 bg-promo-400/60" />
-              <span className="text-promo-300 text-[10px] sm:text-xs uppercase tracking-[0.28em] font-semibold">
-                Tanzania&apos;s #1 Print & Branding Platform
+              <span aria-hidden="true">⚡</span>
+              <span className="text-promo-200 text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold">
+                Same-Day Printing Available
               </span>
             </motion.div>
 
@@ -177,11 +178,33 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
               </Link>
             </motion.div>
 
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-4 text-[11px] sm:text-xs text-silver-400 max-w-xl leading-relaxed"
+            >
+              {trustLine}
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-2 inline-flex items-center gap-1.5 text-[11px] sm:text-xs text-packard-300 font-medium"
+            >
+              <svg className="w-3.5 h-3.5 text-promo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              <span>{deliveryLine}</span>
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="mt-8 grid grid-cols-4 gap-3 max-w-md"
+              className="mt-6 grid grid-cols-4 gap-3 max-w-md"
             >
               {stats.map((stat, i) => (
                 <AnimatedStat key={stat.label} {...stat} delay={0.7 + i * 0.1} variant="gradient" />
@@ -213,20 +236,6 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
               </motion.div>
             ))}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-promo-500/20 blur-3xl" />
-
-            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
-              {heroBanners.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setBannerIndex(i)}
-                  aria-label={`Hero banner ${i + 1}`}
-                  className={cn(
-                    "h-1 rounded-full transition-all",
-                    i === bannerIndex ? "bg-promo-400 w-6" : "bg-white/30 w-1.5 hover:bg-white/50"
-                  )}
-                />
-              ))}
-            </div>
           </motion.div>
 
           <motion.div
@@ -269,12 +278,6 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
             ))}
           </div>
         </motion.div>
-      </div>
-
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
-        <svg className="w-5 h-5 text-silver-500/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
       </div>
     </section>
   );
