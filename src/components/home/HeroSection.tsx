@@ -87,7 +87,7 @@ const floatingProducts = [
 
 export default function HeroSection({ stats }: { stats: { value: number; suffix: string; label: string }[] }) {
   return (
-    <section className="relative min-h-[88vh] md:min-h-screen flex items-center overflow-hidden pt-20 pb-6">
+    <section className="relative min-h-[88vh] md:min-h-screen flex items-center overflow-hidden pt-[7.25rem] md:pt-20 pb-6">
       <div className="absolute inset-0">
         <Image
           src={heroBanners[0]}
