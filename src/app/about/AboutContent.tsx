@@ -74,20 +74,32 @@ export default function AboutContent() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { label: "Founded", value: "2010" },
-                { label: "Production Facility", value: "12,000 sqm" },
-                { label: "Team", value: "50+ specialists" },
-                { label: "Cities Served", value: "8+" },
-                { label: "Presses", value: "Heidelberg · HP · Konica" },
-                { label: "Sister Company", value: "Packard Limited" },
-              ].map((item) => (
-                <div key={item.label} className="glass-card rounded-2xl p-5">
-                  <div className="text-promo-400 text-[10px] uppercase tracking-wider font-semibold mb-1">{item.label}</div>
-                  <div className="text-white font-bold text-base">{item.value}</div>
-                </div>
-              ))}
+            <div className="space-y-4">
+              <div className="relative aspect-video rounded-2xl overflow-hidden bg-packard-800 border border-white/10">
+                <img
+                  src="/images/quality inspection scene printing.jpg"
+                  alt="Packard Promo production facility"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-packard-950/60 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 text-white text-xs font-semibold">Our 12,000 sqm Production Facility</div>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { label: "Founded", value: "2010" },
+                  { label: "Production Facility", value: "12,000 sqm" },
+                  { label: "Team", value: "50+ specialists" },
+                  { label: "Cities Served", value: "8+" },
+                  { label: "Presses", value: "Heidelberg · HP · Konica" },
+                  { label: "Sister Company", value: "Packard Limited" },
+                ].map((item) => (
+                  <div key={item.label} className="glass-card rounded-2xl p-4">
+                    <div className="text-promo-400 text-[10px] uppercase tracking-wider font-semibold mb-1">{item.label}</div>
+                    <div className="text-white font-bold text-sm">{item.value}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-05-15",
     readTime: "5 min",
-    image: "/images/insights/business-card-finishes.jpg",
+    image: "/images/business card2.jpg",
   },
   {
     title: "Vehicle Branding ROI: Why Your Fleet is Your Best Billboard",
@@ -20,7 +20,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-05-10",
     readTime: "6 min",
-    image: "/images/insights/vehicle-roi.jpg",
+    image: "/images/vehicle branding.jpg",
   },
   {
     title: "Signage Permits in Tanzania: What You Need to Know",
@@ -29,7 +29,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-05-05",
     readTime: "8 min",
-    image: "/images/insights/signage-permits.jpg",
+    image: "/images/illuminated signage.jpg",
   },
   {
     title: "Offset vs Digital Printing: When to Use Each",
@@ -38,7 +38,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-04-28",
     readTime: "7 min",
-    image: "/images/insights/offset-vs-digital.jpg",
+    image: "/images/offset printing.jpg",
   },
   {
     title: "The Complete Guide to Promotional Products for Events",
@@ -47,7 +47,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-04-20",
     readTime: "9 min",
-    image: "/images/insights/promo-products.jpg",
+    image: "/images/coffee mug.jpg",
   },
   {
     title: "Packaging Design Trends That Sell in East Africa",
@@ -56,7 +56,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-04-12",
     readTime: "8 min",
-    image: "/images/insights/packaging-trends.jpg",
+    image: "/images/packaging.jpg",
   },
 ];
 
@@ -93,14 +93,17 @@ export default function InsightsContent() {
                 className="group"
               >
                 <Link href="#" className="block glass-card rounded-2xl overflow-hidden h-full">
-                  <div className="aspect-[16/10] bg-gradient-to-br from-packard-800/50 to-packard-900/50 relative grid-lines">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-promo-500/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                      </svg>
-                    </div>
+                  <div className="aspect-[16/10] relative overflow-hidden bg-packard-800">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                      onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/logo.jpg"; }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-packard-950/85 via-packard-950/30 to-transparent" />
                     <div className="absolute top-3 left-3">
-                      <span className="text-[9px] uppercase tracking-wider text-white font-semibold px-2.5 py-1 rounded-full bg-promo-500/80 border border-promo-500/30">
+                      <span className="text-[9px] uppercase tracking-wider text-white font-semibold px-2.5 py-1 rounded-full bg-promo-500/95 backdrop-blur-sm border border-promo-500/30">
                         {post.category}
                       </span>
                     </div>

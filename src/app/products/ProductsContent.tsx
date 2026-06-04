@@ -104,6 +104,7 @@ export default function ProductsContent({ services }: { services: Service[] }) {
                   leadTime={product.leadTime}
                   index={i}
                   category={product.serviceTitle}
+                  image={product.image}
                 />
               ))}
             </div>

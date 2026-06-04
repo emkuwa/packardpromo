@@ -69,6 +69,18 @@ export default function MobileMenu({ items, onClose }: MobileMenuProps) {
             </div>
 
             <div className="border-t border-white/5 pt-6 space-y-3">
+              <a
+                href="https://packardlimited.co.tz"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onClose}
+                className="flex items-center justify-center gap-2 w-full px-6 py-3 text-sm font-semibold rounded-full bg-packard-500/10 text-packard-200 border border-packard-400/30"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+                Packard Limited
+              </a>
               <Link
                 href="/quote"
                 onClick={onClose}

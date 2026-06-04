@@ -130,6 +130,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                 leadTime={product.leadTime}
                 index={i}
                 category={product.category}
+                image={product.image}
               />
             ))}
           </div>
@@ -167,6 +168,12 @@ export default function ServiceDetail({ service }: { service: Service }) {
                 </a>
                 <a href="tel:+255716002790" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
                   Call 0716 002 790
+                </a>
+              </div>
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="text-silver-500 text-xs mb-2">Need corporate branding strategy, PR, or communications consulting?</p>
+                <a href="https://packardlimited.co.tz" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-packard-300 hover:text-packard-200 text-xs font-semibold uppercase tracking-wider transition-colors">
+                  Visit Packard Limited (Strategy & Comms) →
                 </a>
               </div>
             </div>

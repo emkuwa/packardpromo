@@ -1,9 +1,10 @@
 import type { City, Stat, Testimonial } from "@/types";
+import { activeDomains, crossLinkLabel, crossLinkUrl, promoShopUrl, corporateSiteUrl, isFutureDomains } from "./domains";
 
 export const siteConfig = {
   name: "Packard Promo",
-  parentBrand: "Packard Limited",
-  tagline: "Print. Promote. Perform.",
+  parentBrand: crossLinkLabel(),
+  tagline: "PRINT. BRAND. DELIVER.",
   description:
     "Tanzania's leading printing, branding, signage and promotional products platform. Professional printing, signage, packaging, promotional products and branding solutions for businesses across Tanzania.",
   shortDescription: "Tanzania's leading printing, signage, packaging & promotional products platform.",
@@ -11,17 +12,21 @@ export const siteConfig = {
   phone: "+255 716 002 790",
   phoneAlt: "+255 658 144 421",
   email: "promo@packardltd.co.tz",
-  whatsapp: "+255716002790",
-  url: "https://packardpromo.co.tz",
-  parentUrl: "https://packardlimited.co.tz",
+  whatsapp: "255716002790",
+  url: activeDomains.primary,
+  parentUrl: crossLinkUrl(),
+  promoUrl: promoShopUrl(),
+  corporateUrl: corporateSiteUrl(),
+  primaryDomain: "packardltd.com",
+  useFutureDomains: isFutureDomains,
   hours: "Mon - Fri: 8:00 AM - 6:00 PM · Sat: 9:00 AM - 2:00 PM",
   founded: 2010,
   social: {
-    linkedin: "#",
-    twitter: "#",
-    instagram: "#",
-    facebook: "#",
-    tiktok: "#",
+    linkedin: "",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+    tiktok: "",
   },
 };
 

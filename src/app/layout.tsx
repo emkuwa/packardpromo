@@ -17,6 +17,7 @@ const inter = Inter({
 });
 
 const baseUrl = siteConfig.url;
+const defaultOgImage = `${baseUrl}/images/og-default.jpg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -50,19 +51,26 @@ export const metadata: Metadata = {
   creator: "Packard Promo",
   publisher: "Packard Limited",
   openGraph: {
-    title: "Packard Promo | Print. Promote. Perform.",
+    title: "Printing, Signage, Packaging & Promotional Products in Tanzania | Packard Promo",
     description: siteConfig.description,
     url: baseUrl,
     siteName: siteConfig.name,
     locale: "en_TZ",
     type: "website",
-    images: [{ url: `${baseUrl}/logo.png`, width: 1200, height: 630 }],
+    images: [
+      {
+        url: defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Packard Promo printing, signage, packaging and promotional products in Tanzania",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Packard Promo | Print. Promote. Perform.",
+    title: "Printing, Signage, Packaging & Promotional Products in Tanzania | Packard Promo",
     description: siteConfig.shortDescription,
-    images: [`${baseUrl}/logo.png`],
+    images: [defaultOgImage],
   },
   robots: {
     index: true,
@@ -73,11 +81,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/icon-192x192.png",
+    apple: "/icon-192x192.jpg",
   },
   manifest: "/manifest.json",
-  verification: {
-    google: "google-site-verification",
+  alternates: {
+    canonical: baseUrl,
   },
   other: {
     "geo.region": "TZ",

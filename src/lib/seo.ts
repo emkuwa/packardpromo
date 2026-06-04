@@ -1,6 +1,13 @@
 import { siteConfig } from "./data";
 
 const baseUrl = siteConfig.url;
+const defaultOgImage = `${baseUrl}/images/og-default.jpg`;
+
+function realSocialUrls() {
+  return Object.values(siteConfig.social).filter(
+    (url): url is string => Boolean(url && url !== "#" && url.startsWith("https://"))
+  );
+}
 
 export function organizationSchema() {
   return {
@@ -10,7 +17,7 @@ export function organizationSchema() {
     alternateName: "Packard Promo Tanzania",
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
-    image: `${baseUrl}/images/og-default.jpg`,
+    image: defaultOgImage,
     description: siteConfig.description,
     slogan: siteConfig.tagline,
     foundingDate: String(siteConfig.founded),
@@ -34,12 +41,7 @@ export function organizationSchema() {
       areaServed: "TZ",
       availableLanguage: ["English", "Swahili"],
     },
-    sameAs: [
-      siteConfig.social.linkedin,
-      siteConfig.social.twitter,
-      siteConfig.social.instagram,
-      siteConfig.social.facebook,
-    ],
+    sameAs: realSocialUrls(),
   };
 }
 
@@ -52,7 +54,7 @@ export function localBusinessSchema() {
     alternateName: "Packard Promo Tanzania",
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
-    image: `${baseUrl}/images/og-default.jpg`,
+    image: defaultOgImage,
     description: siteConfig.shortDescription,
     telephone: siteConfig.phone.replace(/\s/g, ""),
     email: siteConfig.email,
@@ -62,6 +64,11 @@ export function localBusinessSchema() {
       addressLocality: "Dar es Salaam",
       addressRegion: "Dar es Salaam",
       addressCountry: "TZ",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: -6.813791,
+      longitude: 39.272225,
     },
     openingHours: "Mo-Fr 08:00-18:00, Sa 09:00-14:00",
     priceRange: "TSh TSh TSh",
@@ -154,6 +161,50 @@ export function faqSchema(questions: { q: string; a: string }[]) {
   };
 }
 
+export function homePageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${baseUrl}/#webpage`,
+    url: baseUrl,
+    name: "Printing, Signage, Packaging & Promotional Products in Tanzania",
+    description:
+      "Packard Promo provides printing services, signage, packaging, promotional products and corporate branding in Dar es Salaam and across Tanzania.",
+    isPartOf: { "@type": "WebSite", "@id": `${baseUrl}/#website`, name: siteConfig.name, url: baseUrl },
+    about: [
+      { "@type": "Thing", name: "Printing Services" },
+      { "@type": "Thing", name: "Signage" },
+      { "@type": "Thing", name: "Packaging" },
+      { "@type": "Thing", name: "Promotional Products" },
+      { "@type": "Thing", name: "Corporate Branding" },
+    ],
+    primaryImageOfPage: { "@type": "ImageObject", url: defaultOgImage, width: 1200, height: 630 },
+    publisher: { "@type": "Organization", name: siteConfig.name, url: baseUrl, logo: `${baseUrl}/logo.png` },
+    inLanguage: "en-TZ",
+  };
+}
+
+export function homepageFaqSchema() {
+  return faqSchema([
+    {
+      q: "Does Packard Promo offer same-day printing in Tanzania?",
+      a: "Yes. Same-day printing is available for selected products in Dar es Salaam when artwork is ready and production capacity is available.",
+    },
+    {
+      q: "Can Packard Promo deliver printing, signage and promotional products across Tanzania?",
+      a: "Yes. Packard Promo supports Tanzania-wide delivery for printing services, signage, packaging, promotional products and corporate branding orders.",
+    },
+    {
+      q: "Can I request an online quotation?",
+      a: "Yes. Customers can request online quotations through the quote form or WhatsApp with project details, quantities, artwork requirements and delivery location.",
+    },
+    {
+      q: "What printing and signage services are available?",
+      a: "Services include digital printing, offset printing, large format printing, business cards, banners, shop signage, vehicle branding, packaging, labels, branded merchandise and corporate branding materials.",
+    },
+  ]);
+}
+
 export function defaultMetadata(title: string, description: string, path: string) {
   const url = `${baseUrl}${path}`;
   return {
@@ -167,13 +218,13 @@ export function defaultMetadata(title: string, description: string, path: string
       siteName: siteConfig.name,
       locale: "en_TZ",
       type: "website" as const,
-      images: [{ url: `${baseUrl}/images/og-default.jpg`, width: 1200, height: 630 }],
+      images: [{ url: defaultOgImage, width: 1200, height: 630, alt: "Packard Promo printing, signage, packaging and promotional products in Tanzania" }],
     },
     twitter: {
       card: "summary_large_image" as const,
       title: `${title} | Packard Promo`,
       description,
-      images: [`${baseUrl}/images/og-default.jpg`],
+      images: [defaultOgImage],
     },
     other: {
       "geo.region": "TZ",

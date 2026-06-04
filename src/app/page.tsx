@@ -1,19 +1,59 @@
+import type { Metadata } from "next";
 import Script from "next/script";
 import HeroSection from "@/components/home/HeroSection";
 import TrustedBy from "@/components/home/TrustedBy";
+import MostOrderedTanzania from "@/components/home/MostOrderedTanzania";
+import VisualCategoryNav from "@/components/home/VisualCategoryNav";
 import ProductSearch from "@/components/home/ProductSearch";
 import MostRequestedProducts from "@/components/home/MostRequestedProducts";
 import VisualProductCategories from "@/components/home/VisualProductCategories";
 import QualityShowcase from "@/components/home/QualityShowcase";
-import NeedItFast from "@/components/home/NeedItFast";
+import CategoryImageGrid from "@/components/home/CategoryImageGrid";
+import ProductGallery from "@/components/home/ProductGallery";
 import ProductionFacility from "@/components/home/ProductionFacility";
-import AiTools from "@/components/home/AiTools";
-import MultiStepQuote from "@/components/home/MultiStepQuote";
+import NeedItFast from "@/components/home/NeedItFast";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
 import IndustrySolutions from "@/components/home/IndustrySolutions";
 import LocationsSection from "@/components/home/LocationsSection";
+import AiTools from "@/components/home/AiTools";
 import ContactCTA from "@/components/home/ContactCTA";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import ClientTrust from "@/components/home/ClientTrust";
+import FinalCTA from "@/components/home/FinalCTA";
 import { heroStats, siteConfig } from "@/lib/data";
+import { homePageSchema, homepageFaqSchema } from "@/lib/seo";
+
+const homeTitle = "Printing, Signage, Packaging & Promotional Products in Tanzania";
+const homeDescription =
+  "Packard Promo provides printing services, signage, packaging, promotional products and corporate branding in Dar es Salaam and across Tanzania. Request online quotes and nationwide delivery.";
+const homeOgImage = `${siteConfig.url}/images/og-default.jpg`;
+
+export const metadata: Metadata = {
+  title: homeTitle,
+  description: homeDescription,
+  openGraph: {
+    title: `${homeTitle} | Packard Promo`,
+    description: homeDescription,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    locale: "en_TZ",
+    type: "website",
+    images: [
+      {
+        url: homeOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Packard Promo printing, signage, packaging and promotional products in Tanzania",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${homeTitle} | Packard Promo`,
+    description: homeDescription,
+    images: [homeOgImage],
+  },
+};
 
 export default function HomePage() {
   return (
@@ -25,50 +65,81 @@ export default function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
+            "@id": `${siteConfig.url}/#website`,
             name: siteConfig.name,
             url: siteConfig.url,
             description: siteConfig.description,
-            potentialAction: {
-              "@type": "SearchAction",
-              target: { "@type": "EntryPoint", urlTemplate: `${siteConfig.url}/search?q={search_term_string}` },
-              "query-input": "required name=search_term_string",
-            },
           }),
         }}
       />
+      <Script
+        id="homepage-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema()) }}
+      />
+      <Script
+        id="homepage-faq-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema()) }}
+      />
+
+      {/* Hero with product visuals */}
       <HeroSection stats={heroStats} />
+
+      {/* Compact brand trust strip */}
       <TrustedBy />
-      
-      {/* Quick Product Search */}
+
+      {/* Most ordered products in Tanzania - large images */}
+      <MostOrderedTanzania />
+
+      {/* Visual category navigation */}
+      <VisualCategoryNav />
+
+      {/* Quick product search */}
       <ProductSearch />
-      
-      {/* Popular Products with Prices */}
+
+      {/* Most requested products with prices */}
       <MostRequestedProducts />
-      
-      {/* Visual Product Categories Grid */}
+
+      {/* Visual category showcase */}
       <VisualProductCategories />
-      
-      {/* Quality Showcase / Close-up Gallery */}
+
+      {/* Quality showcase / close-up gallery */}
       <QualityShowcase />
-      
-      {/* Express Services */}
+
+      {/* Category image grids */}
+      <CategoryImageGrid />
+
+      {/* Full product gallery */}
+      <ProductGallery />
+
+      {/* Express services */}
       <NeedItFast />
-      
-      {/* Production Capabilities */}
+
+      {/* Production capabilities */}
       <ProductionFacility />
-      
-      {/* AI Tools Section */}
-      <AiTools />
-      
-      {/* Portfolio / Featured Projects */}
+
+      {/* Portfolio / Featured projects */}
       <FeaturedProjects />
-      
-      {/* Industry Solutions */}
+
+      {/* Industry solutions */}
       <IndustrySolutions />
-      
-      {/* Service Areas */}
+
+      {/* Service areas */}
       <LocationsSection />
-      
+
+      {/* AI tools section */}
+      <AiTools />
+
+      {/* Conversion: Why Choose Us (4 cards) */}
+      <WhyChooseUs />
+
+      {/* Conversion: Client trust message */}
+      <ClientTrust />
+
+      {/* Conversion: Final CTA before footer */}
+      <FinalCTA />
+
       {/* Final CTA */}
       <ContactCTA />
     </>

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import SectionHeading from "@/components/shared/SectionHeading";
 import ProjectCard from "@/components/shared/ProjectCard";
 import { portfolioProjects } from "@/lib/portfolio";
 import Link from "next/link";
@@ -9,28 +8,25 @@ import Link from "next/link";
 export default function FeaturedProjects() {
   const featured = portfolioProjects.slice(0, 6);
   return (
-    <section className="section-padding relative" id="portfolio">
+    <section className="section-tight relative" id="portfolio">
       <div className="absolute inset-0 bg-gradient-to-b from-packard-950 via-packard-900/30 to-packard-950" />
       <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+        <div className="flex items-end justify-between gap-3 mb-5">
           <div>
-            <div className="inline-flex items-center gap-3 mb-3">
-              <span className="h-px w-8 bg-promo-500/60" />
-              <span className="text-promo-400 text-xs uppercase tracking-[0.25em] font-semibold">Recently Completed</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white max-w-2xl">
+            <span className="text-promo-400 text-[10px] uppercase tracking-[0.25em] font-semibold">Recently Completed</span>
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
               Real projects. <span className="text-gradient-promo">Real results.</span>
             </h2>
           </div>
-          <Link href="/portfolio" className="inline-flex items-center gap-2 text-promo-400 hover:text-promo-300 text-sm font-semibold">
+          <Link href="/portfolio" className="hidden sm:inline-flex items-center gap-1.5 text-promo-400 hover:text-promo-300 text-xs font-semibold">
             View all 1,000+ projects
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
           {featured.map((project, i) => (
             <ProjectCard
               key={project.id}

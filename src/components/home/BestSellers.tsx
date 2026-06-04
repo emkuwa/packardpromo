@@ -10,7 +10,7 @@ const bestSellers = [
     slug: "business-cards",
     name: "Premium Business Cards",
     category: "Digital Printing",
-    image: "/images/service-digital-printing.jpg",
+    image: "/images/business card2.jpg",
     price: 18000,
     orders: "20K+",
     rating: 4.9,
@@ -21,7 +21,7 @@ const bestSellers = [
     slug: "tshirts",
     name: "Custom Branded T-Shirts",
     category: "Promotional Products",
-    image: "/images/service-promotional-products.jpg",
+    image: "/images/round neck t-shirt.jpg",
     price: 8500,
     orders: "15K+",
     rating: 4.8,
@@ -32,7 +32,7 @@ const bestSellers = [
     slug: "rollup",
     name: "Roll-up Banners",
     category: "Large Format",
-    image: "/images/service-large-format-printing.jpg",
+    image: "/images/x-banner.jpg",
     price: 55000,
     orders: "8K+",
     rating: 4.9,
@@ -43,7 +43,7 @@ const bestSellers = [
     slug: "shop-sign",
     name: "Illuminated Shop Signboards",
     category: "Signage",
-    image: "/images/service-signage-solutions.jpg",
+    image: "/images/illuminated signage.jpg",
     price: 180000,
     orders: "5K+",
     rating: 5.0,
@@ -54,7 +54,7 @@ const bestSellers = [
     slug: "car-wrap",
     name: "Vehicle Wrap Branding",
     category: "Vehicle Branding",
-    image: "/images/service-vehicle-branding.jpg",
+    image: "/images/vehicle branding.jpg",
     price: 350000,
     orders: "2K+",
     rating: 4.9,
@@ -62,10 +62,10 @@ const bestSellers = [
   },
   {
     rank: 6,
-    slug: "cartons",
-    name: "Folding Cartons",
+    slug: "packaging",
+    name: "Custom Packaging",
     category: "Packaging",
-    image: "/images/service-packaging-printing.jpg",
+    image: "/images/packaging.jpg",
     price: 250,
     orders: "10K+",
     rating: 4.8,
@@ -76,7 +76,7 @@ const bestSellers = [
     slug: "mug",
     name: "Branded Ceramic Mugs",
     category: "Promotional Products",
-    image: "/images/service-promotional-products.jpg",
+    image: "/images/coffee mug.jpg",
     price: 4500,
     orders: "12K+",
     rating: 4.7,
@@ -87,11 +87,55 @@ const bestSellers = [
     slug: "flyers",
     name: "Full Color Flyers",
     category: "Digital Printing",
-    image: "/images/service-digital-printing.jpg",
+    image: "/images/poster.jpg",
     price: 25000,
     orders: "18K+",
     rating: 4.8,
     reviewCount: 412,
+  },
+  {
+    rank: 9,
+    slug: "caps",
+    name: "Branded Caps",
+    category: "Promotional Products",
+    image: "/images/cap.jpg",
+    price: 6500,
+    orders: "9K+",
+    rating: 4.8,
+    reviewCount: 178,
+  },
+  {
+    rank: 10,
+    slug: "brochures",
+    name: "Multi-Page Brochures",
+    category: "Digital Printing",
+    image: "/images/brochure.jpg",
+    price: 75000,
+    orders: "6K+",
+    rating: 4.7,
+    reviewCount: 132,
+  },
+  {
+    rank: 11,
+    slug: "stickers",
+    name: "Custom Stickers & Labels",
+    category: "Digital Printing",
+    image: "/images/stickers.jpg",
+    price: 15000,
+    orders: "14K+",
+    rating: 4.7,
+    reviewCount: 245,
+  },
+  {
+    rank: 12,
+    slug: "diary",
+    name: "Executive Diaries",
+    category: "Promotional Products",
+    image: "/images/executive diary.jpg",
+    price: 12500,
+    orders: "4K+",
+    rating: 4.9,
+    reviewCount: 87,
   },
 ];
 
@@ -147,6 +191,7 @@ export default function BestSellers() {
                   alt={bestSellers[0].name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/logo.jpg"; }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-packard-950 via-packard-950/30 to-transparent" />
                 <div className="absolute top-3 left-3 flex flex-col gap-2">
@@ -184,7 +229,7 @@ export default function BestSellers() {
             </Link>
           </motion.div>
 
-          {bestSellers.slice(1, 8).map((product, i) => (
+          {bestSellers.slice(1, 12).map((product, i) => (
             <motion.div
               key={product.slug}
               initial={{ opacity: 0, y: 20 }}
@@ -196,7 +241,7 @@ export default function BestSellers() {
               <Link href={`/products/${product.slug}`} className="block glass-card rounded-2xl overflow-hidden">
                 <div className="flex gap-0">
                   <div className="relative w-24 h-24 md:w-32 md:h-32 shrink-0 overflow-hidden bg-packard-800">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+                    <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/logo.jpg"; }} />
                     <div className="absolute top-1 left-1">
                       <span className="text-[8px] font-bold text-white bg-amber-500/90 px-1.5 py-0.5 rounded">
                         #{product.rank}

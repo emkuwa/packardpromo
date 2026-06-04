@@ -143,6 +143,12 @@ export default function QuoteContent() {
                       Call 0716 002 790
                     </a>
                   </div>
+                  <div className="mt-6 pt-6 border-t border-white/10">
+                    <p className="text-silver-500 text-xs mb-3">Looking for corporate branding, communications, or PR services?</p>
+                    <a href="https://packardlimited.co.tz" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-packard-300 hover:text-packard-200 text-xs font-semibold uppercase tracking-wider transition-colors">
+                      Visit Packard Limited (Parent Company) →
+                    </a>
+                  </div>
                 </div>
               )}
             </div>

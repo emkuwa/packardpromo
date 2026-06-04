@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -37,20 +38,19 @@ function AnimatedStat({ value, suffix, label, delay, variant }: { value: number;
 
   return (
     <motion.div ref={ref} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay }} className="text-center">
-      <div className={cn("text-3xl md:text-5xl font-bold", variant === "gradient" ? "text-gradient-promo" : "text-white")}>
+      <div className={cn("text-2xl md:text-4xl font-bold", variant === "gradient" ? "text-gradient-promo" : "text-white")}>
         {count}{suffix}
       </div>
-      <div className="text-silver-500 text-[10px] md:text-xs uppercase tracking-widest mt-2 font-medium">{label}</div>
+      <div className="text-silver-500 text-[9px] md:text-[10px] uppercase tracking-widest mt-1 font-medium">{label}</div>
     </motion.div>
   );
 }
 
 const trustIndicators = [
-  { label: "50+", sublabel: "Product Categories", icon: "M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" },
-  { label: "9", sublabel: "Service Divisions", icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" },
-  { label: "Nationwide", sublabel: "Delivery", icon: "M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" },
-  { label: "Fast", sublabel: "Turnaround", icon: "M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" },
-  { label: "Instant", sublabel: "Quotes", icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" },
+  { label: "Same Day Printing", sublabel: "Available" },
+  { label: "Dar es Salaam", sublabel: "Delivery" },
+  { label: "Nationwide", sublabel: "Tanzania Delivery" },
+  { label: "Fast Quote", sublabel: "Response" },
 ];
 
 const productionCapabilities = [
@@ -62,140 +62,208 @@ const productionCapabilities = [
   "Promotional Products",
 ];
 
+const heroBanners = [
+  "/images/hero-mobile.jpg",
+];
+
+const heroCollage = [
+  { src: "/images/hero-tanzania.jpg", alt: "Packard Promo Tanzania", className: "col-span-2 row-span-2", priority: true },
+  { src: "/images/hero image for promo packard.jpg", alt: "Promo packaging", className: "" },
+  { src: "/images/hero2.jpg", alt: "Print production", className: "" },
+  { src: "/images/hero-east-african.jpg", alt: "East African printing", className: "col-span-2" },
+];
+
+const floatingProducts = [
+  { src: "/images/business card2.jpg", alt: "Business Cards", top: "6%", right: "3%", size: "w-20 h-20 md:w-24 md:h-24", delay: 0, rotate: -8 },
+  { src: "/images/round neck t-shirt.jpg", alt: "T-Shirts", top: "30%", right: "1%", size: "w-24 h-24 md:w-28 md:h-28", delay: 0.2, rotate: 6 },
+  { src: "/images/cap.jpg", alt: "Caps", top: "58%", right: "4%", size: "w-20 h-20 md:w-24 md:h-24", delay: 0.4, rotate: -10 },
+  { src: "/images/packaging.jpg", alt: "Packaging", top: "10%", left: "1%", size: "w-24 h-24 md:w-28 md:h-28", delay: 0.3, rotate: 8 },
+  { src: "/images/illuminated signage.jpg", alt: "Signboards", top: "45%", left: "0%", size: "w-24 h-24 md:w-28 md:h-28", delay: 0.5, rotate: -6 },
+  { src: "/images/large format printing.jpg", alt: "Banners", top: "72%", left: "4%", size: "w-20 h-20 md:w-24 md:h-24", delay: 0.15, rotate: 10 },
+];
+
 export default function HeroSection({ stats }: { stats: { value: number; suffix: string; label: string }[] }) {
+  const [bannerIndex, setBannerIndex] = useState(0);
+
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[88vh] md:min-h-screen flex items-center overflow-hidden pt-24 md:pt-20 pb-6">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-packard-900/40 via-packard-950/60 to-packard-950" />
-          <img
-            src="/images/hero-printing-branding.jpg"
-            alt="Packard Promo printing and branding services in Tanzania"
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="lazy"
-          />
+        <Image
+          src={heroBanners[0]}
+          alt="Packard Promo printing and branding services in Tanzania"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
         <div className="absolute inset-0 grid-lines opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-packard-950/40 via-packard-950/20 to-packard-950/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-packard-950/60 via-packard-950/20 to-packard-950/60" />
         <div className="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-packard-500/20 rounded-full blur-[200px]" />
         <div className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] bg-promo-500/15 rounded-full blur-[200px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full">
-        <div className="max-w-5xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="inline-flex items-center gap-3 mb-6"
-          >
-            <span className="h-px w-12 bg-promo-400/60" />
-            <span className="text-promo-300 text-xs sm:text-sm uppercase tracking-[0.28em] font-semibold">
-              Tanzania&apos;s Leading Printing & Branding Platform
-            </span>
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7.5rem] font-bold leading-[0.95] sm:leading-[0.9] tracking-tight text-white hero-text-shadow"
-          >
-            Print.
-            <br />
-            <span className="text-gradient-promo">Promote.</span>
-            <br />
-            Perform.
-          </motion.h1>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-7 flex flex-wrap items-center gap-2"
-          >
-            <div className="text-silver-400 text-xs uppercase tracking-wider font-semibold mr-2">Industrial-Scale Production</div>
-            {productionCapabilities.map((cap) => (
-              <span key={cap} className="px-2.5 py-1 rounded-full bg-promo-500/10 border border-promo-500/20 text-promo-300 text-xs font-semibold">
-                {cap}
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="max-w-2xl">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="inline-flex items-center gap-3 mb-4"
+            >
+              <span className="h-px w-10 bg-promo-400/60" />
+              <span className="text-promo-300 text-[10px] sm:text-xs uppercase tracking-[0.28em] font-semibold">
+                Tanzania&apos;s #1 Print & Branding Platform
               </span>
-            ))}
-          </motion.div>
+            </motion.div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-7 text-base sm:text-lg md:text-xl lg:text-2xl text-silver-300 max-w-3xl leading-relaxed"
-          >
-            Professional Printing, Signage, Packaging, Promotional Products and Branding Solutions for Businesses Across Tanzania.
-          </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-white hero-text-shadow"
+            >
+              PRINT.
+              <br />
+              <span className="text-gradient-promo">BRAND.</span>
+              <br />
+              DELIVER.
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-5 text-sm sm:text-base md:text-lg text-silver-300 max-w-xl leading-relaxed"
+            >
+              Same-Day Printing, Branding &amp; Signage Solutions in Tanzania.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-3 text-xs sm:text-sm text-silver-400 max-w-xl leading-relaxed"
+            >
+              Business Cards &bull; Flyers &bull; Stickers &bull; Banners &bull; Signboards &bull; Corporate Gifts
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-6 flex flex-wrap gap-2"
+            >
+              <Link
+                href="/quote"
+                className="inline-flex items-center justify-center px-6 py-3.5 text-sm md:text-base font-semibold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white shadow-xl shadow-promo-500/30 hover:shadow-promo-500/50 hover:from-promo-400 transition-all"
+              >
+                Get a Quote
+                <svg className="w-4 h-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+              <Link
+                href="https://wa.me/+255716002790?text=Hi%20Packard%20Promo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3.5 text-sm md:text-base font-semibold rounded-full bg-green-500 text-white shadow-xl shadow-green-500/30 hover:bg-green-400 transition-all"
+              >
+                <svg className="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+                </svg>
+                Chat on WhatsApp
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="mt-8 grid grid-cols-4 gap-3 max-w-md"
+            >
+              {stats.map((stat, i) => (
+                <AnimatedStat key={stat.label} {...stat} delay={0.7 + i * 0.1} variant="gradient" />
+              ))}
+            </motion.div>
+          </div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="hidden lg:block relative h-[600px]"
           >
-            <Link
-              href="/quote"
-              className="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white shadow-xl shadow-promo-500/30 hover:shadow-promo-500/50 hover:from-promo-400 transition-all"
-            >
-              Get Quote
-              <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
-            <Link
-              href="/products"
-              className="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded-full bg-white/10 text-white backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all"
-            >
-              Browse Products
-            </Link>
-            <Link
-              href="/ai-tools"
-              className="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded-full bg-packard-500/20 text-packard-200 backdrop-blur-sm border border-packard-400/30 hover:bg-packard-500/30 transition-all"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
-              </svg>
-              AI Advisor
-            </Link>
+            {floatingProducts.map((p) => (
+              <motion.div
+                key={p.src}
+                initial={{ opacity: 0, scale: 0.7, rotate: p.rotate }}
+                animate={{ opacity: 1, scale: 1, rotate: p.rotate }}
+                transition={{ duration: 0.6, delay: 0.5 + p.delay }}
+                whileHover={{ scale: 1.1, rotate: 0, zIndex: 10 }}
+                className={cn(
+                  "absolute rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl shadow-black/50",
+                  p.size
+                )}
+                style={{ top: p.top, right: p.right, left: p.left }}
+              >
+                <img src={p.src} alt={p.alt} className="w-full h-full object-cover" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-packard-950/40 to-transparent" />
+              </motion.div>
+            ))}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-promo-500/20 blur-3xl" />
+
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
+              {heroBanners.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setBannerIndex(i)}
+                  aria-label={`Hero banner ${i + 1}`}
+                  className={cn(
+                    "h-1 rounded-full transition-all",
+                    i === bannerIndex ? "bg-promo-400 w-6" : "bg-white/30 w-1.5 hover:bg-white/50"
+                  )}
+                />
+              ))}
+            </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-10 md:mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-3xl"
+            className="lg:hidden grid grid-cols-3 gap-2 mt-4"
           >
-            {stats.map((stat, i) => (
-              <AnimatedStat key={stat.label} {...stat} delay={0.7 + i * 0.1} variant="gradient" />
+            {floatingProducts.slice(0, 6).map((p) => (
+              <div key={p.src} className="aspect-square rounded-lg overflow-hidden border border-white/20">
+                <img src={p.src} alt={p.alt} className="w-full h-full object-cover" loading="lazy" />
+              </div>
             ))}
           </motion.div>
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="mt-10 md:mt-12"
+          transition={{ duration: 0.6, delay: 0.9 }}
+          className="mt-6"
         >
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 max-w-2xl">
             {trustIndicators.map((ind, i) => (
               <motion.div
                 key={ind.label}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 1 + i * 0.06 }}
-                className="glass-card rounded-xl p-3 md:p-4 flex items-center gap-2.5"
+                className="glass-card rounded-lg p-2 flex items-center gap-1.5"
               >
-                <div className="w-9 h-9 rounded-lg bg-promo-500/15 border border-promo-500/25 flex items-center justify-center shrink-0">
-                  <svg className="w-4 h-4 text-promo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={ind.icon} />
-                  </svg>
-                </div>
+                <svg className="w-3.5 h-3.5 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                </svg>
                 <div className="min-w-0">
-                  <div className="text-white font-bold text-sm leading-tight">{ind.label}</div>
-                  <div className="text-silver-500 text-[10px] leading-tight truncate">{ind.sublabel}</div>
+                  <div className="text-white font-bold text-[11px] leading-tight">{ind.label}</div>
+                  <div className="text-silver-500 text-[9px] leading-tight">{ind.sublabel}</div>
                 </div>
               </motion.div>
             ))}
@@ -203,8 +271,8 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
         </motion.div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
-        <svg className="w-6 h-6 text-silver-500/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
+        <svg className="w-5 h-5 text-silver-500/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>

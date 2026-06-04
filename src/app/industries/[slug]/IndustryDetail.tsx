@@ -11,7 +11,15 @@ export default function IndustryDetail({ industry, caseStudies }: { industry: In
     <>
       <section className="relative pt-32 pb-12 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <div className={`absolute inset-0 bg-gradient-to-br ${industry.color} opacity-30`} />
+          {industry.heroImage ? (
+            <img
+              src={industry.heroImage}
+              alt={industry.name}
+              className="absolute inset-0 w-full h-full object-cover opacity-30"
+              loading="eager"
+            />
+          ) : null}
+          <div className={`absolute inset-0 bg-gradient-to-br ${industry.color} opacity-40`} />
           <div className="absolute inset-0 bg-gradient-to-b from-packard-950/40 via-packard-950/60 to-packard-950" />
         </div>
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-promo-500/40 to-transparent" />

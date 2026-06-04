@@ -36,9 +36,18 @@ export default function ProductDetail({ service, product }: { service: Service; 
 
           <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-start">
             <div className="lg:col-span-3">
-              <span className="inline-block text-[10px] uppercase tracking-wider text-promo-300 font-semibold px-2.5 py-1 rounded-full bg-promo-500/10 border border-promo-500/20 mb-4">
-                {service.title}
-              </span>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-packard-800 mb-6 border border-white/10">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-packard-950/40 via-transparent to-transparent" />
+                <span className="absolute top-4 left-4 inline-block text-[10px] uppercase tracking-wider text-white font-bold px-2.5 py-1 rounded-full bg-promo-500/95 backdrop-blur-sm">
+                  {service.title}
+                </span>
+              </div>
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[0.95] tracking-tight text-white mb-4">
                 {product.name}
               </h1>
