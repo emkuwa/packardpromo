@@ -9,7 +9,7 @@ import StickyMobileBar from "@/components/layout/StickyMobileBar";
 import Script from "next/script";
 import { organizationSchema, localBusinessSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/data";
-import { gtmId, googleSiteVerification, bingVerification, hasGtm } from "@/lib/analytics";
+import { googleSiteVerification } from "@/lib/analytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -114,21 +114,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {googleSiteVerification() && (
           <meta name="google-site-verification" content={googleSiteVerification()!} />
         )}
-        {bingVerification() && (
-          <meta name="msvalidate.01" content={bingVerification()!} />
+        {true && (
+          <meta name="msvalidate.01" content="E5971F1FF6CFBED454D2052DA1C769AD" />
         )}
-        {hasGtm() && (
+        {true && (
           <Script id="gtm" strategy="afterInteractive" dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId()}');`
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TQ5WVR52');`
           }} />
         )}
       </head>
       <body className="antialiased overflow-x-hidden">
-        {hasGtm() && (
-          <noscript>
-            <iframe src={`https://www.googletagmanager.com/ns.html?id=${gtmId()}`} height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
-          </noscript>
-        )}
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ5WVR52" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
+        </noscript>
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
