@@ -8,6 +8,8 @@ import FAQ from "@/components/shared/FAQ";
 import ProductCard from "@/components/shared/ProductCard";
 import { cn } from "@/lib/utils";
 import { formatNumber } from "@/lib/utils";
+import { trackEvent } from "@/lib/analytics";
+import { corporateSiteUrl } from "@/lib/domains";
 
 export default function ServiceDetail({ service }: { service: Service }) {
   const [quoteOpen, setQuoteOpen] = useState(false);
@@ -45,7 +47,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
 
               <div className="flex flex-wrap gap-3">
                 <button
-                  onClick={() => setQuoteOpen(true)}
+                  onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "service_detail_top" }); }}
                   className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400 transition-all"
                 >
                   Get Free Quote
@@ -53,7 +55,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                 <Link href="/ai-tools/quote-generator" className="px-7 py-3.5 rounded-full bg-packard-500/20 border border-packard-500/30 text-packard-300 font-semibold text-sm hover:bg-packard-500/30">
                   AI Quote Generator
                 </Link>
-                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">
+                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "service_detail_top" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">
                   WhatsApp
                 </a>
               </div>
@@ -160,19 +162,19 @@ export default function ServiceDetail({ service }: { service: Service }) {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Ready to Order {service.title}?</h2>
               <p className="text-silver-300 text-lg mb-7 max-w-xl mx-auto">Get a custom quote, see samples, or book a free consultation with our {service.title.toLowerCase()} specialists.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <button onClick={() => setQuoteOpen(true)} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">
+                <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "service_detail_bottom" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">
                   Get Free Quote
                 </button>
-                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
+                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "service_detail_bottom" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
                   Chat on WhatsApp
                 </a>
-                <a href="tel:+255716002790" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
+                <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "service_detail_bottom" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
                   Call 0716 002 790
                 </a>
               </div>
               <div className="mt-6 pt-6 border-t border-white/10">
                 <p className="text-silver-500 text-xs mb-2">Need corporate branding strategy, PR, or communications consulting?</p>
-                <a href="https://packardlimited.co.tz" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-packard-300 hover:text-packard-200 text-xs font-semibold uppercase tracking-wider transition-colors">
+                <a href={corporateSiteUrl()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-packard-300 hover:text-packard-200 text-xs font-semibold uppercase tracking-wider transition-colors">
                   Visit Packard Limited (Strategy & Comms) →
                 </a>
               </div>

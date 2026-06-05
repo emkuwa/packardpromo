@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { siteConfig } from "@/lib/data";
+import { trackEvent } from "@/lib/analytics";
+import { corporateSiteUrl } from "@/lib/domains";
 
 export default function ContactContent() {
   const [submitted, setSubmitted] = useState(false);
@@ -46,7 +48,7 @@ export default function ContactContent() {
                     </div>
                     <div>
                       <div className="text-silver-400 text-[10px] uppercase tracking-wider font-semibold mb-1">Call / WhatsApp</div>
-                      <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className="text-white font-bold text-lg hover:text-promo-300">{siteConfig.phone}</a>
+                      <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} onClick={() => trackEvent("phone_click", { label: "contact_card" })} className="text-white font-bold text-lg hover:text-promo-300">{siteConfig.phone}</a>
                       <div className="text-silver-500 text-xs mt-1">Same number for calls & WhatsApp</div>
                     </div>
                   </div>
@@ -157,21 +159,21 @@ export default function ContactContent() {
                   <span className="text-packard-300 text-[10px] uppercase tracking-[0.25em] font-semibold">Looking for Corporate Branding, PR or Comms?</span>
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Visit <a href="https://packardlimited.co.tz" target="_blank" rel="noopener noreferrer" className="text-packard-300 hover:text-packard-200 transition-colors">Packard Limited</a> — Our Parent Company
+                  Visit <a href={corporateSiteUrl()} target="_blank" rel="noopener noreferrer" className="text-packard-300 hover:text-packard-200 transition-colors">Packard Limited</a> — Our Parent Company
                 </h2>
                 <p className="text-silver-300 text-sm leading-relaxed">
                   Packard Limited handles corporate branding, communications strategy, PR, government relations, NGO programs and enterprise solutions — complementing Packard Promo&apos;s production capabilities.
                 </p>
               </div>
               <div className="flex flex-col gap-2">
-                <a href="https://packardlimited.co.tz" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-packard-500/20 text-packard-200 border border-packard-400/30 font-semibold text-sm hover:bg-packard-500/30 transition-all">
+                <a href={corporateSiteUrl()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-packard-500/20 text-packard-200 border border-packard-400/30 font-semibold text-sm hover:bg-packard-500/30 transition-all">
                   Visit Packard Limited
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                   </svg>
                 </a>
-                <a href="mailto:hello@packardlimited.co.tz" className="inline-flex items-center justify-center px-5 py-3 rounded-full bg-white/5 text-white border border-white/10 text-xs font-semibold hover:bg-white/10 transition-all">
-                  hello@packardlimited.co.tz
+                <a href={`mailto:hello@${corporateSiteUrl().replace('https://', '')}`} className="inline-flex items-center justify-center px-5 py-3 rounded-full bg-white/5 text-white border border-white/10 text-xs font-semibold hover:bg-white/10 transition-all">
+                  hello@{corporateSiteUrl().replace('https://', '')}
                 </a>
               </div>
             </div>

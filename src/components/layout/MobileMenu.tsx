@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { services } from "@/lib/services";
 import { cn } from "@/lib/utils";
+import { corporateSiteUrl } from "@/lib/domains";
+import { trackEvent } from "@/lib/analytics";
 
 interface MobileMenuProps {
   items: { label: string; href: string }[];
@@ -70,7 +72,7 @@ export default function MobileMenu({ items, onClose }: MobileMenuProps) {
 
             <div className="border-t border-white/5 pt-6 space-y-3">
               <a
-                href="https://packardlimited.co.tz"
+                href={corporateSiteUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={onClose}
@@ -83,13 +85,14 @@ export default function MobileMenu({ items, onClose }: MobileMenuProps) {
               </a>
               <Link
                 href="/quote"
-                onClick={onClose}
+                onClick={() => { onClose(); trackEvent("quote_click", { label: "mobile_menu" }); }}
                 className="block w-full text-center px-6 py-3.5 text-sm font-semibold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white"
               >
                 Get Instant Quote
               </Link>
               <a
                 href="tel:+255716002790"
+                onClick={() => trackEvent("phone_click", { label: "mobile_menu" })}
                 className="flex items-center justify-center gap-2 w-full px-6 py-3 text-sm font-medium rounded-full bg-white/5 text-white border border-white/10"
               >
                 <svg className="w-4 h-4 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -101,6 +104,7 @@ export default function MobileMenu({ items, onClose }: MobileMenuProps) {
                 href="https://wa.me/+255716002790"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackEvent("whatsapp_click", { label: "mobile_menu" })}
                 className="flex items-center justify-center gap-2 w-full px-6 py-3 text-sm font-medium rounded-full bg-green-500/10 text-green-300 border border-green-500/20"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

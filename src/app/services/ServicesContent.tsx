@@ -5,6 +5,8 @@ import Link from "next/link";
 import Script from "next/script";
 import type { Service } from "@/types";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/lib/data";
+import { trackEvent } from "@/lib/analytics";
 
 export default function ServicesContent({ services }: { services: Service[] }) {
   return (
@@ -20,7 +22,7 @@ export default function ServicesContent({ services }: { services: Service[] }) {
             itemListElement: services.map((s, i) => ({
               "@type": "ListItem",
               position: i + 1,
-              url: `https://packardpromo.co.tz/services/${s.slug}`,
+              url: `${siteConfig.url}/services/${s.slug}`,
               name: s.title,
             })),
           }),
@@ -96,6 +98,7 @@ export default function ServicesContent({ services }: { services: Service[] }) {
                       </Link>
                       <Link
                         href="/quote"
+                        onClick={() => trackEvent("quote_click", { label: "services_listing" })}
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white font-semibold text-sm hover:bg-white/10"
                       >
                         Get Quote

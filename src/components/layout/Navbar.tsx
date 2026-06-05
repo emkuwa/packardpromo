@@ -6,6 +6,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { services } from "@/lib/services";
+import { trackEvent } from "@/lib/analytics";
+import { corporateSiteUrl } from "@/lib/domains";
 import MobileMenu from "./MobileMenu";
 
 const navItems = [
@@ -19,7 +21,7 @@ const navItems = [
   { label: "Contact", href: "/contact" },
 ];
 
-const packardLimitedUrl = "https://packardlimited.co.tz";
+const packardLimitedUrl = corporateSiteUrl();
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -155,7 +157,7 @@ export default function Navbar() {
                     >
                       <a
                         href="tel:+255716002790"
-                        onClick={() => setPhoneOpen(false)}
+                        onClick={() => { setPhoneOpen(false); trackEvent("phone_click", { label: "navbar_dropdown" }); }}
                         className="flex items-center gap-3 px-4 py-3 text-sm text-silver-300 hover:text-white hover:bg-white/5 transition-colors"
                       >
                         <svg className="w-4 h-4 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -167,7 +169,7 @@ export default function Navbar() {
                         href="https://wa.me/+255716002790"
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={() => setPhoneOpen(false)}
+                        onClick={() => { setPhoneOpen(false); trackEvent("whatsapp_click", { label: "navbar_dropdown" }); }}
                         className="flex items-center gap-3 px-4 py-3 text-sm text-silver-300 hover:text-white hover:bg-white/5 transition-colors"
                       >
                         <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24">
@@ -191,6 +193,7 @@ export default function Navbar() {
 
               <Link
                 href="/quote"
+                onClick={() => trackEvent("quote_click", { label: "navbar_desktop" })}
                 className="hidden md:inline-flex px-6 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white hover:from-promo-400 hover:to-promo-300 shadow-lg shadow-promo-500/30 hover:shadow-promo-500/50 transition-all duration-300"
               >
                 Get Instant Quote
@@ -198,6 +201,7 @@ export default function Navbar() {
 
               <a
                 href="tel:+255716002790"
+                onClick={() => trackEvent("phone_click", { label: "navbar_mobile" })}
                 className="sm:hidden inline-flex items-center gap-1 text-xs font-semibold text-white hover:text-promo-300 transition-colors whitespace-nowrap shrink-0"
                 aria-label="Call Packard Promo at +255 716 002 790"
               >

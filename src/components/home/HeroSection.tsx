@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/analytics";
 
 function AnimatedStat({ value, suffix, label, delay, variant }: { value: number; suffix: string; label: string; delay: number; variant: "gradient" | "light" }) {
   const [count, setCount] = useState(0);
@@ -158,6 +159,7 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
             >
               <Link
                 href="/quote"
+                onClick={() => trackEvent("quote_click", { label: "hero" })}
                 className="inline-flex items-center justify-center px-7 py-4 text-base md:text-lg font-bold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white shadow-2xl shadow-promo-500/40 hover:shadow-promo-500/60 hover:from-promo-400 hover:to-promo-300 ring-1 ring-promo-300/30 transition-all"
               >
                 Get a Quote
@@ -169,6 +171,7 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
                 href="https://wa.me/+255716002790?text=Hi%20Packard%20Promo"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackEvent("whatsapp_click", { label: "hero" })}
                 className="inline-flex items-center justify-center px-7 py-4 text-base md:text-lg font-semibold rounded-full bg-green-500 text-white shadow-xl shadow-green-500/30 hover:bg-green-400 transition-all"
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">

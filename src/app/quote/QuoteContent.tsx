@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { services } from "@/lib/services";
+import { trackEvent } from "@/lib/analytics";
+import { corporateSiteUrl } from "@/lib/domains";
 
 export default function QuoteContent() {
   const [submitted, setSubmitted] = useState(false);
@@ -121,7 +123,7 @@ export default function QuoteContent() {
                     <textarea rows={4} className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder-silver-500 focus:outline-none focus:border-promo-500/50 resize-none" placeholder="Sizes, materials, finishes, file formats you have ready, special requirements..."></textarea>
                   </div>
 
-                  <button type="submit" className="w-full px-6 py-4 rounded-xl bg-gradient-to-r from-promo-500 to-promo-400 text-white font-bold text-base hover:from-promo-400 shadow-lg shadow-promo-500/30">
+                  <button type="submit" onClick={() => trackEvent("quote_click", { label: "quote_form_submit" })} className="w-full px-6 py-4 rounded-xl bg-gradient-to-r from-promo-500 to-promo-400 text-white font-bold text-base hover:from-promo-400 shadow-lg shadow-promo-500/30">
                     Send Quote Request →
                   </button>
                   <p className="text-[10px] text-silver-600 text-center">By submitting you agree to our privacy policy. We never share your data.</p>
@@ -136,16 +138,16 @@ export default function QuoteContent() {
                   <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Quote Request Sent!</h2>
                   <p className="text-silver-300 text-base mb-7 max-w-md mx-auto">Thank you. Our team will review your project and respond within 2 hours during business hours.</p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-sm hover:from-green-500">
+                    <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "quote_post_submit" })} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-sm hover:from-green-500">
                       💬 Chat on WhatsApp Now
                     </a>
-                    <a href="tel:+255716002790" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
+                    <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "quote_post_submit" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
                       Call 0716 002 790
                     </a>
                   </div>
                   <div className="mt-6 pt-6 border-t border-white/10">
                     <p className="text-silver-500 text-xs mb-3">Looking for corporate branding, communications, or PR services?</p>
-                    <a href="https://packardlimited.co.tz" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-packard-300 hover:text-packard-200 text-xs font-semibold uppercase tracking-wider transition-colors">
+                    <a href={corporateSiteUrl()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-packard-300 hover:text-packard-200 text-xs font-semibold uppercase tracking-wider transition-colors">
                       Visit Packard Limited (Parent Company) →
                     </a>
                   </div>

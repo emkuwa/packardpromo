@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { trackEvent } from "@/lib/analytics";
 
 export default function WhatsAppButton() {
   return (
@@ -8,6 +9,7 @@ export default function WhatsAppButton() {
       href="https://wa.me/+255716002790?text=Hello%20Packard%20Promo%2C%20I%27d%20like%20to%20discuss%20a%20print%20project."
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent("whatsapp_click", { label: "floating_button" })}
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ delay: 1, type: "spring", stiffness: 200 }}

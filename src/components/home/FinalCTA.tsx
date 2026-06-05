@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 export default function FinalCTA() {
   return (
@@ -33,6 +34,7 @@ export default function FinalCTA() {
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/quote"
+              onClick={() => trackEvent("quote_click", { label: "final_cta" })}
               className="inline-flex items-center justify-center px-6 py-3.5 text-sm md:text-base font-semibold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white shadow-xl shadow-promo-500/30 hover:shadow-promo-500/50 hover:from-promo-400 transition-all"
             >
               Request a Quote
@@ -44,6 +46,7 @@ export default function FinalCTA() {
               href="https://wa.me/+255716002790?text=Hi%20Packard%20Promo%2C%20I%27d%20like%20to%20discuss%20a%20print%20project."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent("whatsapp_click", { label: "final_cta" })}
               className="inline-flex items-center justify-center px-6 py-3.5 text-sm md:text-base font-semibold rounded-full bg-green-500 text-white shadow-xl shadow-green-500/30 hover:bg-green-400 transition-all"
             >
               <svg className="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

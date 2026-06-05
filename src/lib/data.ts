@@ -17,7 +17,7 @@ export const siteConfig = {
   parentUrl: crossLinkUrl(),
   promoUrl: promoShopUrl(),
   corporateUrl: corporateSiteUrl(),
-  primaryDomain: "packardltd.com",
+  primaryDomain: "promo.packardltd.com",
   useFutureDomains: isFutureDomains,
   hours: "Mon - Fri: 8:00 AM - 6:00 PM · Sat: 9:00 AM - 2:00 PM",
   founded: 2010,

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { siteConfig, trustedBy, cities } from "@/lib/data";
 import { services } from "@/lib/services";
+import { trackEvent } from "@/lib/analytics";
 import { industries } from "@/lib/industries";
 import { productCatalog } from "@/lib/product-catalog";
 
@@ -237,7 +238,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <div className="text-silver-600 text-[9px] uppercase tracking-wider font-semibold mb-1">Call / WhatsApp</div>
-              <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className="text-white hover:text-promo-400 text-sm font-semibold transition-colors">{siteConfig.phone}</a>
+              <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} onClick={() => trackEvent("phone_click", { label: "footer" })} className="text-white hover:text-promo-400 text-sm font-semibold transition-colors">{siteConfig.phone}</a>
             </div>
             <div>
               <div className="text-silver-600 text-[9px] uppercase tracking-wider font-semibold mb-1">Email</div>

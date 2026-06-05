@@ -9,10 +9,10 @@ export interface DomainConfig {
 
 export const domainConfigs: Record<DomainKey, DomainConfig> = {
   current: {
-    primary: "https://packardpromo.co.tz",
-    promo: "https://packardpromo.co.tz",
-    corporate: "https://packardlimited.co.tz",
-    parentBrand: "Packard Limited",
+    primary: "https://promo.packardltd.com",
+    promo: "https://promo.packardltd.com",
+    corporate: "https://packardltd.com",
+    parentBrand: "Packard Ltd",
   },
   future: {
     primary: "https://promo.packardltd.com",

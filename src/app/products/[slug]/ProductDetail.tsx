@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import FAQ from "@/components/shared/FAQ";
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/analytics";
 import type { Service, Product } from "@/types";
 
 export default function ProductDetail({ service, product }: { service: Service; product: Product & { category: string } }) {
@@ -137,7 +138,7 @@ export default function ProductDetail({ service, product }: { service: Service; 
 
                   <div className="mt-5 space-y-2.5">
                     <button
-                      onClick={() => setQuoteOpen(true)}
+                      onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "product_detail" }); }}
                       className="w-full px-5 py-3.5 rounded-xl bg-gradient-to-r from-promo-500 to-promo-400 text-white font-bold text-sm hover:from-promo-400 transition-all"
                     >
                       Request Formal Quote →
@@ -146,6 +147,7 @@ export default function ProductDetail({ service, product }: { service: Service; 
                       href={`https://wa.me/+255716002790?text=Hi%20Packard%20Promo%2C%20I'd%20like%20to%20order%3A%0A%0AProduct%3A%20${encodeURIComponent(product.name)}%0AQuantity%3A%20${qty}%0AEstimated%20Total%3A%20TZS%20${formatPrice(estimatedTotal)}%0A%0APlease%20confirm%20and%20send%20formal%20quote.`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() => trackEvent("whatsapp_click", { label: "product_detail" })}
                       className="block w-full text-center px-5 py-3 rounded-xl bg-green-500/10 border border-green-500/20 text-green-300 font-semibold text-sm hover:bg-green-500/20"
                     >
                       💬 Order on WhatsApp

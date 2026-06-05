@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 const fastOptions = [
   {
@@ -57,6 +58,7 @@ export default function NeedItFast() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/quote"
+                onClick={() => trackEvent("quote_click", { label: "need_it_fast" })}
                 className="inline-flex items-center px-8 py-4 rounded-full bg-white text-promo-600 font-bold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
               >
                 Get Express Quote
@@ -65,7 +67,8 @@ export default function NeedItFast() {
                 </svg>
               </Link>
               <a
-                href="tel:+255123456789"
+                href="tel:+255716002790"
+                onClick={() => trackEvent("phone_click", { label: "need_it_fast" })}
                 className="inline-flex items-center px-8 py-4 rounded-full border-2 border-white text-white font-bold hover:bg-white/10 transition-all"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

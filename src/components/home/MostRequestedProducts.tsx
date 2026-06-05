@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 const requestedProducts = [
   { slug: "tshirts", name: "Branded T-Shirts", image: "/images/round neck t-shirt.jpg", price: 8500, originalPrice: 12000, badge: "Top Seller", badgeColor: "from-promo-500 to-pink-500", serviceSlug: "promotional-products" },
@@ -73,6 +74,7 @@ export default function MostRequestedProducts() {
                   <h3 className="text-white font-bold text-xs leading-tight group-hover:text-promo-300 transition-colors line-clamp-2 mb-1.5">{p.name}</h3>
                   <Link
                     href="/quote"
+                    onClick={() => trackEvent("quote_click", { label: "most_requested_products" })}
                     className="mt-auto w-full text-center px-2 py-1.5 rounded-md bg-gradient-to-r from-promo-500 to-promo-400 text-white text-[10px] font-bold hover:from-promo-400 transition-all"
                   >
                     Get Quote

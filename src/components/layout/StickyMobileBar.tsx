@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 export default function StickyMobileBar() {
   const [visible, setVisible] = useState(false);
@@ -51,6 +52,7 @@ export default function StickyMobileBar() {
 
               <Link
                 href="/quote"
+                onClick={() => trackEvent("quote_click", { label: "sticky_mobile_bar" })}
                 className="flex flex-col items-center gap-0.5 px-4 py-2 rounded-xl bg-gradient-to-r from-promo-500 to-promo-400 text-white shadow-lg shadow-promo-500/30 active:scale-95 transition-transform"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,6 +65,7 @@ export default function StickyMobileBar() {
                 href="https://wa.me/+255716002790?text=Hello%20Packard%20Promo%2C%20I%27d%20like%20a%20quote."
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackEvent("whatsapp_click", { label: "sticky_mobile_bar" })}
                 className="flex flex-col items-center gap-0.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 transition-colors active:scale-95"
                 aria-label="WhatsApp"
               >
