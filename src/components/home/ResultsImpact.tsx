@@ -61,7 +61,7 @@ function AnimatedNumber({ value, suffix, delay }: { value: number; suffix: strin
 
 export default function ResultsImpact() {
   return (
-    <section className="section-padding relative" id="results">
+    <section className="section-padding relative overflow-hidden" id="results">
       <div className="absolute inset-0 bg-gradient-to-br from-packard-900/50 via-packard-950 to-packard-950" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-promo-500/40 to-transparent" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-promo-500/5 rounded-full blur-[200px]" />

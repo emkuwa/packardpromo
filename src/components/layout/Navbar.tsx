@@ -60,18 +60,18 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-          scrolled ? "bg-packard-950/90 backdrop-blur-xl border-b border-white/5" : "bg-transparent"
+          scrolled ? "bg-packard-950/90 backdrop-blur-xl border-b border-white/5" : "bg-packard-950/60 backdrop-blur-md"
         )}
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-6">
-          <div className="flex items-center justify-between h-20 gap-2">
-            <Link href="/" className="flex items-center gap-0 sm:gap-3 group whitespace-nowrap shrink-0 min-w-0">
+          <div className="flex items-center justify-between h-20 gap-1 sm:gap-2">
+              <Link href="/" className="flex items-center gap-0 sm:gap-3 group whitespace-nowrap sm:shrink-0 min-w-0 overflow-hidden">
               <div className="hidden sm:flex w-11 h-11 rounded-xl overflow-hidden ring-1 ring-white/10 group-hover:ring-promo-500/40 transition-all">
                 <img src="/logo.png" alt="Packard Promo" className="w-full h-full object-cover" />
               </div>
               <span className="flex items-baseline gap-1 whitespace-nowrap">
-                <span className="text-white font-bold text-base sm:text-lg leading-none group-hover:text-promo-300 transition-colors">Packard</span>
-                <span className="text-promo-400 uppercase text-[9px] sm:text-[10px] tracking-[0.18em] sm:tracking-[0.22em] font-bold leading-none">Promo</span>
+                <span className="text-white font-bold text-xs sm:text-sm leading-none group-hover:text-promo-300 transition-colors">Packard</span>
+                <span className="text-promo-400 uppercase text-xs sm:text-sm tracking-[0.14em] sm:tracking-[0.18em] font-bold leading-none">Promo</span>
               </span>
             </Link>
 
@@ -119,7 +119,7 @@ export default function Navbar() {
               })}
             </nav>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-1.5 sm:gap-3">
               <a
                 href={packardLimitedUrl}
                 target="_blank"

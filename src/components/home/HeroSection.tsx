@@ -115,7 +115,7 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
             >
               <span aria-hidden="true">⚡</span>
               <span className="text-promo-200 text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold">
-                Same-Day Printing Available
+                Same-Day Printing
               </span>
             </motion.div>
 

@@ -111,7 +111,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Script id="organization-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
         <Script id="localbusiness-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
       </head>
-      <body className="antialiased">
+      <body className="antialiased overflow-x-hidden">
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
