@@ -1,13 +1,13 @@
-export function gtmId(): string | undefined {
-  return process.env.NEXT_PUBLIC_GTM_ID || undefined;
+export function gtmId(): string | null {
+  return process.env.NEXT_PUBLIC_GTM_ID ?? null;
 }
 
-export function googleSiteVerification(): string | undefined {
-  return process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined;
+export function googleSiteVerification(): string | null {
+  return process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? null;
 }
 
-export function bingVerification(): string | undefined {
-  return process.env.NEXT_PUBLIC_BING_VERIFICATION || undefined;
+export function bingVerification(): string | null {
+  return process.env.NEXT_PUBLIC_BING_VERIFICATION ?? null;
 }
 
 export function hasGtm(): boolean {
