@@ -64,14 +64,14 @@ export default function Navbar() {
         )}
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-6">
-          <div className="flex items-center justify-between h-20 gap-1 sm:gap-2">
+          <div className="flex items-center justify-between h-20 gap-0.5 sm:gap-2">
               <Link href="/" className="flex items-center gap-0 sm:gap-3 group whitespace-nowrap sm:shrink-0 min-w-0 overflow-hidden">
               <div className="hidden sm:flex w-11 h-11 rounded-xl overflow-hidden ring-1 ring-white/10 group-hover:ring-promo-500/40 transition-all">
                 <img src="/logo.png" alt="Packard Promo" className="w-full h-full object-cover" />
               </div>
-              <span className="flex items-baseline gap-1 whitespace-nowrap">
-                <span className="text-white font-bold text-xs sm:text-sm leading-none group-hover:text-promo-300 transition-colors">Packard</span>
-                <span className="text-promo-400 uppercase text-xs sm:text-sm tracking-[0.14em] sm:tracking-[0.18em] font-bold leading-none">Promo</span>
+              <span className="flex items-baseline gap-0.5 whitespace-nowrap">
+                <span className="text-white font-bold text-sm leading-none group-hover:text-promo-300 transition-colors">Packard</span>
+                <span className="text-promo-400 uppercase text-sm tracking-[0.14em] sm:tracking-[0.18em] font-bold leading-none">Promo</span>
               </span>
             </Link>
 
@@ -119,7 +119,7 @@ export default function Navbar() {
               })}
             </nav>
 
-            <div className="flex items-center gap-1.5 sm:gap-3">
+            <div className="flex items-center gap-0.5 sm:gap-3">
               <a
                 href={packardLimitedUrl}
                 target="_blank"
@@ -198,7 +198,7 @@ export default function Navbar() {
 
               <a
                 href="tel:+255716002790"
-                className="sm:hidden inline-flex items-center gap-1 text-[10px] font-semibold text-white hover:text-promo-300 transition-colors whitespace-nowrap shrink-0"
+                className="sm:hidden inline-flex items-center gap-1 text-xs font-semibold text-white hover:text-promo-300 transition-colors whitespace-nowrap shrink-0"
                 aria-label="Call Packard Promo at +255 716 002 790"
               >
                 <svg className="w-3 h-3 text-promo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
