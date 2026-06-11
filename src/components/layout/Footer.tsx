@@ -60,6 +60,10 @@ const popularSearches = [
   { label: "LED signs", href: "/services/signage-solutions" },
   { label: "Sticker printing", href: "/products/stickers-labels" },
   { label: "Magazine printing", href: "/services/offset-printing" },
+  { label: "Sabasaba exhibition", href: "/sabasaba-exhibition" },
+  { label: "Exhibition stands Tanzania", href: "/products/exhibition-stands" },
+  { label: "Trade fair printing", href: "/sabasaba-exhibition" },
+  { label: "Event branding Tanzania", href: "/services/exhibition-events" },
 ];
 
 const quickQuotes = [

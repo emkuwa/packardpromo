@@ -218,6 +218,23 @@ export default function ProductDetail({ service, product }: { service: Service; 
         </div>
       </section>
 
+      {(product.category === "Exhibition & Events") && (
+        <section className="section-padding pt-0 bg-packard-900/30 -mx-4 sm:-mx-6 px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto py-6">
+            <div className="text-center">
+              <h3 className="text-white font-bold text-lg mb-2">Preparing for Sabasaba Exhibition?</h3>
+              <p className="text-silver-400 text-sm mb-4">Get everything you need for the Dar es Salaam International Trade Fair — stands, banners, promotional products and more.</p>
+              <Link
+                href="/sabasaba-exhibition"
+                className="inline-flex px-5 py-2.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400"
+              >
+                Visit Sabasaba Exhibition Page →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
       {quoteOpen && <QuoteModal product={product} qty={qty} onClose={() => setQuoteOpen(false)} />}
     </>
   );

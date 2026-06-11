@@ -28,6 +28,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/insights/`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/locations/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/sabasaba-exhibition/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/same-day-printing-dar-es-salaam/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/services/digital-printing/dar-es-salaam/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/services/offset-printing/dar-es-salaam/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/services/large-format-printing/dar-es-salaam/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/services/signage-solutions/dar-es-salaam/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/services/vehicle-branding/dar-es-salaam/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const servicePages: MetadataRoute.Sitemap = services.map((s) => ({

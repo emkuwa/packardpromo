@@ -139,6 +139,43 @@ export default function ServiceDetail({ service }: { service: Service }) {
         </div>
       </section>
 
+      {(service.slug === "exhibition-events") && (
+        <section className="section-padding bg-packard-900/30">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-6">
+              <div className="text-promo-400 text-xs uppercase tracking-[0.25em] font-semibold mb-3">Sabasaba Exhibition</div>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Preparing for Sabasaba?</h2>
+              <p className="text-silver-400 text-sm max-w-2xl">
+                The Dar es Salaam International Trade Fair (Sabasaba) is Tanzania&apos;s premier business exhibition, held every July at the Mwalimu J.K. Nyerere Grounds. We provide complete exhibition branding packages including stands, banners, promotional products, and signage tailored for Sabasaba exhibitors.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <Link href="/sabasaba-exhibition" className="glass-card rounded-xl p-4 text-center hover:border-promo-500/30 block group">
+                <span className="text-white font-bold text-sm group-hover:text-promo-300 transition-colors">Sabasaba Exhibition Guide</span>
+                <p className="text-silver-500 text-xs mt-1">Complete branding solutions</p>
+              </Link>
+              <Link href="/knowledge/sabasaba-exhibition-guide" className="glass-card rounded-xl p-4 text-center hover:border-promo-500/30 block group">
+                <span className="text-white font-bold text-sm group-hover:text-promo-300 transition-colors">How to Prepare Guide</span>
+                <p className="text-silver-500 text-xs mt-1">Step-by-step preparation</p>
+              </Link>
+              <Link href="/knowledge/exhibition-stand-design-guide" className="glass-card rounded-xl p-4 text-center hover:border-promo-500/30 block group">
+                <span className="text-white font-bold text-sm group-hover:text-promo-300 transition-colors">Stand Design Guide</span>
+                <p className="text-silver-500 text-xs mt-1">Design tips for trade fairs</p>
+              </Link>
+              <Link href="/knowledge/best-promotional-products-trade-shows" className="glass-card rounded-xl p-4 text-center hover:border-promo-500/30 block group">
+                <span className="text-white font-bold text-sm group-hover:text-promo-300 transition-colors">Promo Products Guide</span>
+                <p className="text-silver-500 text-xs mt-1">Best giveaways for exhibitions</p>
+              </Link>
+            </div>
+            <div className="mt-4 text-center">
+              <Link href="/sabasaba-exhibition" className="inline-flex px-5 py-2.5 rounded-full bg-promo-500/10 border border-promo-500/20 text-promo-300 font-semibold text-sm hover:bg-promo-500/20">
+                Visit Sabasaba Exhibition Page →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="section-padding" id="faq">
         <div className="max-w-3xl mx-auto">
           <div className="text-promo-400 text-xs uppercase tracking-[0.25em] font-semibold mb-3 text-center">FAQ</div>
