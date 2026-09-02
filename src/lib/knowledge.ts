@@ -230,6 +230,30 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     date: "2026-06-09",
     readTime: "6 min",
   },
+  {
+    id: "delivery-times-tanzania",
+    slug: "delivery-times-tanzania",
+    title: "Printing Delivery Times Across Tanzania: City-by-City Guide",
+    excerpt: "How long does printing take in each Tanzanian city? Same-day Dar es Salaam, next-day Zanzibar and Arusha, 2-3 days to Mwanza, Mbeya, Dodoma. Complete delivery timeline for every product.",
+    content: "Understanding delivery times is critical for planning any printing, signage, packaging or promotional products order in Tanzania. Packard Promo operates from a 12,000 sqm production facility in Dar es Salaam and delivers nationwide. Here are the city-by-city delivery timelines: Dar es Salaam — same-day printing and delivery for business cards, flyers, posters and most stationery products when artwork is ready before noon. Signage installation within 3-5 business days. Vehicle branding 2-4 business days. Zanzibar — next-day delivery for standard printed materials. Signage and packaging 3-5 business days. Resort and hospitality projects scheduled with 2-week lead time. Arusha — next-day to 2-day delivery for stationery and promotional products. Signage projects 5-10 business days including installation. Mwanza — 2-3 day delivery for printed materials. Large signage and fleet branding 5-10 business days. Dodoma — 2-day delivery for stationery. Government and institutional projects quoted with specific timelines. Mbeya — 2-3 day delivery for standard products. Industrial signage and packaging 7-14 business days. Morogoro — 1-2 day delivery for stationery. Large format and signage 5-7 business days. Tanga — 2-3 day delivery. Heavy-duty signage and export packaging quoted individually. Factors affecting delivery: artwork readiness (provide print-ready PDF files), quantity (large runs need more production time), finish complexity (lamination, foil, spot UV add 1-2 days), and installation requirements (signage needs site survey first). For rush orders, contact Packard Promo on WhatsApp at +255 716 002 790 for expedited production and delivery across Tanzania.",
+    category: "printing-tips",
+    tags: ["delivery", "Tanzania", "logistics", "turnaround"],
+    author: "Packard Promo",
+    date: "2026-06-15",
+    readTime: "5 min",
+  },
+  {
+    id: "digital-vs-offset-deep-dive",
+    slug: "digital-vs-offset-deep-dive",
+    title: "Digital vs Offset Printing in Tanzania: Complete Decision Guide",
+    excerpt: "Which printing method saves you money? Digital for short runs, offset for volume — but the crossover point depends on your product. Full comparison with Tanzania-specific pricing.",
+    content: "Choosing between digital and offset printing in Tanzania depends on quantity, quality requirements, turnaround time, and budget. Here is a complete decision guide with Tanzania-specific pricing from Packard Promo. Digital Printing uses HP Indigo and Konica Minolta presses. Best for: quantities under 1,000 units, fast turnaround (same-day to 48 hours), variable data printing (personalized names, numbers), short-run packaging prototypes, and proofing. Business cards: TZS 18,000 for 100 pieces (TZS 180/each). Flyers: TZS 25,000 for 100 A4 flyers (TZS 250/each). Posters: TZS 8,000 for 10 A3 posters (TZS 800/each). Digital excels at low quantities with no setup fees. Offset Printing uses Heidelberg Speedmaster presses. Best for: quantities above 1,000 units, color-critical work requiring Pantone matching, large format runs, books, magazines, and bulk brochures. The break-even point is typically 500-2,000 units depending on the product. Brochures: TZS 220/each at 5,000 units vs TZS 750/each at 50 units digitally. Books: TZS 350/each at 1,000 units vs TZS 4,500/each at 200 units digitally. NCR Receipt Books: TZS 180/book at 1,000 units — far cheaper than digital at volume. Key differences: Setup cost — digital has zero setup, offset has plate-making fees amortized across the run. Per-unit cost — offset becomes cheaper above the break-even quantity. Color accuracy — offset with Pantone spot colors is more consistent across large runs. Turnaround — digital is 4x faster for short runs. Paper options — offset handles a wider range of paper weights and types. For businesses in Tanzania, the recommendation is: use digital for urgent orders, small batches, and prototypes. Use offset for bulk orders, regular reprints, and color-critical work. Many clients use both — digital for initial runs and proofs, offset for production volumes. Packard Promo offers both digital and offset printing from the same facility, allowing seamless transitions between methods as your quantity needs grow.",
+    category: "printing-tips",
+    tags: ["digital printing", "offset printing", "comparison", "pricing"],
+    author: "Packard Promo",
+    date: "2026-06-12",
+    readTime: "7 min",
+  },
 ];
 
 export function getArticleBySlug(slug: string): KnowledgeArticle | undefined {
