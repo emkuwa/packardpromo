@@ -112,33 +112,6 @@ export function localBusinessSchema() {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Design Studio", url: `${baseUrl}/services/design-studio` } },
       ],
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "250",
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: [
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Sarah Mwakasege" },
-        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-        reviewBody: "Packard Promo handled our 12-branch signage rollout in record time. The quality of materials, attention to brand guidelines and installation precision was on another level.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "David Mlay" },
-        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-        reviewBody: "From concept to delivery, the Packard Promo team delivered 50,000 branded notebooks for our campaign ahead of schedule. Best print quality we've experienced in Tanzania.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Anna Nkya" },
-        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-        reviewBody: "Packard Promo is our go-to for campaign materials. Their AI quote tool saved our team weeks of back-and-forth. Professional, fast, and globally competitive quality.",
-      },
-    ],
   };
 }
 
