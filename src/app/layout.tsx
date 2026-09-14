@@ -1,21 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import WhatsAppButton from "@/components/layout/WhatsAppButton";
-import ChatBot from "@/components/layout/ChatBot";
-import StickyMobileBar from "@/components/layout/StickyMobileBar";
+import AppShell from "@/components/app-ui/AppShell";
 import Script from "next/script";
 import { organizationSchema, localBusinessSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/data";
 import { googleSiteVerification } from "@/lib/analytics";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
 
 const baseUrl = siteConfig.url;
 const defaultOgImage = `${baseUrl}/images/og-default.jpg`;
@@ -111,7 +100,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en">
       <head>
         <Script id="organization-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
         <Script id="localbusiness-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
@@ -131,12 +120,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ5WVR52" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
         </noscript>
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <WhatsAppButton />
-        <ChatBot />
-        <StickyMobileBar />
+        <AppShell><main>{children}</main></AppShell>
       </body>
     </html>
   );

@@ -1,162 +1,64 @@
 import type { Metadata } from "next";
-import Script from "next/script";
-import HeroSection from "@/components/home/HeroSection";
-import TrustedBy from "@/components/home/TrustedBy";
-import MostOrderedTanzania from "@/components/home/MostOrderedTanzania";
-import VisualCategoryNav from "@/components/home/VisualCategoryNav";
-import ProductSearch from "@/components/home/ProductSearch";
-import MostRequestedProducts from "@/components/home/MostRequestedProducts";
-import VisualProductCategories from "@/components/home/VisualProductCategories";
-import QualityShowcase from "@/components/home/QualityShowcase";
-import CategoryImageGrid from "@/components/home/CategoryImageGrid";
-import ProductGallery from "@/components/home/ProductGallery";
-import ProductionFacility from "@/components/home/ProductionFacility";
-import NeedItFast from "@/components/home/NeedItFast";
-import FeaturedProjects from "@/components/home/FeaturedProjects";
-import IndustrySolutions from "@/components/home/IndustrySolutions";
-import LocationsSection from "@/components/home/LocationsSection";
-import AiTools from "@/components/home/AiTools";
-import ContactCTA from "@/components/home/ContactCTA";
-import WhyChooseUs from "@/components/home/WhyChooseUs";
-import ClientTrust from "@/components/home/ClientTrust";
-import FinalCTA from "@/components/home/FinalCTA";
-import { heroStats, siteConfig } from "@/lib/data";
-import { homePageSchema, homepageFaqSchema } from "@/lib/seo";
-
-const homeTitle = "Printing, Signage, Packaging & Promotional Products in Tanzania";
-const homeDescription =
-  "Packard Promo provides printing services, signage, packaging, promotional products and corporate branding in Dar es Salaam and across Tanzania. Request online quotes and nationwide delivery.";
-const homeOgImage = `${siteConfig.url}/images/og-default.jpg`;
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: homeTitle,
-  description: homeDescription,
-  openGraph: {
-    title: `${homeTitle} | Packard Promo`,
-    description: homeDescription,
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    locale: "en_TZ",
-    type: "website",
-    images: [
-      {
-        url: homeOgImage,
-        width: 1200,
-        height: 630,
-        alt: "Packard Promo printing, signage, packaging and promotional products in Tanzania",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${homeTitle} | Packard Promo`,
-    description: homeDescription,
-    images: [homeOgImage],
-  },
+  title: "Packard Promo | Print. Brand. Deliver.",
+  description: "Order premium printing, branded apparel, packaging, signage and corporate gifts with nationwide delivery across Tanzania.",
 };
+
+const categories = [
+  ["Business Cards", "/images/business card2.jpg", "/products/business-cards"],
+  ["T-Shirts", "/images/round neck t-shirt.jpg", "/products/t-shirts"],
+  ["Caps", "/images/cap.jpg", "/products/caps"],
+  ["Packaging", "/images/shopping bag.jpg", "/services/packaging-printing"],
+  ["Signage", "/images/illuminated signage.jpg", "/services/signage-solutions"],
+  ["Banners", "/images/x-banner.jpg", "/products/rollup-banners"],
+  ["Corporate Gifts", "/images/coffee mug.jpg", "/services/promotional-products"],
+  ["Vehicle Branding", "/images/vehicle branding.jpg", "/services/vehicle-branding"],
+];
+
+const trending = [
+  ["Business Cards", "/images/business card2.jpg", "18,000", "Best Seller", "/products/business-cards"],
+  ["Branded T-Shirts", "/images/round neck t-shirt.jpg", "8,500", "Popular", "/products/t-shirts"],
+  ["Branded Caps", "/images/cap.jpg", "6,500", "Trending", "/products/caps"],
+  ["Packaging Boxes", "/images/shopping bag.jpg", "250", "Best Value", "/services/packaging-printing"],
+];
+
+function SearchBar() {
+  return <form action="/products" className="app-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input name="q" aria-label="Search products" placeholder="Search products, services or ideas..." /></form>;
+}
 
 export default function HomePage() {
   return (
-    <>
-      <Script
-        id="website-ld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "@id": `${siteConfig.url}/#website`,
-            name: siteConfig.name,
-            url: siteConfig.url,
-            description: siteConfig.description,
-            publisher: {
-              "@type": "Organization",
-              name: siteConfig.name,
-              url: siteConfig.url,
-              logo: `${siteConfig.url}/logo.png`,
-            },
-            potentialAction: {
-              "@type": "SearchAction",
-              target: {
-                "@type": "EntryPoint",
-                urlTemplate: `${siteConfig.url}/search?q={search_term_string}`,
-              },
-              "query-input": "required name=search_term_string",
-            },
-            inLanguage: "en-TZ",
-          }),
-        }}
-      />
-      <Script
-        id="homepage-ld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema()) }}
-      />
-      <Script
-        id="homepage-faq-ld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema()) }}
-      />
+    <div className="home-screen">
+      <SearchBar />
+      <section className="home-hero">
+        <Image src="/images/hero image for promo packard.jpg" alt="Packard Promo printing and branding products" fill sizes="(max-width: 700px) 100vw, 1100px" priority />
+        <div className="hero-shade" />
+        <div className="hero-copy">
+          <p className="eyebrow">Tanzania&apos;s print partner</p>
+          <h1>Print.<br/>Brand.<br/><span>Deliver.</span></h1>
+          <p>High-quality printing, signage, packaging and promotional products for businesses across Tanzania.</p>
+          <div className="hero-actions"><Link href="/ai-tools/quote-generator" className="btn-primary">Get Instant Quote <span>→</span></Link><a className="btn-whatsapp" href="https://wa.me/255716002790">◉ Chat on WhatsApp</a></div>
+        </div>
+      </section>
 
-      {/* Hero with product visuals */}
-      <HeroSection stats={heroStats} />
+      <section className="trust-strip" aria-label="Our service guarantees">
+        <div><b>▣</b><span>Tanzania-wide<br/>Delivery</span></div><div><b>ϟ</b><span>Same-day<br/>Printing</span></div><div><b>♢</b><span>Trusted by<br/>Businesses</span></div><div><b>☆</b><span>Quality<br/>Guaranteed</span></div>
+      </section>
 
-      {/* Compact brand trust strip */}
-      <TrustedBy />
+      <section className="app-section">
+        <div className="section-title"><h2>Shop by Category</h2><Link href="/products">View all →</Link></div>
+        <div className="category-grid">{categories.map(([name, image, href]) => <Link href={href} key={name}><span><Image src={image} alt={name} fill sizes="130px" /></span><strong>{name}</strong></Link>)}</div>
+      </section>
 
-      {/* Most ordered products in Tanzania - large images */}
-      <MostOrderedTanzania />
+      <section className="app-section trending-section">
+        <div className="section-title"><h2>Trending Products</h2><Link href="/products">View all →</Link></div>
+        <div className="trending-grid">{trending.map(([name, image, price, badge, href]) => <Link href={href} className="trend-card" key={name}><div><Image src={image} alt={name} fill sizes="260px"/><em>{badge}</em></div><h3>{name}</h3><p>From <strong>TZS {price}</strong></p><span>Get Quote</span></Link>)}</div>
+      </section>
 
-      {/* Visual category navigation */}
-      <VisualCategoryNav />
-
-      {/* Quick product search */}
-      <ProductSearch />
-
-      {/* Most requested products with prices */}
-      <MostRequestedProducts />
-
-      {/* Visual category showcase */}
-      <VisualProductCategories />
-
-      {/* Quality showcase / close-up gallery */}
-      <QualityShowcase />
-
-      {/* Category image grids */}
-      <CategoryImageGrid />
-
-      {/* Full product gallery */}
-      <ProductGallery />
-
-      {/* Express services */}
-      <NeedItFast />
-
-      {/* Production capabilities */}
-      <ProductionFacility />
-
-      {/* Portfolio / Featured projects */}
-      <FeaturedProjects />
-
-      {/* Industry solutions */}
-      <IndustrySolutions />
-
-      {/* Service areas */}
-      <LocationsSection />
-
-      {/* AI tools section */}
-      <AiTools />
-
-      {/* Conversion: Why Choose Us (4 cards) */}
-      <WhyChooseUs />
-
-      {/* Conversion: Client trust message */}
-      <ClientTrust />
-
-      {/* Conversion: Final CTA before footer */}
-      <FinalCTA />
-
-      {/* Final CTA */}
-      <ContactCTA />
-    </>
+      <section className="app-cta"><div><small>PACKARD PROMO</small><h2>More than print.<br/>A brighter Tanzania.</h2><p>From a first idea to nationwide delivery, we make brands visible.</p></div><Link href="/products">Explore products →</Link></section>
+    </div>
   );
 }
