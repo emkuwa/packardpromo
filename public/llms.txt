@@ -1,34 +1,73 @@
-# Packard Promo — Tanzania's Printing, Signage & Promotional Products Marketplace
+# Packard Promo — Tanzania's Printing, Signage & Promotional Products Platform
 
 ## About
-Packard Promo is Tanzania's leading online marketplace for printing, signage, packaging, vehicle branding and promotional products. We provide professional printing services, signage solutions, packaging, promotional products and corporate branding for businesses across Tanzania.
+Packard Promo is a division of Packard Limited, established in 2010 in Dar es Salaam, Tanzania. It is Tanzania's leading printing, signage, packaging and promotional products platform with 14+ years of experience, 4,500+ projects delivered, 1,200+ signage installations, 350+ branding projects, and a 99% on-time delivery rate. Packard Promo serves 250+ organizations across 8+ Tanzanian cities from a 12,000 sqm production facility.
 
-## Services
-- Digital Printing
-- Offset Printing
-- Large Format Printing
-- Packaging Printing
-- Signage Solutions
-- Vehicle Branding
-- Promotional Products
-- Exhibition & Events
-- Design Studio
+## Services (9 Categories)
+1. Digital Printing — Business cards, flyers, brochures, posters, stickers, certificates, letterheads, ID cards. HP Indigo and Konica Minolta presses. Same-day turnaround available.
+2. Offset Printing — Books, magazines, annual reports, bulk brochures, company profiles, educational materials, NCR receipt books. Heidelberg Speedmaster presses. 2,000 to 1,000,000+ unit runs.
+3. Large Format Printing — PVC banners, roll-up banners, teardrop banners, backdrops, billboards. Up to 5m wide seamless printing.
+4. Packaging Printing — Folding cartons, product packaging, food packaging, retail packaging, gift boxes, shopping bags, labels. Food-safe inks, FSC-certified board.
+5. Signage Solutions — Shop signboards, 3D signs, outdoor signage, reception signs, safety signage, wayfinding, lightboxes, glass branding, retail storefronts. 5-7 year durability.
+6. Vehicle Branding — Full wraps, partial wraps, decals, wheel covers. 3M IJ180Cv3 and Avery Dennison MPI 1105 vinyl. 5-7 year outdoor durability.
+7. Promotional Products — T-shirts, polo shirts, caps, mugs, pens, uniforms, key holders, water bottles, power banks. Screen print, DTG, embroidery, sublimation.
+8. Exhibition & Events — Pop-up displays, backdrops, event branding, registration counters, stage backdrops.
+9. Design Studio — Logo design, graphic design, packaging design, signage design.
 
-## Products
-- Business Cards
-- Banners & Roll-up Banners
-- T-shirts & Apparel
-- Corporate Gifts
-- Shop Signboards
-- Vehicle Wraps
-- Labels & Stickers
-- Packaging Boxes
-- Brochures & Flyers
-- Posters & Flyers
+## Products with Starting Prices (TZS)
+- NCR Receipt Books: TZS 180 (min 1,000)
+- Packaging Labels: TZS 180 (min 1,000)
+- Branded Pens: TZS 950 (min 100)
+- Key Holders: TZS 1,800 (min 100)
+- Laptop Stickers: TZS 3,500 (min 100)
+- Branded Mugs: TZS 4,500 (min 25)
+- Staff ID Cards with Lanyard: TZS 5,500 (min 50)
+- Roll-up Banners: TZS 55,000 (min 1)
+- T-Shirts: TZS 8,500 (min 25)
+- Business Cards: TZS 18,000 (min 100, same-day available)
+- Executive Business Cards: TZS 35,000 (min 100)
+- Teardrop Banners: TZS 65,000 (min 1)
+- Brochures: TZS 75,000 (min 50)
+- Shop Signboards: TZS 180,000 (min 1)
+- Vehicle Branding (full wrap): TZS 350,000 (min 1)
+- Logo Design: TZS 250,000 (min 1)
+- Exhibition Stands: TZS 850,000 (min 1)
+
+## Key Facts
+- Founded: 2010
+- Years of Experience: 14+
+- Projects Delivered: 4,500+
+- Signage Installs: 1,200+
+- Branding Projects: 350+
+- On-Time Delivery: 99%
+- Same-Day Printing: Available in Dar es Salaam
+- Production Facility: 12,000 sqm
+- Team: 50+ specialists
+- Cities Served: 8+ (Dar es Salaam, Zanzibar, Arusha, Mwanza, Dodoma, Mbeya, Morogoro, Tanga)
+- Equipment: Heidelberg Speedmaster offset presses, HP Indigo digital presses, Konica Minolta presses
+- AI Tools: Instant quote generator, print consultant, packaging advisor, signage planner
+
+## Target Industries
+- Banks & Financial Services: CRDB Bank, NMB Bank, NBC Bank, TPB Bank
+- Telecommunications: Vodacom, Airtel, Azam Media
+- Hotels & Hospitality: Serena Hotels, Hyatt Regency
+- NGOs & International Organizations: UNDP, UNICEF, WHO, World Bank
+- Government & Public Sector
+- Schools & Education: 120+ schools served
+- Construction & Manufacturing: Dangote Cement, Bakhresa Group
 
 ## Locations
 - Headquarters: Fire Area, Dar es Salaam, Tanzania
-- Service coverage: Dar es Salaam, Zanzibar, Arusha, Mwanza, Dodoma, Mbeya, Morogoro, Tanga
+- Coordinates: -6.813791, 39.272225
+- Service Areas: Dar es Salaam, Zanzibar, Arusha, Mwanza, Dodoma, Mbeya, Morogoro, Tanga
+
+## Delivery Times
+- Same-day: Business cards, flyers, posters (Dar es Salaam, artwork ready)
+- Next-day: Zanzibar, Arusha, Dodoma
+- 2-3 days: Mwanza, Mbeya, Morogoro, Tanga
+- Standard printing: 1-3 business days
+- Large format & signage: 3-10 business days
+- Packaging: 10-21 business days
 
 ## Contact
 - Phone: +255 716 002 790
@@ -36,6 +75,20 @@ Packard Promo is Tanzania's leading online marketplace for printing, signage, pa
 - Email: promo@packardltd.co.tz
 - WhatsApp: +255716002790
 - Website: https://promo.packardltd.com
+- Quote Form: https://promo.packardltd.com/quote
+- AI Quote Tool: https://promo.packardltd.com/ai-tools/quote-generator
+
+## Hours
+- Monday - Friday: 8:00 AM - 6:00 PM
+- Saturday: 9:00 AM - 2:00 PM
+- Sunday: Closed
+
+## Payment Methods
+- Cash
+- Mobile Money: M-Pesa, Tigo Pesa, Airtel Money
+- Bank Transfer
+- Corporate Invoicing (approved clients)
+- Currency: TZS (Tanzanian Shillings)
 
 ## Social Media
 - LinkedIn: https://linkedin.com/company/packard-promo
@@ -44,11 +97,6 @@ Packard Promo is Tanzania's leading online marketplace for printing, signage, pa
 - Facebook: https://facebook.com/packardpromo
 - TikTok: https://tiktok.com/@packardpromo
 
-## Key Facts
-- Founded: 2010
-- Years of Experience: 14+
-- Projects Delivered: 4500+
-- Print Jobs Delivered: 4500+
-- Signage Installs: 1200+
-- On-Time Delivery: 99%
-- Same-Day Printing: Available
+## Parent Company
+- Packard Limited — Tanzania's leading corporate branding agency
+- Website: https://packardltd.com

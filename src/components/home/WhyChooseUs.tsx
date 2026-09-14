@@ -5,23 +5,23 @@ import SectionHeading from "@/components/shared/SectionHeading";
 
 const reasons = [
   {
-    title: "Same-Day Printing",
-    description: "Place your order before noon and collect in Dar es Salaam the same day. Rush services available nationwide.",
+    title: "Same-Day Printing in Dar es Salaam",
+    description: "Packard Promo offers same-day printing for business cards, flyers and posters in Dar es Salaam when artwork is ready and production capacity is available. Orders placed before noon can be collected the same day. Rush services are available nationwide for an additional fee.",
     icon: "M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z",
   },
   {
-    title: "Nationwide Delivery",
-    description: "Same-day in Dar. Next-day to Zanzibar, Arusha, Dodoma. 2-3 days to all major Tanzanian cities.",
+    title: "Nationwide Delivery Across Tanzania",
+    description: "Packard Promo delivers same-day in Dar es Salaam, next-day to Zanzibar, Arusha and Dodoma, and within 2-3 days to Mwanza, Mbeya, Morogoro, Tanga and all major Tanzanian cities. The company has served 8+ cities for 14+ years.",
     icon: "M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12",
   },
   {
-    title: "Professional Design Support",
-    description: "Senior in-house designers handle logos, packaging, marketing collateral and signage — all under one roof.",
+    title: "Professional In-House Design Studio",
+    description: "Packard Promo has an in-house design studio with senior designers who handle logo design, packaging design, marketing collateral and signage — all under one roof. Design fees start from TZS 50,000 for stationery sets.",
     icon: "M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42",
   },
   {
-    title: "Fast Quote Response",
-    description: "Get an instant estimate in 30 seconds with our AI quote tool. Formal quotes within 2 hours during business hours.",
+    title: "AI-Powered Instant Quotes",
+    description: "Packard Promo provides instant printing estimates in 30 seconds with its AI quote tool at promo.packardltd.com/ai-tools/quote-generator. Formal quotes are responded to within 2 hours during business hours (Mon-Fri 8AM-6PM, Sat 9AM-2PM).",
     icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z",
   },
 ];
@@ -33,8 +33,8 @@ export default function WhyChooseUs() {
       <div className="relative z-10 max-w-7xl mx-auto">
         <SectionHeading
           eyebrow="Why Choose Us"
-          title="Fast, Reliable, Professional"
-          subtitle="Four reasons businesses across Tanzania trust us with their printing, branding and signage."
+          title="Why do 250+ organizations in Tanzania choose Packard Promo for printing and branding?"
+          subtitle="Four reasons businesses, NGOs, schools, hotels and institutions across Tanzania trust Packard Promo with their printing, branding and signage projects."
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">

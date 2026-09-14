@@ -25,10 +25,10 @@ export default function FinalCTA() {
             <span className="h-px w-8 bg-promo-500/60" />
           </div>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-white mb-3">
-            Need Printing, Branding or Signage?
+            How do I get a printing quote in Tanzania?
           </h2>
           <p className="text-silver-300 text-sm md:text-base leading-relaxed mb-6 max-w-xl mx-auto">
-            Request a formal quote or chat with us on WhatsApp. We respond within 2 hours during business hours.
+            Request a formal quote through the online form, chat on WhatsApp at +255716002790, or use the AI quote tool for instant estimates. Packard Promo responds within 2 hours during business hours (Mon-Fri 8AM-6PM, Sat 9AM-2PM).
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mb-4">

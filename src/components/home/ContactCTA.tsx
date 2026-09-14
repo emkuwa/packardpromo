@@ -23,10 +23,10 @@ export default function ContactCTA() {
               <span className="text-promo-400 text-[10px] uppercase tracking-[0.25em] font-semibold">Get Started Today</span>
             </div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-white mb-3">
-              Ready to <span className="text-gradient-promo">Print, Promote & Perform?</span>
+              How do I contact Packard Promo in Tanzania?
             </h2>
             <p className="text-silver-300 text-sm md:text-base leading-relaxed mb-5 max-w-md">
-              Share your project. We respond within 2 hours during business hours, and our AI tools give you instant estimates 24/7.
+              Call +255 716 002 790, WhatsApp +255716002790, or email promo@packardltd.co.tz. Packard Promo responds within 2 hours during business hours. AI tools provide instant estimates 24/7 at promo.packardltd.com.
             </p>
 
             <div className="space-y-2 mb-6">

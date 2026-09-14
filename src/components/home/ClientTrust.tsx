@@ -19,7 +19,7 @@ export default function ClientTrust() {
             <span className="h-px w-8 bg-promo-500/60" />
           </div>
           <p className="text-white text-base md:text-lg font-medium leading-relaxed">
-            Trusted by businesses, NGOs, schools, hotels and institutions across Tanzania.
+            Packard Promo serves 250+ organizations including CRDB Bank, Vodacom, NMB Bank, Serena Hotels, UNICEF, WHO, Dangote Cement and World Bank — delivering 4,500+ print jobs, 1,200+ signage installations and 350+ branding projects across Tanzania since 2010.
           </p>
         </motion.div>
       </div>

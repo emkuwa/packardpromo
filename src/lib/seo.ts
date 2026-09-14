@@ -14,14 +14,24 @@ export function organizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: siteConfig.name,
-    alternateName: "Packard Promo Tanzania",
+    alternateName: ["Packard Promo Tanzania", "Packard Promo Dar es Salaam"],
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
     image: defaultOgImage,
-    description: siteConfig.description,
+    description:
+      "Packard Promo is Tanzania's leading printing, signage, packaging and promotional products platform with 14+ years of experience, 4,500+ projects delivered, and 250+ organizations served. Part of Packard Limited, a corporate branding agency established in 2010.",
     slogan: siteConfig.tagline,
     foundingDate: String(siteConfig.founded),
-    areaServed: { "@type": "Country", name: "Tanzania" },
+    numberOfEmployees: { "@type": "QuantitativeValue", value: 50, unitText: "specialists" },
+    areaServed: [
+      { "@type": "Country", name: "Tanzania" },
+      { "@type": "City", name: "Dar es Salaam" },
+      { "@type": "City", name: "Zanzibar" },
+      { "@type": "City", name: "Arusha" },
+      { "@type": "City", name: "Mwanza" },
+      { "@type": "City", name: "Dodoma" },
+      { "@type": "City", name: "Mbeya" },
+    ],
     parentOrganization: {
       "@type": "Organization",
       name: siteConfig.parentBrand,
@@ -34,14 +44,35 @@ export function organizationSchema() {
       addressRegion: "Dar es Salaam",
       addressCountry: "TZ",
     },
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: siteConfig.phone.replace(/\s/g, ""),
-      contactType: "sales",
-      areaServed: "TZ",
-      availableLanguage: ["English", "Swahili"],
-    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: siteConfig.phone.replace(/\s/g, ""),
+        contactType: "sales",
+        areaServed: "TZ",
+        availableLanguage: ["English", "Swahili"],
+      },
+      {
+        "@type": "ContactPoint",
+        email: siteConfig.email,
+        contactType: "customer service",
+        areaServed: "TZ",
+        availableLanguage: ["English", "Swahili"],
+      },
+    ],
     sameAs: realSocialUrls(),
+    knowsAbout: [
+      "Digital Printing Tanzania",
+      "Offset Printing Tanzania",
+      "Large Format Printing Tanzania",
+      "Signage Solutions Tanzania",
+      "Vehicle Branding Tanzania",
+      "Packaging Printing Tanzania",
+      "Promotional Products Tanzania",
+      "Corporate Branding Tanzania",
+      "Business Cards Tanzania",
+      "Shop Signboards Tanzania",
+    ],
   };
 }
 
@@ -211,20 +242,36 @@ export function homePageSchema() {
 export function homepageFaqSchema() {
   return faqSchema([
     {
+      q: "What printing services does Packard Promo offer in Tanzania?",
+      a: "Packard Promo offers 9 service categories: digital printing, offset printing, large format printing, packaging printing, signage solutions, vehicle branding, promotional products, exhibition & events, and design studio. The catalog includes 82+ products ranging from business cards (from TZS 18,000) to full vehicle wraps (from TZS 350,000).",
+    },
+    {
+      q: "How much does printing cost in Tanzania?",
+      a: "Packard Promo printing prices start from TZS 180 for NCR receipt books, TZS 18,000 for business cards (100 pieces), TZS 8,500 for branded T-shirts (25 pieces), and TZS 55,000 for roll-up banners. All prices are in Tanzanian Shillings (TZS) with transparent minimum order quantities listed on each product page.",
+    },
+    {
       q: "Does Packard Promo offer same-day printing in Tanzania?",
-      a: "Yes. Same-day printing is available for selected products in Dar es Salaam when artwork is ready and production capacity is available.",
+      a: "Yes. Same-day printing is available for business cards, flyers, and posters in Dar es Salaam when artwork is ready. Standard turnaround is 1-3 business days for most products. Large format and signage take 3-10 business days, and packaging takes 10-21 business days.",
     },
     {
-      q: "Can Packard Promo deliver printing, signage and promotional products across Tanzania?",
-      a: "Yes. Packard Promo supports Tanzania-wide delivery for printing services, signage, packaging, promotional products and corporate branding orders.",
+      q: "Does Packard Promo deliver across Tanzania?",
+      a: "Yes. Same-day delivery in Dar es Salaam. Next-day to Zanzibar, Arusha, and Dodoma. 2-3 days to Mwanza, Mbeya, Morogoro, Tanga and all major Tanzanian cities. Packard Promo has served 8+ cities across Tanzania for 14+ years.",
     },
     {
-      q: "Can I request an online quotation?",
-      a: "Yes. Customers can request online quotations through the quote form or WhatsApp with project details, quantities, artwork requirements and delivery location.",
+      q: "Who are Packard Promo's clients?",
+      a: "Packard Promo serves 250+ organizations including CRDB Bank, Vodacom, NMB Bank, Serena Hotels, Azam Media, Hyatt Regency, UNDP, UNICEF, WHO, Dangote Cement, Airtel, NBC Bank, Bakhresa Group, TPB Bank and World Bank across banking, telecoms, hospitality, NGOs, government and education sectors.",
     },
     {
-      q: "What printing and signage services are available?",
-      a: "Services include digital printing, offset printing, large format printing, business cards, banners, shop signage, vehicle branding, packaging, labels, branded merchandise and corporate branding materials.",
+      q: "How do I get a printing quote from Packard Promo?",
+      a: "Request a quote through the online quote form at promo.packardltd.com/quote, message on WhatsApp at +255716002790, or use the AI quote generator tool for instant estimates 24/7. Formal quotes are responded to within 2 hours during business hours (Mon-Fri 8AM-6PM, Sat 9AM-2PM).",
+    },
+    {
+      q: "What payment methods does Packard Promo accept?",
+      a: "Packard Promo accepts Cash, Mobile Money (M-Pesa, Tigo Pesa, Airtel Money), Bank Transfer, and corporate invoicing for approved clients. All prices are quoted in Tanzanian Shillings (TZS).",
+    },
+    {
+      q: "Where is Packard Promo located in Tanzania?",
+      a: "Packard Promo headquarters is at Fire Area, Dar es Salaam, Tanzania (coordinates: -6.813791, 39.272225). The 12,000 sqm production facility houses Heidelberg offset presses, HP Indigo digital presses, large-format printers, signage fabrication workshop, vehicle branding bay and packaging design studio.",
     },
   ]);
 }

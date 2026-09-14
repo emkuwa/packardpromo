@@ -4,8 +4,8 @@ import { defaultMetadata } from "@/lib/seo";
 import ServicesContent from "./ServicesContent";
 
 export const metadata: Metadata = defaultMetadata(
-  "All Printing, Signage, Packaging & Promotional Services",
-  "Browse all 9 service categories from Packard Promo — Tanzania's leading printing, signage, packaging and promotional products platform. Digital printing, offset, large format, signage, vehicle branding, packaging, promotional products, exhibition and design.",
+  "All Printing, Signage, Packaging & Promotional Services in Tanzania | Packard Promo",
+  "Packard Promo offers 9 service categories: digital printing, offset printing, large format printing, packaging printing, signage solutions, vehicle branding, promotional products, exhibition & events, and design studio. 82+ products for businesses across Tanzania. Same-day printing available.",
   "/services"
 );
 
