@@ -20,7 +20,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-05-10",
     readTime: "6 min",
-    image: "/images/vehicle branding.jpg",
+    image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
   },
   {
     title: "Signage Permits in Tanzania: What You Need to Know",
@@ -29,7 +29,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-05-05",
     readTime: "8 min",
-    image: "/images/illuminated signage.jpg",
+    image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
   },
   {
     title: "Offset vs Digital Printing: When to Use Each",
@@ -38,7 +38,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-04-28",
     readTime: "7 min",
-    image: "/images/offset printing.jpg",
+    image: "/images/packard-2026/offset-printing-services-tanzania.webp",
   },
   {
     title: "The Complete Guide to Promotional Products for Events",
@@ -47,7 +47,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-04-20",
     readTime: "9 min",
-    image: "/images/coffee mug.jpg",
+    image: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp",
   },
   {
     title: "Packaging Design Trends That Sell in East Africa",
@@ -56,7 +56,7 @@ const insights = [
     author: "Packard Promo Team",
     date: "2026-04-12",
     readTime: "8 min",
-    image: "/images/packaging.jpg",
+    image: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
   },
 ];
 

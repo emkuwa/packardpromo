@@ -24,13 +24,13 @@ const categories = [
   },
   {
     name: "Packaging",
-    image: "/images/packaging.jpg",
+    image: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
     href: "/services/packaging-printing",
     count: "9+",
   },
   {
     name: "Signage",
-    image: "/images/illuminated signage.jpg",
+    image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
     href: "/services/signage-solutions",
     count: "12+",
   },
@@ -42,13 +42,13 @@ const categories = [
   },
   {
     name: "Corporate Gifts",
-    image: "/images/executive diary.jpg",
+    image: "/images/packard-2026/custom-branded-notebooks-tanzania.webp",
     href: "/services/promotional-products",
     count: "10+",
   },
   {
     name: "Vehicle Branding",
-    image: "/images/vehicle branding.jpg",
+    image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
     href: "/services/vehicle-branding",
     count: "5+",
   },

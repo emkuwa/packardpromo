@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const galleryImages = [
   { src: "/images/business card2.jpg", alt: "Business cards", caption: "Business Cards" },
-  { src: "/images/packaging.jpg", alt: "Custom packaging", caption: "Packaging" },
+  { src: "/images/packard-2026/custom-retail-packaging-tanzania.webp", alt: "Custom packaging", caption: "Packaging" },
   { src: "/images/luxury-hotel-branding.jpg", alt: "Luxury signage", caption: "Luxury Signage" },
-  { src: "/images/vodacom-billboard.jpg", alt: "Billboard printing", caption: "Billboards" },
-  { src: "/images/vehicle branding.jpg", alt: "Vehicle branding", caption: "Vehicle Wraps" },
-  { src: "/images/illuminated signage.jpg", alt: "LED signs", caption: "LED Signs" },
-  { src: "/images/round neck t-shirt.jpg", alt: "Apparel", caption: "Apparel" },
-  { src: "/images/award.jpg", alt: "Awards", caption: "Awards" },
+  { src: "/images/packard-2026/billboard-printing-tanzania.webp", alt: "Billboard printing", caption: "Billboards" },
+  { src: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp", alt: "Vehicle branding", caption: "Vehicle Wraps" },
+  { src: "/images/packard-2026/led-illuminated-signage-tanzania.webp", alt: "LED signs", caption: "LED Signs" },
+  { src: "/images/packard-2026/custom-embroidered-polo-shirts-tanzania.webp", alt: "Embroidered corporate apparel", caption: "Apparel" },
+  { src: "/images/packard-2026/custom-corporate-awards-trophies-tanzania.webp", alt: "Awards", caption: "Awards" },
 ];
 
 export default function QualityShowcase() {

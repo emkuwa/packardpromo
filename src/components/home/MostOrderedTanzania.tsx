@@ -34,7 +34,7 @@ const mostOrdered = [
   {
     slug: "pvc-banners",
     name: "PVC Banners",
-    image: "/images/large format printing.jpg",
+    image: "/images/packard-2026/pvc-banner-printing-tanzania.webp",
     price: 12000,
     badge: "#4",
     badgeColor: "from-emerald-500 to-teal-500",
@@ -43,7 +43,7 @@ const mostOrdered = [
   {
     slug: "packaging",
     name: "Packaging Boxes",
-    image: "/images/packaging.jpg",
+    image: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
     price: 250,
     badge: "#5",
     badgeColor: "from-purple-500 to-violet-500",
@@ -52,7 +52,7 @@ const mostOrdered = [
   {
     slug: "shop-sign",
     name: "Shop Signboards",
-    image: "/images/illuminated signage.jpg",
+    image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
     price: 180000,
     badge: "#6",
     badgeColor: "from-amber-500 to-yellow-500",
@@ -61,7 +61,7 @@ const mostOrdered = [
   {
     slug: "stickers",
     name: "Custom Stickers",
-    image: "/images/stickers.jpg",
+    image: "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp",
     price: 15000,
     badge: "#7",
     badgeColor: "from-rose-500 to-red-500",
@@ -70,7 +70,7 @@ const mostOrdered = [
   {
     slug: "promo-mugs",
     name: "Promo Gifts & Mugs",
-    image: "/images/coffee mug.jpg",
+    image: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp",
     price: 4500,
     badge: "#8",
     badgeColor: "from-amber-500 to-amber-600",

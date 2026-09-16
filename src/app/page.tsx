@@ -11,18 +11,18 @@ const categories = [
   ["Business Cards", "/images/business card2.jpg", "/products/business-cards"],
   ["T-Shirts", "/images/round neck t-shirt.jpg", "/products/t-shirts"],
   ["Caps", "/images/cap.jpg", "/products/caps"],
-  ["Packaging", "/images/shopping bag.jpg", "/services/packaging-printing"],
-  ["Signage", "/images/illuminated signage.jpg", "/services/signage-solutions"],
+  ["Packaging", "/images/packard-2026/custom-retail-packaging-tanzania.webp", "/services/packaging-printing"],
+  ["Signage", "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp", "/services/signage-solutions"],
   ["Banners", "/images/x-banner.jpg", "/products/rollup-banners"],
-  ["Corporate Gifts", "/images/coffee mug.jpg", "/services/promotional-products"],
-  ["Vehicle Branding", "/images/vehicle branding.jpg", "/services/vehicle-branding"],
+  ["Corporate Gifts", "/images/packard-2026/custom-branded-mug-printing-tanzania.webp", "/services/promotional-products"],
+  ["Vehicle Branding", "/images/packard-2026/fleet-vehicle-branding-tanzania.webp", "/services/vehicle-branding"],
 ];
 
 const trending = [
   ["Business Cards", "/images/business card2.jpg", "18,000", "Best Seller", "/products/business-cards"],
   ["Branded T-Shirts", "/images/round neck t-shirt.jpg", "8,500", "Popular", "/products/t-shirts"],
   ["Branded Caps", "/images/cap.jpg", "6,500", "Trending", "/products/caps"],
-  ["Packaging Boxes", "/images/shopping bag.jpg", "250", "Best Value", "/services/packaging-printing"],
+  ["Packaging Boxes", "/images/packard-2026/custom-retail-packaging-tanzania.webp", "250", "Best Value", "/services/packaging-printing"],
 ];
 
 function SearchBar() {

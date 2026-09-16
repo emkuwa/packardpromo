@@ -17,17 +17,17 @@ interface FeaturedProduct {
 
 const featured: FeaturedProduct[] = [
   { slug: "business-cards", name: "Business Cards", category: "Digital", image: "/images/business card2.jpg", price: 18000, minQty: 100, serviceSlug: "digital-printing", serviceTitle: "Digital Printing" },
-  { slug: "flyers", name: "Flyers & Leaflets", category: "Digital", image: "/images/poster.jpg", price: 25000, minQty: 100, serviceSlug: "digital-printing", serviceTitle: "Digital Printing" },
+  { slug: "flyers", name: "Flyers & Leaflets", category: "Digital", image: "/images/packard-2026/flyer-leaflet-printing-dar-es-salaam-tanzania.webp", price: 25000, minQty: 100, serviceSlug: "digital-printing", serviceTitle: "Digital Printing" },
   { slug: "rollup", name: "Roll-up Banners", category: "Large Format", image: "/images/x-banner.jpg", price: 55000, minQty: 1, serviceSlug: "large-format-printing", serviceTitle: "Large Format" },
-  { slug: "pvc-banner", name: "PVC Banners", category: "Large Format", image: "/images/large format printing.jpg", price: 12000, minQty: 1, serviceSlug: "large-format-printing", serviceTitle: "Large Format" },
-  { slug: "shop-sign", name: "Shop Signboards", category: "Signage", image: "/images/illuminated signage.jpg", price: 180000, minQty: 1, serviceSlug: "signage-solutions", serviceTitle: "Signage" },
-  { slug: "led-sign", name: "LED Channel Letters", category: "Signage", image: "/images/illuminated light box.jpg", price: 85000, minQty: 1, serviceSlug: "signage-solutions", serviceTitle: "Signage" },
+  { slug: "pvc-banner", name: "PVC Banners", category: "Large Format", image: "/images/packard-2026/pvc-banner-printing-tanzania.webp", price: 12000, minQty: 1, serviceSlug: "large-format-printing", serviceTitle: "Large Format" },
+  { slug: "shop-sign", name: "Shop Signboards", category: "Signage", image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp", price: 180000, minQty: 1, serviceSlug: "signage-solutions", serviceTitle: "Signage" },
+  { slug: "led-sign", name: "LED Channel Letters", category: "Signage", image: "/images/packard-2026/led-illuminated-signage-tanzania.webp", price: 85000, minQty: 1, serviceSlug: "signage-solutions", serviceTitle: "Signage" },
   { slug: "tshirt", name: "Branded T-Shirts", category: "Promo", image: "/images/round neck t-shirt.jpg", price: 8500, minQty: 25, serviceSlug: "promotional-products", serviceTitle: "Promotional Products" },
   { slug: "polo", name: "Branded Polos", category: "Promo", image: "/images/screen printing.jpg", price: 14000, minQty: 25, serviceSlug: "promotional-products", serviceTitle: "Promotional Products" },
-  { slug: "mug", name: "Branded Mugs", category: "Promo", image: "/images/coffee mug.jpg", price: 4500, minQty: 25, serviceSlug: "promotional-products", serviceTitle: "Promotional Products" },
-  { slug: "car-wrap", name: "Vehicle Wraps", category: "Vehicle", image: "/images/vehicle branding.jpg", price: 350000, minQty: 1, serviceSlug: "vehicle-branding", serviceTitle: "Vehicle Branding" },
-  { slug: "cartons", name: "Folding Cartons", category: "Packaging", image: "/images/packaging.jpg", price: 250, minQty: 1000, serviceSlug: "packaging-printing", serviceTitle: "Packaging" },
-  { slug: "diary", name: "Branded Diaries", category: "Promo", image: "/images/executive diary.jpg", price: 12500, minQty: 50, serviceSlug: "promotional-products", serviceTitle: "Promotional Products" },
+  { slug: "mug", name: "Branded Mugs", category: "Promo", image: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp", price: 4500, minQty: 25, serviceSlug: "promotional-products", serviceTitle: "Promotional Products" },
+  { slug: "car-wrap", name: "Vehicle Wraps", category: "Vehicle", image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp", price: 350000, minQty: 1, serviceSlug: "vehicle-branding", serviceTitle: "Vehicle Branding" },
+  { slug: "cartons", name: "Folding Cartons", category: "Packaging", image: "/images/packard-2026/custom-retail-packaging-tanzania.webp", price: 250, minQty: 1000, serviceSlug: "packaging-printing", serviceTitle: "Packaging" },
+  { slug: "diary", name: "Branded Diaries", category: "Promo", image: "/images/packard-2026/custom-branded-notebooks-tanzania.webp", price: 12500, minQty: 50, serviceSlug: "promotional-products", serviceTitle: "Promotional Products" },
 ];
 
 export default function PopularProducts() {

@@ -11,11 +11,11 @@ const topProducts = [
   { name: "Business Cards", slug: "business-cards", image: "/images/business card2.jpg" },
   { name: "T-Shirts", slug: "tshirts", image: "/images/round neck t-shirt.jpg" },
   { name: "Caps", slug: "caps", image: "/images/cap.jpg" },
-  { name: "PVC Banners", slug: "pvc-banners", image: "/images/large format printing.jpg" },
-  { name: "Packaging Boxes", slug: "folding-cartons", image: "/images/packaging.jpg" },
-  { name: "Shop Signboards", slug: "shop-signboards", image: "/images/illuminated signage.jpg" },
-  { name: "Stickers", slug: "stickers-labels", image: "/images/stickers.jpg" },
-  { name: "Promotional Gifts", slug: "gift-sets", image: "/images/executive diary.jpg" },
+  { name: "PVC Banners", slug: "pvc-banners", image: "/images/packard-2026/pvc-banner-printing-tanzania.webp" },
+  { name: "Packaging Boxes", slug: "folding-cartons", image: "/images/packard-2026/custom-retail-packaging-tanzania.webp" },
+  { name: "Shop Signboards", slug: "shop-signboards", image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp" },
+  { name: "Stickers", slug: "stickers-labels", image: "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp" },
+  { name: "Promotional Gifts", slug: "gift-sets", image: "/images/packard-2026/custom-branded-notebooks-tanzania.webp" },
 ];
 
 const packardPromoServices = [

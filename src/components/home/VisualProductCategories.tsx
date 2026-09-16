@@ -14,12 +14,12 @@ interface ProductCategory {
 const productCategories: ProductCategory[] = [
   { name: "Business Cards", image: "/images/business card2.jpg", color: "from-blue-500/30 to-cyan-500/20", count: 3, href: "/services/digital-printing" },
   { name: "T-Shirts & Apparel", image: "/images/round neck t-shirt.jpg", color: "from-purple-500/30 to-pink-500/20", count: 8, href: "/services/promotional-products" },
-  { name: "Signage & Displays", image: "/images/illuminated signage.jpg", color: "from-orange-500/30 to-red-500/20", count: 12, href: "/services/signage-solutions" },
-  { name: "Packaging", image: "/images/packaging.jpg", color: "from-green-500/30 to-emerald-500/20", count: 9, href: "/services/packaging-printing" },
-  { name: "Promo Products", image: "/images/coffee mug.jpg", color: "from-pink-500/30 to-rose-500/20", count: 15, href: "/services/promotional-products" },
-  { name: "Large Format", image: "/images/large format printing.jpg", color: "from-indigo-500/30 to-blue-500/20", count: 7, href: "/services/large-format-printing" },
-  { name: "Vehicle Branding", image: "/images/vehicle branding.jpg", color: "from-teal-500/30 to-cyan-500/20", count: 5, href: "/services/vehicle-branding" },
-  { name: "Event Branding", image: "/images/exhibition stand.jpg", color: "from-rose-500/30 to-orange-500/20", count: 11, href: "/services/exhibition-events" },
+  { name: "Signage & Displays", image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp", color: "from-orange-500/30 to-red-500/20", count: 12, href: "/services/signage-solutions" },
+  { name: "Packaging", image: "/images/packard-2026/custom-retail-packaging-tanzania.webp", color: "from-green-500/30 to-emerald-500/20", count: 9, href: "/services/packaging-printing" },
+  { name: "Promo Products", image: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp", color: "from-pink-500/30 to-rose-500/20", count: 15, href: "/services/promotional-products" },
+  { name: "Large Format", image: "/images/packard-2026/pvc-banner-printing-tanzania.webp", color: "from-indigo-500/30 to-blue-500/20", count: 7, href: "/services/large-format-printing" },
+  { name: "Vehicle Branding", image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp", color: "from-teal-500/30 to-cyan-500/20", count: 5, href: "/services/vehicle-branding" },
+  { name: "Event Branding", image: "/images/packard-2026/exhibition-stand-branding-tanzania.webp", color: "from-rose-500/30 to-orange-500/20", count: 11, href: "/services/exhibition-events" },
 ];
 
 export default function VisualProductCategories() {

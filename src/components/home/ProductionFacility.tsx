@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 
 const facilities = [
-  { name: "Digital Printing", image: "/images/digital printing.jpg", stat: "6 presses" },
-  { name: "Offset Printing", image: "/images/offset printing.jpg", stat: "4 presses" },
-  { name: "Packaging Production", image: "/images/packaging.jpg", stat: "In-house" },
-  { name: "Signage Workshop", image: "/images/illuminated signage.jpg", stat: "12,000 sqm" },
-  { name: "Vehicle Branding", image: "/images/vehicle branding.jpg", stat: "200+ vehicles" },
-  { name: "Embroidery & DTF", image: "/images/embroidery service.jpg", stat: "12 heads" },
+  { name: "Digital Printing", image: "/images/packard-2026/digital-printing-facility-dar-es-salaam-tanzania.webp", stat: "6 presses" },
+  { name: "Offset Printing", image: "/images/packard-2026/offset-printing-services-tanzania.webp", stat: "4 presses" },
+  { name: "Packaging Production", image: "/images/packard-2026/custom-retail-packaging-tanzania.webp", stat: "In-house" },
+  { name: "Signage Workshop", image: "/images/packard-2026/signage-production-workshop-tanzania.webp", stat: "12,000 sqm" },
+  { name: "Vehicle Branding", image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp", stat: "200+ vehicles" },
+  { name: "Embroidery & DTF", image: "/images/packard-2026/embroidery-garment-branding-tanzania.webp", stat: "12 heads" },
   { name: "Screen Printing", image: "/images/screen printing.jpg", stat: "Full color" },
   { name: "Quality Control", image: "/images/quality inspection scene printing.jpg", stat: "3-stage QC" },
 ];

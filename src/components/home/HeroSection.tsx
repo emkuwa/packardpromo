@@ -81,9 +81,9 @@ const floatingProducts = [
   { src: "/images/business card2.jpg", alt: "Business Cards", top: "6%", right: "3%", size: "w-20 h-20 md:w-24 md:h-24", delay: 0, rotate: -8 },
   { src: "/images/round neck t-shirt.jpg", alt: "T-Shirts", top: "30%", right: "1%", size: "w-24 h-24 md:w-28 md:h-28", delay: 0.2, rotate: 6 },
   { src: "/images/cap.jpg", alt: "Caps", top: "58%", right: "4%", size: "w-20 h-20 md:w-24 md:h-24", delay: 0.4, rotate: -10 },
-  { src: "/images/packaging.jpg", alt: "Packaging", top: "10%", left: "1%", size: "w-24 h-24 md:w-28 md:h-28", delay: 0.3, rotate: 8 },
-  { src: "/images/illuminated signage.jpg", alt: "Signboards", top: "45%", left: "0%", size: "w-24 h-24 md:w-28 md:h-28", delay: 0.5, rotate: -6 },
-  { src: "/images/large format printing.jpg", alt: "Banners", top: "72%", left: "4%", size: "w-20 h-20 md:w-24 md:h-24", delay: 0.15, rotate: 10 },
+  { src: "/images/packard-2026/custom-retail-packaging-tanzania.webp", alt: "Packaging", top: "10%", left: "1%", size: "w-24 h-24 md:w-28 md:h-28", delay: 0.3, rotate: 8 },
+  { src: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp", alt: "Signboards", top: "45%", left: "0%", size: "w-24 h-24 md:w-28 md:h-28", delay: 0.5, rotate: -6 },
+  { src: "/images/packard-2026/pvc-banner-printing-tanzania.webp", alt: "Banners", top: "72%", left: "4%", size: "w-20 h-20 md:w-24 md:h-24", delay: 0.15, rotate: 10 },
 ];
 
 export default function HeroSection({ stats }: { stats: { value: number; suffix: string; label: string }[] }) {

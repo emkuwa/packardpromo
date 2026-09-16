@@ -9,14 +9,14 @@ const requestedProducts = [
   { slug: "business-cards", name: "Business Cards", image: "/images/business card2.jpg", price: 18000, originalPrice: 25000, badge: "Top Seller", badgeColor: "from-promo-500 to-pink-500", serviceSlug: "digital-printing" },
   { slug: "caps", name: "Branded Caps", image: "/images/cap.jpg", price: 6500, originalPrice: 9500, badge: "Trending", badgeColor: "from-cyan-500 to-blue-500", serviceSlug: "promotional-products" },
   { slug: "rollup", name: "Roll-up Banners", image: "/images/x-banner.jpg", price: 55000, originalPrice: 85000, badge: "Best Value", badgeColor: "from-emerald-500 to-teal-500", serviceSlug: "large-format-printing" },
-  { slug: "mugs", name: "Branded Mugs", image: "/images/coffee mug.jpg", price: 4500, originalPrice: 7500, badge: "Top Seller", badgeColor: "from-promo-500 to-pink-500", serviceSlug: "promotional-products" },
-  { slug: "flyers", name: "Flyers & Leaflets", image: "/images/poster.jpg", price: 25000, originalPrice: 35000, badge: "Trending", badgeColor: "from-cyan-500 to-blue-500", serviceSlug: "digital-printing" },
-  { slug: "pvc-banner", name: "PVC Banners", image: "/images/large format printing.jpg", price: 12000, originalPrice: 18000, badge: "Trending", badgeColor: "from-cyan-500 to-blue-500", serviceSlug: "large-format-printing" },
-  { slug: "shop-sign", name: "Shop Signboards", image: "/images/illuminated signage.jpg", price: 180000, originalPrice: 280000, badge: "Premium", badgeColor: "from-gold-500 to-amber-500", serviceSlug: "signage-solutions" },
-  { slug: "car-wrap", name: "Vehicle Branding", image: "/images/vehicle branding.jpg", price: 350000, originalPrice: 500000, badge: "Premium", badgeColor: "from-gold-500 to-amber-500", serviceSlug: "vehicle-branding" },
-  { slug: "stickers", name: "Stickers & Labels", image: "/images/stickers.jpg", price: 15000, originalPrice: 22000, badge: "Hot", badgeColor: "from-rose-500 to-red-500", serviceSlug: "digital-printing" },
-  { slug: "packaging", name: "Custom Packaging", image: "/images/packaging.jpg", price: 250, originalPrice: 380, badge: "Best Value", badgeColor: "from-emerald-500 to-teal-500", serviceSlug: "packaging-printing" },
-  { slug: "brochures", name: "Brochures", image: "/images/brochure.jpg", price: 75000, originalPrice: 110000, badge: "Top Seller", badgeColor: "from-promo-500 to-pink-500", serviceSlug: "digital-printing" },
+  { slug: "mugs", name: "Branded Mugs", image: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp", price: 4500, originalPrice: 7500, badge: "Top Seller", badgeColor: "from-promo-500 to-pink-500", serviceSlug: "promotional-products" },
+  { slug: "flyers", name: "Flyers & Leaflets", image: "/images/packard-2026/flyer-leaflet-printing-dar-es-salaam-tanzania.webp", price: 25000, originalPrice: 35000, badge: "Trending", badgeColor: "from-cyan-500 to-blue-500", serviceSlug: "digital-printing" },
+  { slug: "pvc-banner", name: "PVC Banners", image: "/images/packard-2026/pvc-banner-printing-tanzania.webp", price: 12000, originalPrice: 18000, badge: "Trending", badgeColor: "from-cyan-500 to-blue-500", serviceSlug: "large-format-printing" },
+  { slug: "shop-sign", name: "Shop Signboards", image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp", price: 180000, originalPrice: 280000, badge: "Premium", badgeColor: "from-gold-500 to-amber-500", serviceSlug: "signage-solutions" },
+  { slug: "car-wrap", name: "Vehicle Branding", image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp", price: 350000, originalPrice: 500000, badge: "Premium", badgeColor: "from-gold-500 to-amber-500", serviceSlug: "vehicle-branding" },
+  { slug: "stickers", name: "Stickers & Labels", image: "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp", price: 15000, originalPrice: 22000, badge: "Hot", badgeColor: "from-rose-500 to-red-500", serviceSlug: "digital-printing" },
+  { slug: "packaging", name: "Custom Packaging", image: "/images/packard-2026/custom-retail-packaging-tanzania.webp", price: 250, originalPrice: 380, badge: "Best Value", badgeColor: "from-emerald-500 to-teal-500", serviceSlug: "packaging-printing" },
+  { slug: "brochures", name: "Brochures", image: "/images/packard-2026/brochure-company-profile-printing-tanzania.webp", price: 75000, originalPrice: 110000, badge: "Top Seller", badgeColor: "from-promo-500 to-pink-500", serviceSlug: "digital-printing" },
 ];
 
 export default function MostRequestedProducts() {

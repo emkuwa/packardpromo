@@ -121,7 +121,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "reflector-jackets",
     name: "Reflector Jackets",
-    image: "/images/reflector jacket.jpg",
+    image: "/images/packard-2026/branded-workwear-safety-vest-tanzania.webp",
     category: "Apparel & Uniforms",
     startingPrice: 14500,
     minQty: 25,
@@ -157,7 +157,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "branded-mugs",
     name: "Branded Mugs",
-    image: "/images/coffee mug.jpg",
+    image: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp",
     category: "Promotional Products",
     startingPrice: 4500,
     minQty: 25,
@@ -255,7 +255,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "umbrellas",
     name: "Branded Umbrellas",
-    image: "/images/umbrellar.jpg",
+    image: "/images/packard-2026/custom-branded-umbrella-tanzania.webp",
     category: "Promotional Products",
     startingPrice: 9500,
     minQty: 25,
@@ -265,7 +265,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "shopping-bags",
     name: "Custom Shopping Bags",
-    image: "/images/shopping bag.jpg",
+    image: "/images/packard-2026/custom-paper-shopping-bags-tanzania.webp",
     category: "Packaging",
     startingPrice: 2500,
     minQty: 100,
@@ -275,7 +275,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "conference-bags",
     name: "Conference Bags",
-    image: "/images/conference bag.jpg",
+    image: "/images/packard-2026/custom-canvas-tote-bag-printing-tanzania.webp",
     category: "Event Branding",
     startingPrice: 12000,
     minQty: 50,
@@ -315,7 +315,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "executive-diaries",
     name: "Executive Diaries",
-    image: "/images/executive diary.jpg",
+    image: "/images/packard-2026/custom-branded-notebooks-tanzania.webp",
     category: "Corporate Gifts",
     startingPrice: 12500,
     minQty: 50,
@@ -327,7 +327,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "notebooks",
     name: "Branded Notebooks",
-    image: "/images/note book.jpg",
+    image: "/images/packard-2026/custom-branded-notebooks-tanzania.webp",
     category: "Office Branding",
     startingPrice: 4500,
     minQty: 100,
@@ -337,7 +337,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "desktop-calendars",
     name: "Desktop Calendars",
-    image: "/images/desktop calendar.jpg",
+    image: "/images/packard-2026/custom-corporate-calendar-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 8500,
     minQty: 50,
@@ -347,7 +347,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "table-calendars",
     name: "Table Calendars",
-    image: "/images/table calendar2.jpg",
+    image: "/images/packard-2026/custom-corporate-calendar-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 7500,
     minQty: 50,
@@ -387,7 +387,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "id-cards",
     name: "ID Cards & Badges",
-    image: "/images/id card.jpg",
+    image: "/images/packard-2026/staff-id-card-lanyard-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 4500,
     minQty: 50,
@@ -397,7 +397,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "id-cards-premium",
     name: "Premium ID Cards",
-    image: "/images/id card2.jpg",
+    image: "/images/packard-2026/staff-id-card-lanyard-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 6500,
     minQty: 50,
@@ -407,7 +407,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "id-cards-executive",
     name: "Executive ID Cards",
-    image: "/images/id card3.jpg",
+    image: "/images/packard-2026/staff-id-card-lanyard-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 8500,
     minQty: 25,
@@ -417,7 +417,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "id-cards-lanyard",
     name: "ID Cards with Lanyard",
-    image: "/images/id card with lanyard.jpg",
+    image: "/images/packard-2026/staff-id-card-lanyard-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 6500,
     minQty: 50,
@@ -427,7 +427,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "staff-ids",
     name: "Staff ID Cards",
-    image: "/images/staff id.jpg",
+    image: "/images/packard-2026/staff-id-card-lanyard-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 5500,
     minQty: 50,
@@ -457,7 +457,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "awards",
     name: "Custom Awards",
-    image: "/images/award.jpg",
+    image: "/images/packard-2026/custom-corporate-awards-trophies-tanzania.webp",
     category: "Awards & Recognition",
     startingPrice: 18000,
     minQty: 5,
@@ -469,7 +469,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "trophies",
     name: "Custom Trophies",
-    image: "/images/trophy.jpg",
+    image: "/images/packard-2026/custom-corporate-awards-trophies-tanzania.webp",
     category: "Awards & Recognition",
     startingPrice: 14500,
     minQty: 5,
@@ -499,7 +499,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "pvc-banners",
     name: "PVC Banners",
-    image: "/images/large format printing.jpg",
+    image: "/images/packard-2026/pvc-banner-printing-tanzania.webp",
     category: "Signage",
     startingPrice: 12000,
     minQty: 1,
@@ -533,7 +533,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "backdrop-banners",
     name: "Backdrop Banners",
-    image: "/images/backdrop banner.jpg",
+    image: "/images/packard-2026/event-backdrop-step-repeat-tanzania.webp",
     category: "Event Branding",
     startingPrice: 145000,
     minQty: 1,
@@ -543,7 +543,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "shop-signboards",
     name: "Shop Signboards",
-    image: "/images/illuminated signage.jpg",
+    image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
     category: "Signage",
     startingPrice: 180000,
     minQty: 1,
@@ -555,7 +555,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "led-signs",
     name: "LED Signs & Letters",
-    image: "/images/illuminated light box.jpg",
+    image: "/images/packard-2026/led-illuminated-signage-tanzania.webp",
     category: "Signage",
     startingPrice: 85000,
     minQty: 1,
@@ -565,7 +565,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "led-illuminated-signs",
     name: "LED Illuminated Signs",
-    image: "/images/led illuminated sign.jpg",
+    image: "/images/packard-2026/led-illuminated-signage-tanzania.webp",
     category: "Signage",
     startingPrice: 95000,
     minQty: 1,
@@ -575,7 +575,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "3d-signs",
     name: "3D Acrylic Signs",
-    image: "/images/3d sign.jpg",
+    image: "/images/packard-2026/3d-letter-signage-tanzania.webp",
     category: "Signage",
     startingPrice: 65000,
     minQty: 1,
@@ -585,7 +585,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "3d-signs-premium",
     name: "Premium 3D Signs",
-    image: "/images/3d sign2.jpg",
+    image: "/images/packard-2026/3d-letter-signage-tanzania.webp",
     category: "Signage",
     startingPrice: 85000,
     minQty: 1,
@@ -605,7 +605,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "reception-signs",
     name: "Reception Wall Signs",
-    image: "/images/reception  wall sign.jpg",
+    image: "/images/packard-2026/office-wall-branding-graphics-tanzania.webp",
     category: "Office Branding",
     startingPrice: 125000,
     minQty: 1,
@@ -625,7 +625,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "wayfinder-signs",
     name: "Wayfinder Signs",
-    image: "/images/wayfinder sign.jpg",
+    image: "/images/packard-2026/event-directional-signage-tanzania.webp",
     category: "Signage",
     startingPrice: 45000,
     minQty: 10,
@@ -635,7 +635,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "glass-branding",
     name: "Glass Branding (Frosted)",
-    image: "/images/glass branding frost.jpg",
+    image: "/images/packard-2026/window-graphics-branding-tanzania.webp",
     category: "Office Branding",
     startingPrice: 9500,
     minQty: 5,
@@ -675,7 +675,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "brochures",
     name: "Brochures",
-    image: "/images/brochure.jpg",
+    image: "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
     category: "Printing Services",
     startingPrice: 75000,
     minQty: 50,
@@ -685,7 +685,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "corporate-brochures",
     name: "Corporate Brochures",
-    image: "/images/brochure3.jpg",
+    image: "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
     category: "Printing Services",
     startingPrice: 95000,
     minQty: 50,
@@ -695,7 +695,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "company-profiles",
     name: "Company Profiles",
-    image: "/images/company profile.jpg",
+    image: "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
     category: "Printing Services",
     startingPrice: 9500,
     minQty: 100,
@@ -705,7 +705,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "premium-company-profiles",
     name: "Premium Company Profiles",
-    image: "/images/company profile2.jpg",
+    image: "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
     category: "Printing Services",
     startingPrice: 14500,
     minQty: 100,
@@ -735,7 +735,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "posters",
     name: "Posters",
-    image: "/images/poster.jpg",
+    image: "/images/packard-2026/custom-poster-printing-tanzania.webp",
     category: "Printing Services",
     startingPrice: 8000,
     minQty: 10,
@@ -745,7 +745,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "stickers-labels",
     name: "Stickers & Labels",
-    image: "/images/stickers.jpg",
+    image: "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp",
     category: "Printing Services",
     startingPrice: 15000,
     minQty: 100,
@@ -765,7 +765,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "letterheads",
     name: "Letterheads",
-    image: "/images/letter head.jpg",
+    image: "/images/packard-2026/corporate-stationery-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 32000,
     minQty: 500,
@@ -775,7 +775,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "envelopes",
     name: "Branded Envelopes",
-    image: "/images/envelop.jpg",
+    image: "/images/packard-2026/custom-branded-envelope-printing-tanzania.webp",
     category: "Office Branding",
     startingPrice: 28000,
     minQty: 500,
@@ -805,7 +805,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "packaging-boxes",
     name: "Packaging Boxes",
-    image: "/images/packaging.jpg",
+    image: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
     category: "Packaging",
     startingPrice: 250,
     minQty: 1000,
@@ -815,7 +815,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "product-packaging",
     name: "Product Packaging",
-    image: "/images/product package.jpg",
+    image: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
     category: "Packaging",
     startingPrice: 320,
     minQty: 1000,
@@ -825,7 +825,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "packaging-labels",
     name: "Packaging Labels",
-    image: "/images/packaging labels.jpg",
+    image: "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp",
     category: "Packaging",
     startingPrice: 180,
     minQty: 1000,
@@ -835,7 +835,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "vehicle-branding",
     name: "Vehicle Branding",
-    image: "/images/vehicle branding.jpg",
+    image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
     category: "Vehicle Branding",
     startingPrice: 350000,
     minQty: 1,
@@ -857,7 +857,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "exhibition-stands",
     name: "Exhibition Stands",
-    image: "/images/exhibition stand.jpg",
+    image: "/images/packard-2026/exhibition-stand-branding-tanzania.webp",
     category: "Event Branding",
     startingPrice: 850000,
     minQty: 1,
@@ -887,7 +887,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "embroidery",
     name: "Embroidery Service",
-    image: "/images/embroidery service.jpg",
+    image: "/images/packard-2026/embroidery-garment-branding-tanzania.webp",
     category: "Apparel & Uniforms",
     startingPrice: 6500,
     minQty: 25,
@@ -897,7 +897,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "premium-embroidery",
     name: "Premium Embroidery",
-    image: "/images/embroidery2.jpg",
+    image: "/images/packard-2026/embroidery-garment-branding-tanzania.webp",
     category: "Apparel & Uniforms",
     startingPrice: 8500,
     minQty: 25,
@@ -917,7 +917,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "digital-printing-svc",
     name: "Digital Printing",
-    image: "/images/digital printing.jpg",
+    image: "/images/packard-2026/digital-printing-facility-dar-es-salaam-tanzania.webp",
     category: "Printing Services",
     startingPrice: 25000,
     minQty: 100,
@@ -927,7 +927,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "offset-printing-svc",
     name: "Offset Printing",
-    image: "/images/offset printing.jpg",
+    image: "/images/packard-2026/offset-printing-services-tanzania.webp",
     category: "Printing Services",
     startingPrice: 4500,
     minQty: 1000,
@@ -937,7 +937,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "large-format-printing-svc",
     name: "Large Format Printing",
-    image: "/images/large format printing.jpg",
+    image: "/images/packard-2026/pvc-banner-printing-tanzania.webp",
     category: "Signage",
     startingPrice: 12000,
     minQty: 1,
@@ -947,7 +947,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "logo-design",
     name: "Logo Design",
-    image: "/images/logo designing.jpg",
+    image: "/images/packard-2026/graphic-design-branding-studio-tanzania.webp",
     category: "Printing Services",
     startingPrice: 250000,
     minQty: 1,
@@ -957,7 +957,7 @@ export const productCatalog: CatalogProduct[] = [
   {
     slug: "graphics-design",
     name: "Graphics Design",
-    image: "/images/graphics design service.jpg",
+    image: "/images/packard-2026/graphic-design-branding-studio-tanzania.webp",
     category: "Printing Services",
     startingPrice: 95000,
     minQty: 1,
@@ -1046,23 +1046,23 @@ export const galleryImages: CatalogGalleryImage[] = [
   { src: "/images/business card2.jpg", caption: "Business Cards", alt: "Premium business cards with foil stamping", category: "Business Cards" },
   { src: "/images/round neck t-shirt.jpg", caption: "T-Shirts", alt: "Custom branded T-shirts", category: "Apparel & Uniforms" },
   { src: "/images/cap.jpg", caption: "Caps", alt: "Embroidered caps with 3D logo", category: "Apparel & Uniforms" },
-  { src: "/images/coffee mug.jpg", caption: "Mugs", alt: "Branded ceramic mugs", category: "Promotional Products" },
-  { src: "/images/illuminated signage.jpg", caption: "Illuminated Signs", alt: "LED illuminated signage", category: "Signage" },
-  { src: "/images/packaging.jpg", caption: "Packaging", alt: "Custom packaging boxes", category: "Packaging" },
-  { src: "/images/vehicle branding.jpg", caption: "Vehicle Branding", alt: "Vehicle wrap branding", category: "Vehicle Branding" },
-  { src: "/images/brochure.jpg", caption: "Brochures", alt: "Multi-page brochures", category: "Printing Services" },
-  { src: "/images/executive diary.jpg", caption: "Executive Diaries", alt: "PU leather branded diaries", category: "Corporate Gifts" },
-  { src: "/images/award.jpg", caption: "Awards", alt: "Custom crystal awards", category: "Awards & Recognition" },
+  { src: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp", caption: "Mugs", alt: "Branded ceramic mugs", category: "Promotional Products" },
+  { src: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp", caption: "Illuminated Signs", alt: "LED illuminated signage", category: "Signage" },
+  { src: "/images/packard-2026/custom-retail-packaging-tanzania.webp", caption: "Packaging", alt: "Custom packaging boxes", category: "Packaging" },
+  { src: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp", caption: "Vehicle Branding", alt: "Vehicle wrap branding", category: "Vehicle Branding" },
+  { src: "/images/packard-2026/brochure-company-profile-printing-tanzania.webp", caption: "Brochures", alt: "Multi-page brochures", category: "Printing Services" },
+  { src: "/images/packard-2026/custom-branded-notebooks-tanzania.webp", caption: "Executive Diaries", alt: "PU leather branded diaries", category: "Corporate Gifts" },
+  { src: "/images/packard-2026/custom-corporate-awards-trophies-tanzania.webp", caption: "Awards", alt: "Custom crystal awards", category: "Awards & Recognition" },
   { src: "/images/x-banner.jpg", caption: "Roll-up Banners", alt: "Retractable roll-up banners", category: "Event Branding" },
-  { src: "/images/stickers.jpg", caption: "Stickers", alt: "Custom die-cut stickers", category: "Printing Services" },
+  { src: "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp", caption: "Stickers", alt: "Custom die-cut stickers", category: "Printing Services" },
   { src: "/images/keyholder.jpg", caption: "Key Holders", alt: "Branded metal key holders", category: "Promotional Products" },
   { src: "/images/water bottle.jpg", caption: "Water Bottles", alt: "Stainless steel water bottles", category: "Promotional Products" },
-  { src: "/images/letter head.jpg", caption: "Letterheads", alt: "Corporate letterheads", category: "Office Branding" },
-  { src: "/images/3d sign.jpg", caption: "3D Signs", alt: "3D acrylic signs", category: "Signage" },
-  { src: "/images/large format printing.jpg", caption: "Large Format", alt: "Large format printing production", category: "Signage" },
-  { src: "/images/digital printing.jpg", caption: "Digital Printing", alt: "HP Indigo digital printing", category: "Printing Services" },
-  { src: "/images/embroidery service.jpg", caption: "Embroidery", alt: "Custom embroidery service", category: "Apparel & Uniforms" },
-  { src: "/images/conference bag.jpg", caption: "Conference Bags", alt: "Branded conference bags", category: "Event Branding" },
+  { src: "/images/packard-2026/corporate-stationery-printing-tanzania.webp", caption: "Letterheads", alt: "Corporate letterheads", category: "Office Branding" },
+  { src: "/images/packard-2026/3d-letter-signage-tanzania.webp", caption: "3D Signs", alt: "3D acrylic signs", category: "Signage" },
+  { src: "/images/packard-2026/pvc-banner-printing-tanzania.webp", caption: "Large Format", alt: "Large format printing production", category: "Signage" },
+  { src: "/images/packard-2026/digital-printing-facility-dar-es-salaam-tanzania.webp", caption: "Digital Printing", alt: "HP Indigo digital printing", category: "Printing Services" },
+  { src: "/images/packard-2026/embroidery-garment-branding-tanzania.webp", caption: "Embroidery", alt: "Custom embroidery service", category: "Apparel & Uniforms" },
+  { src: "/images/packard-2026/custom-canvas-tote-bag-printing-tanzania.webp", caption: "Conference Bags", alt: "Branded conference bags", category: "Event Branding" },
 ];
 
 export const industriesImageMap: Record<string, string> = {
@@ -1080,7 +1080,7 @@ export const industriesImageMap: Record<string, string> = {
 
 export const additionalProductImages = {
   // From service-*.jpg legacy images
-  printing: "/images/printing-stationery-scene.jpg",
+  printing: "/images/packard-2026/corporate-stationery-printing-tanzania.webp",
   signage: "/images/sea-cliff-signage.jpg",
   packaging: "/images/tbl-beverage-branding.jpg",
   // Heroes
@@ -1094,21 +1094,21 @@ export const additionalProductImages = {
   industry4: "/images/industry-real-estate-tanzania.jpg",
   industry5: "/images/industry-telecommunications-tanzania.jpg",
   // Services
-  service1: "/images/service-billboard-advertising.jpg",
+  service1: "/images/packard-2026/billboard-printing-tanzania.webp",
   service2: "/images/service-corporate-branding.jpg",
-  service3: "/images/service-corporate-printing.jpg",
-  service4: "/images/service-design-studio.jpg",
-  service5: "/images/service-digital-printing.jpg",
-  service6: "/images/service-event-branding.jpg",
-  service7: "/images/service-exhibition-branding.jpg",
+  service3: "/images/packard-2026/corporate-stationery-printing-tanzania.webp",
+  service4: "/images/packard-2026/graphic-design-branding-studio-tanzania.webp",
+  service5: "/images/packard-2026/digital-printing-facility-dar-es-salaam-tanzania.webp",
+  service6: "/images/packard-2026/event-backdrop-step-repeat-tanzania.webp",
+  service7: "/images/packard-2026/exhibition-stand-branding-tanzania.webp",
   service8: "/images/service-large-format-printing.jpg",
-  service9: "/images/service-offset-printing.jpg",
-  service10: "/images/service-packaging-printing.jpg",
+  service9: "/images/packard-2026/offset-printing-services-tanzania.webp",
+  service10: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
   service11: "/images/service-promotional-campaigns.jpg",
   service12: "/images/service-promotional-products.jpg",
-  service13: "/images/service-signage-solutions.jpg",
-  service14: "/images/service-signage-systems.jpg",
-  service15: "/images/service-vehicle-branding.jpg",
+  service13: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
+  service14: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
+  service15: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
   // Other
   about: "/images/about-hero.jpg",
   featured: "/images/featured-projects-cover.jpg",
@@ -1116,7 +1116,7 @@ export const additionalProductImages = {
   marketing: "/images/marketing-strategy-concept.jpg",
   media: "/images/media-intelligence-concept.jpg",
   hospitality: "/images/hospitality-transformation.jpg",
-  heroMobile: "/images/hero mobile.jpg",
+  heroMobile: "/images/hero-mobile.jpg",
   hero2Main: "/images/hero2.jpg",
   heroPackard: "/images/hero image for promo packard.jpg",
   heroBg: "/images/hero-bg.svg",
@@ -1126,14 +1126,14 @@ export const additionalProductImages = {
 };
 
 export const productionFacilitiesImages = {
-  digital: "/images/digital printing.jpg",
-  offset: "/images/offset printing.jpg",
-  large: "/images/large format printing.jpg",
-  packaging: "/images/packaging.jpg",
-  signage: "/images/illuminated signage.jpg",
-  vehicle: "/images/vehicle branding.jpg",
+  digital: "/images/packard-2026/digital-printing-facility-dar-es-salaam-tanzania.webp",
+  offset: "/images/packard-2026/offset-printing-services-tanzania.webp",
+  large: "/images/packard-2026/pvc-banner-printing-tanzania.webp",
+  packaging: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
+  signage: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
+  vehicle: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
   promo: "/images/screen printing.jpg",
-  embroidery: "/images/embroidery service.jpg",
+  embroidery: "/images/packard-2026/embroidery-garment-branding-tanzania.webp",
   dtf: "/images/dtf printing.jpg",
   quality: "/images/quality inspection scene printing.jpg",
 };
@@ -1141,51 +1141,51 @@ export const productionFacilitiesImages = {
 export const portfolioImageMap: Record<string, { image: string; gallery: string[] }> = {
   "crdb-branch-signage": {
     image: "/images/crdb-banking-branding.jpg",
-    gallery: ["/images/crdb-banking-branding.jpg", "/images/crdb-brand-transformation.jpg", "/images/illuminated signage.jpg", "/images/led illuminated sign.jpg", "/images/3d sign.jpg", "/images/reception  wall sign.jpg"],
+    gallery: ["/images/crdb-banking-branding.jpg", "/images/crdb-brand-transformation.jpg", "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp", "/images/packard-2026/led-illuminated-signage-tanzania.webp", "/images/packard-2026/3d-letter-signage-tanzania.webp", "/images/packard-2026/office-wall-branding-graphics-tanzania.webp"],
   },
   "vodacom-vehicle-fleet": {
-    image: "/images/vehicle branding.jpg",
-    gallery: ["/images/vehicle branding.jpg", "/images/wheel cover.jpg", "/images/vodacom-billboard.jpg", "/images/outdoor-advertising.jpg"],
+    image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
+    gallery: ["/images/packard-2026/fleet-vehicle-branding-tanzania.webp", "/images/wheel cover.jpg", "/images/vodacom-billboard.jpg", "/images/packard-2026/billboard-printing-tanzania.webp"],
   },
   "azam-50k-notebooks": {
-    image: "/images/note book.jpg",
-    gallery: ["/images/note book.jpg", "/images/printing-stationery-scene.jpg", "/images/offset printing.jpg", "/images/letter head.jpg"],
+    image: "/images/packard-2026/custom-branded-notebooks-tanzania.webp",
+    gallery: ["/images/packard-2026/custom-branded-notebooks-tanzania.webp", "/images/packard-2026/corporate-stationery-printing-tanzania.webp", "/images/packard-2026/offset-printing-services-tanzania.webp", "/images/packard-2026/corporate-stationery-printing-tanzania.webp"],
   },
   "serena-resort-packaging": {
     image: "/images/serena-hotel-branding.jpg",
-    gallery: ["/images/serena-hotel-branding.jpg", "/images/packaging.jpg", "/images/luxury-hotel-branding.jpg", "/images/product package.jpg", "/images/certificate holder.jpg"],
+    gallery: ["/images/serena-hotel-branding.jpg", "/images/packard-2026/custom-retail-packaging-tanzania.webp", "/images/luxury-hotel-branding.jpg", "/images/packard-2026/custom-food-packaging-printing-tanzania.webp", "/images/certificate holder.jpg"],
   },
   "dangote-truck-fleet": {
     image: "/images/bakhresa-industrial-branding.jpg",
-    gallery: ["/images/bakhresa-industrial-branding.jpg", "/images/vehicle branding.jpg", "/images/manufacturing-industry.jpg", "/images/wheel cover.jpg"],
+    gallery: ["/images/bakhresa-industrial-branding.jpg", "/images/packard-2026/fleet-vehicle-branding-tanzania.webp", "/images/manufacturing-industry.jpg", "/images/wheel cover.jpg"],
   },
   "safaricom-exhibition": {
-    image: "/images/exhibition stand.jpg",
-    gallery: ["/images/exhibition stand.jpg", "/images/backdrop banner.jpg", "/images/x-banner.jpg", "/images/teardrop banner.jpg", "/images/promotional table.jpg"],
+    image: "/images/packard-2026/exhibition-stand-branding-tanzania.webp",
+    gallery: ["/images/packard-2026/exhibition-stand-branding-tanzania.webp", "/images/packard-2026/event-backdrop-step-repeat-tanzania.webp", "/images/x-banner.jpg", "/images/teardrop banner.jpg", "/images/promotional table.jpg"],
   },
   "unicef-campaign": {
     image: "/images/promo-campaign-tanzania.jpg",
-    gallery: ["/images/promo-campaign-tanzania.jpg", "/images/backpack.jpg", "/images/round neck t-shirt.jpg", "/images/cap.jpg", "/images/conference bag.jpg"],
+    gallery: ["/images/promo-campaign-tanzania.jpg", "/images/backpack.jpg", "/images/round neck t-shirt.jpg", "/images/cap.jpg", "/images/packard-2026/custom-canvas-tote-bag-printing-tanzania.webp"],
   },
   "university-textbooks": {
     image: "/images/education-sector.jpg",
-    gallery: ["/images/education-sector.jpg", "/images/offset printing.jpg", "/images/printing-stationery-scene.jpg", "/images/executive diary.jpg"],
+    gallery: ["/images/education-sector.jpg", "/images/packard-2026/offset-printing-services-tanzania.webp", "/images/packard-2026/corporate-stationery-printing-tanzania.webp", "/images/packard-2026/custom-branded-notebooks-tanzania.webp"],
   },
   "hyatt-signage-system": {
     image: "/images/luxury-hotel-branding.jpg",
-    gallery: ["/images/luxury-hotel-branding.jpg", "/images/sea-cliff-signage.jpg", "/images/wayfinder sign.jpg", "/images/reception  wall sign.jpg", "/images/3d sign2.jpg"],
+    gallery: ["/images/luxury-hotel-branding.jpg", "/images/sea-cliff-signage.jpg", "/images/packard-2026/event-directional-signage-tanzania.webp", "/images/packard-2026/office-wall-branding-graphics-tanzania.webp", "/images/packard-2026/3d-letter-signage-tanzania.webp"],
   },
   "azam-beverage-packaging": {
     image: "/images/tbl-beverage-branding.jpg",
-    gallery: ["/images/tbl-beverage-branding.jpg", "/images/packaging labels.jpg", "/images/packaging.jpg", "/images/product package.jpg"],
+    gallery: ["/images/tbl-beverage-branding.jpg", "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp", "/images/packard-2026/custom-retail-packaging-tanzania.webp", "/images/packard-2026/custom-food-packaging-printing-tanzania.webp"],
   },
   "nmb-corporate-stationery": {
     image: "/images/nmb-bank-evolution.jpg",
-    gallery: ["/images/nmb-bank-evolution.jpg", "/images/business card2.jpg", "/images/letter head.jpg", "/images/envelop.jpg", "/images/corporate business card.jpg"],
+    gallery: ["/images/nmb-bank-evolution.jpg", "/images/business card2.jpg", "/images/packard-2026/corporate-stationery-printing-tanzania.webp", "/images/packard-2026/custom-branded-envelope-printing-tanzania.webp", "/images/corporate business card.jpg"],
   },
   "airtel-billboard": {
-    image: "/images/outdoor-advertising.jpg",
-    gallery: ["/images/outdoor-advertising.jpg", "/images/vodacom-billboard.jpg", "/images/large format printing.jpg", "/images/offset printing.jpg"],
+    image: "/images/packard-2026/billboard-printing-tanzania.webp",
+    gallery: ["/images/packard-2026/billboard-printing-tanzania.webp", "/images/vodacom-billboard.jpg", "/images/packard-2026/pvc-banner-printing-tanzania.webp", "/images/packard-2026/offset-printing-services-tanzania.webp"],
   },
 };
 
