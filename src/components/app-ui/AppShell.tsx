@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { AppIcon, type AppIconName } from "./AppIcon";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const navItems = [
   { label: "Home", href: "/", icon: "home" },
@@ -53,6 +54,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             return <Link key={item.href} href={item.href} className={active ? "active" : ""}><span className={item.icon === "spark" ? "ai-nav-icon" : ""}><AppIcon name={item.icon as AppIconName} className="size-5" /></span><small>{item.label}</small></Link>;
           })}
         </nav>}
+
+      {!isDetail && !isAi && <WhatsAppButton />}
     </div>
   );
 }

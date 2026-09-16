@@ -29,7 +29,7 @@ const bestSellers = [
   },
   {
     rank: 3,
-    slug: "rollup",
+    slug: "rollup-banners",
     name: "Roll-up Banners",
     category: "Large Format",
     image: "/images/x-banner.jpg",
@@ -40,7 +40,7 @@ const bestSellers = [
   },
   {
     rank: 4,
-    slug: "shop-sign",
+    slug: "shop-signboards",
     name: "Illuminated Shop Signboards",
     category: "Signage",
     image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
@@ -51,7 +51,7 @@ const bestSellers = [
   },
   {
     rank: 5,
-    slug: "car-wrap",
+    slug: "car-branding",
     name: "Vehicle Wrap Branding",
     category: "Vehicle Branding",
     image: "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
@@ -62,7 +62,7 @@ const bestSellers = [
   },
   {
     rank: 6,
-    slug: "packaging",
+    slug: "folding-cartons",
     name: "Custom Packaging",
     category: "Packaging",
     image: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
@@ -73,7 +73,7 @@ const bestSellers = [
   },
   {
     rank: 7,
-    slug: "mug",
+    slug: "mugs",
     name: "Branded Ceramic Mugs",
     category: "Promotional Products",
     image: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp",
@@ -117,7 +117,7 @@ const bestSellers = [
   },
   {
     rank: 11,
-    slug: "stickers",
+    slug: "stickers-labels",
     name: "Custom Stickers & Labels",
     category: "Digital Printing",
     image: "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp",
@@ -128,7 +128,7 @@ const bestSellers = [
   },
   {
     rank: 12,
-    slug: "diary",
+    slug: "diaries",
     name: "Executive Diaries",
     category: "Promotional Products",
     image: "/images/packard-2026/custom-branded-notebooks-tanzania.webp",

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 const categories = [
   ["Business Cards", appImages.cards, "/products/business-cards"],
-  ["T-Shirts", appImages.tshirt, "/products/t-shirts"],
+  ["T-Shirts", appImages.tshirt, "/products/tshirts"],
   ["Caps", appImages.cap, "/products/caps"],
   ["Packaging", appImages.packaging, "/services/packaging-printing"],
-  ["Signage", appImages.banner, "/services/signage-solutions"],
+  ["Signage", appImages.signage, "/services/signage-solutions"],
   ["Banners", appImages.banner, "/products/rollup-banners"],
   ["Corporate Gifts", appImages.gift, "/services/promotional-products"],
   ["Vehicle Branding", appImages.vehicle, "/services/vehicle-branding"],
@@ -22,7 +22,7 @@ const categories = [
 
 const trending = [
   ["Business Cards", appImages.cards, "25,000", "Best Seller", "/products/business-cards"],
-  ["Branded T-Shirts", appImages.tshirt, "35,000", "Popular", "/products/t-shirts"],
+  ["Branded T-Shirts", appImages.tshirt, "35,000", "Popular", "/products/tshirts"],
   ["Branded Caps", appImages.cap, "28,000", "Trending", "/products/caps"],
   ["Packaging Boxes", appImages.packaging, "50,000", "Best Value", "/services/packaging-printing"],
 ];

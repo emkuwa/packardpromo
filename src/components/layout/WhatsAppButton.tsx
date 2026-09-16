@@ -15,7 +15,8 @@ export default function WhatsAppButton() {
       transition={{ delay: 1, type: "spring", stiffness: 200 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-24 right-6 z-40 w-14 h-14 rounded-full bg-gradient-to-br from-green-500 to-green-600 shadow-lg shadow-green-500/30 flex items-center justify-center text-white hover:shadow-green-500/50 transition-shadow duration-300 md:bottom-6"
+      className="fixed z-40 w-14 h-14 rounded-full bg-gradient-to-br from-green-500 to-green-600 shadow-lg shadow-green-500/30 flex items-center justify-center text-white hover:shadow-green-500/50 transition-shadow duration-300"
+      style={{ bottom: "max(6rem, calc(5.5rem + env(safe-area-inset-bottom, 0px)))", right: "1.5rem" }}
       aria-label="WhatsApp Packard Promo"
     >
       <span className="absolute inset-0 rounded-full bg-green-500/40 animate-ping" style={{ animationDuration: "2.5s" }} />

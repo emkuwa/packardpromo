@@ -41,7 +41,7 @@ const mostOrdered = [
     href: "/services/large-format-printing",
   },
   {
-    slug: "packaging",
+    slug: "folding-cartons",
     name: "Packaging Boxes",
     image: "/images/packard-2026/custom-retail-packaging-tanzania.webp",
     price: 250,
@@ -50,7 +50,7 @@ const mostOrdered = [
     href: "/services/packaging-printing",
   },
   {
-    slug: "shop-sign",
+    slug: "shop-signboards",
     name: "Shop Signboards",
     image: "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
     price: 180000,
@@ -59,7 +59,7 @@ const mostOrdered = [
     href: "/services/signage-solutions",
   },
   {
-    slug: "stickers",
+    slug: "stickers-labels",
     name: "Custom Stickers",
     image: "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp",
     price: 15000,
@@ -68,7 +68,7 @@ const mostOrdered = [
     href: "/services/digital-printing",
   },
   {
-    slug: "promo-mugs",
+    slug: "mugs",
     name: "Promo Gifts & Mugs",
     image: "/images/packard-2026/custom-branded-mug-printing-tanzania.webp",
     price: 4500,

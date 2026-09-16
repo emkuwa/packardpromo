@@ -14,7 +14,7 @@ export default function ProductDetail({ product }: { service: Service; product: 
   const estimated = useMemo(() => Math.round(product.startingPrice * Math.max(1, qty / Math.max(product.minQty, 1)) * (paper === "Premium" ? 1.3 : 1)), [paper, product, qty]);
   return <div className="detail-screen">
     <header className="detail-header"><Link href="/products" aria-label="Back to products"><AppIcon name="back"/></Link><div><button aria-label="Save product"><AppIcon name="heart"/></button><button aria-label="Share product"><AppIcon name="share"/></button></div></header>
-    <div className="detail-image"><Image src={appProductImage(product, product.image)} alt={product.name} fill priority sizes="(max-width: 700px) 100vw, 700px"/><div className="image-dots"><i/><i className="active"/><i/><i/></div></div>
+    <div className="detail-image"><Image src={product.image || appProductImage(product, product.image)} alt={product.name} fill priority sizes="(max-width: 700px) 100vw, 700px"/><div className="image-dots"><i/><i className="active"/><i/><i/></div></div>
     <section className="detail-body">
       <div className="detail-title"><h1>{product.name}</h1><p>From <strong>TZS {product.startingPrice.toLocaleString("en-US")}</strong></p></div>
       <p className="detail-description">{product.description}</p>
@@ -23,7 +23,34 @@ export default function ProductDetail({ product }: { service: Service; product: 
       <div className="option-block"><h3>Paper Type</h3><div className="choice-row compact">{["Matt", "Gloss", "Premium"].map((item) => <button className={paper === item ? "active" : ""} onClick={() => setPaper(item)} key={item}>{item} {item === "Premium" ? "(400gsm)" : "(350gsm)"}</button>)}</div></div>
       <div className="qty-price"><div><h3>Quantity</h3><div className="stepper"><button onClick={() => setQty(Math.max(product.minQty, qty - 50))}>−</button><strong>{qty}</strong><button onClick={() => setQty(qty + 50)}>＋</button></div></div><div><small>Estimated Price</small><strong>TZS {estimated.toLocaleString("en-US")}</strong></div></div>
       <label className="select-row"><span>Turnaround Time</span><select><option>Standard (3–5 working days)</option><option>Express (1–2 working days)</option></select></label>
-      <label className="select-row"><span>Delivery Location</span><select><option>Dar es Salaam</option><option>Zanzibar</option><option>Arusha</option><option>Dodoma</option></select></label>
+      <label className="select-row"><span>Delivery Location</span><select>
+        <option>Dar es Salaam</option>
+        <option>Dodoma</option>
+        <option>Arusha</option>
+        <option>Mwanza</option>
+        <option>Zanzibar</option>
+        <option>Tanga</option>
+        <option>Tabora</option>
+        <option>Mbeya</option>
+        <option>Moshi</option>
+        <option>Morogoro</option>
+        <option>Kigoma</option>
+        <option>Songea</option>
+        <option>Mtwara</option>
+        <option>Ruvuma</option>
+        <option>Kagera</option>
+        <option>Mara</option>
+        <option>Simiyu</option>
+        <option>Geita</option>
+        <option>Njombe</option>
+        <option>Katavi</option>
+        <option>Rukwa</option>
+        <option>Lindi</option>
+        <option>Pwani</option>
+        <option>Kilimanjaro</option>
+        <option>Manyara</option>
+        <option>Lushoto</option>
+      </select></label>
       <Link href={`/ai-tools/quote-generator?product=${product.slug}&qty=${qty}`} className="add-quote"><AppIcon name="document" className="size-5"/> Add to Quote</Link>
     </section>
   </div>;
