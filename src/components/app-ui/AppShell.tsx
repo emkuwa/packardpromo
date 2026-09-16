@@ -19,10 +19,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const isDetail = /^\/products\/[^/]+/.test(pathname);
   const isAi = pathname === "/ai-tools/quote-generator";
+  const isCommerceExperience = pathname === "/" || pathname.startsWith("/products") || isAi || pathname === "/quote";
   const showStandardHeader = !isDetail && !isAi;
 
   return (
-    <div className="promo-app">
+    <div className={`promo-app${isCommerceExperience ? " commerce-shell" : ""}${isDetail ? " detail-shell" : ""}`}>
       {showStandardHeader && (
         <header className="app-header">
           <button className="icon-button" onClick={() => setMenuOpen(true)} aria-label="Open menu"><AppIcon name="menu" className="size-6" /></button>
@@ -46,12 +47,12 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
       <div className="app-content">{children}</div>
 
-      <nav className="bottom-nav" aria-label="App navigation">
-        {navItems.map((item) => {
-          const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href.replace("/quote-generator", ""));
-          return <Link key={item.href} href={item.href} className={active ? "active" : ""}><span className={item.icon === "spark" ? "ai-nav-icon" : ""}><AppIcon name={item.icon as AppIconName} className="size-5" /></span><small>{item.label}</small></Link>;
-        })}
-      </nav>
+      {!isDetail && <nav className="bottom-nav" aria-label="App navigation">
+          {navItems.map((item) => {
+            const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href.replace("/quote-generator", ""));
+            return <Link key={item.href} href={item.href} className={active ? "active" : ""}><span className={item.icon === "spark" ? "ai-nav-icon" : ""}><AppIcon name={item.icon as AppIconName} className="size-5" /></span><small>{item.label}</small></Link>;
+          })}
+        </nav>}
     </div>
   );
 }

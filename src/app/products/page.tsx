@@ -9,6 +9,7 @@ export const metadata: Metadata = defaultMetadata(
   "/products"
 );
 
-export default function ProductsPage() {
-  return <ProductsContent services={services} />;
+export default async function ProductsPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
+  const { q = "" } = await searchParams;
+  return <ProductsContent services={services} initialSearch={q} />;
 }
