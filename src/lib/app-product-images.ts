@@ -12,87 +12,87 @@ export const appImages = {
 
 const productImageMap: Record<string, string> = {
   "business-cards": "/images/business card2.jpg",
-  "executive-business-cards": "/images/business card2.jpg",
+  "executive-business-cards": "/images/corporate business card.jpg",
   "flyers": "/images/packard-2026/flyer-leaflet-printing-dar-es-salaam-tanzania.webp",
-  "brochures": "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
-  "corporate-brochures": "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
-  "posters": "/images/packard-2026/flyer-leaflet-printing-dar-es-salaam-tanzania.webp",
-  "stickers-labels": "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp",
-  "laptop-stickers": "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp",
-  "certificates": "/images/packard-app/business-cards.png",
-  "letterheads": "/images/packard-app/business-cards.png",
-  "envelopes": "/images/packard-app/business-cards.png",
-  "staff-ids": "/images/packard-app/business-cards.png",
-  "books": "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
-  "magazines": "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
-  "annual-reports": "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
-  "bulk-brochures": "/images/packard-2026/flyer-leaflet-printing-dar-es-salaam-tanzania.webp",
-  "company-profiles": "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
-  "premium-company-profiles": "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
-  "product-catalogues": "/images/packard-2026/brochure-company-profile-printing-tanzania.webp",
-  "educational-materials": "/images/packard-2026/flyer-leaflet-printing-dar-es-salaam-tanzania.webp",
-  "ncr-books": "/images/packard-app/business-cards.png",
+  "brochures": "/images/brochure.jpg",
+  "corporate-brochures": "/images/brochure3.jpg",
+  "posters": "/images/packard-2026/custom-poster-printing-tanzania.webp",
+  "stickers-labels": "/images/stickers.jpg",
+  "laptop-stickers": "/images/laptop stickers.jpg",
+  "certificates": "/images/recognition certificate.jpg",
+  "letterheads": "/images/letter head.jpg",
+  "envelopes": "/images/envelop.jpg",
+  "staff-ids": "/images/id card with lanyard.jpg",
+  "books": "/images/note book.jpg",
+  "magazines": "/images/product catalogue.jpg",
+  "annual-reports": "/images/annual report.jpg",
+  "bulk-brochures": "/images/brochure3.jpg",
+  "company-profiles": "/images/company profile.jpg",
+  "premium-company-profiles": "/images/company profile2.jpg",
+  "product-catalogues": "/images/product catalogue.jpg",
+  "educational-materials": "/images/note book.jpg",
+  "ncr-books": "/images/ncr book.jpg",
   "pvc-banners": "/images/packard-2026/pvc-banner-printing-tanzania.webp",
   "rollup-banners": "/images/x-banner.jpg",
-  "teardrop-banners": "/images/x-banner.jpg",
-  "backdrops": "/images/packard-2026/event-backdrop-branding-tanzania.webp",
-  "billboards": "/images/packard-2026/pvc-banner-printing-tanzania.webp",
+  "teardrop-banners": "/images/teardrop banner.jpg",
+  "backdrops": "/images/backdrop banner.jpg",
+  "billboards": "/images/packard-2026/billboard-printing-tanzania.webp",
   "folding-cartons": "/images/packard-2026/custom-retail-packaging-tanzania.webp",
-  "product-packaging": "/images/packard-2026/custom-retail-packaging-tanzania.webp",
-  "food-packaging": "/images/packard-2026/food-packaging-printing-tanzania.webp",
+  "product-packaging": "/images/product package.jpg",
+  "food-packaging": "/images/packard-2026/custom-food-packaging-printing-tanzania.webp",
   "retail-packaging": "/images/packard-2026/custom-retail-packaging-tanzania.webp",
-  "gift-boxes": "/images/packard-2026/luxury-gift-boxes-tanzania.webp",
-  "shopping-bags": "/images/packard-2026/paper-shopping-bags-tanzania.webp",
-  "packaging-labels": "/images/packard-2026/custom-stickers-labels-printing-tanzania.webp",
+  "gift-boxes": "/images/packard-2026/luxury-gift-box-packaging-tanzania.webp",
+  "shopping-bags": "/images/shopping bag.jpg",
+  "packaging-labels": "/images/packaging labels.jpg",
   "shop-signboards": "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
-  "3d-signs": "/images/packard-2026/3d-letter-signage-tanzania.webp",
-  "premium-3d-signs": "/images/packard-2026/3d-letter-signage-tanzania.webp",
-  "outdoor-signage": "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
-  "reception-signs": "/images/packard-2026/reception-wall-sign-tanzania.webp",
+  "3d-signs": "/images/3d sign.jpg",
+  "premium-3d-signs": "/images/3d sign2.jpg",
+  "outdoor-signage": "/images/outdoor signage.jpg",
+  "reception-signs": "/images/reception  wall sign.jpg",
   "safety-signage": "/images/safety signage.jpg",
-  "wayfinding": "/images/packard-2026/directional-signage-tanzania.webp",
-  "lightboxes": "/images/packard-2026/led-illuminated-signage-tanzania.webp",
-  "glass-branding": "/images/packard-2026/window-graphics-branding-tanzania.webp",
-  "retail-storefront": "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp",
-  "car-branding": "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
-  "wheel-covers": "/images/packard-2026/fleet-vehicle-branding-tanzania.webp",
+  "wayfinding": "/images/wayfinder sign.jpg",
+  "lightboxes": "/images/illuminated light box.jpg",
+  "glass-branding": "/images/glass branding frost.jpg",
+  "retail-storefront": "/images/retail storefront.jpg",
+  "car-branding": "/images/vehicle branding.jpg",
+  "wheel-covers": "/images/wheel cover.jpg",
   "tshirts": "/images/round neck t-shirt.jpg",
-  "polo-shirts": "/images/screen printing.jpg",
+  "polo-shirts": "/images/packard-2026/custom-embroidered-polo-shirts-tanzania.webp",
   "caps": "/images/cap.jpg",
-  "uniforms": "/images/packard-2026/branded-workwear-safety-vests-tanzania.webp",
-  "security-uniforms": "/images/packard-2026/branded-workwear-safety-vests-tanzania.webp",
-  "reflector-jackets": "/images/packard-2026/branded-workwear-safety-vests-tanzania.webp",
-  "mugs": "/images/packard-2026/custom-branded-mug-printing-tanzania.webp",
-  "pens": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "executive-pens": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "diaries": "/images/packard-2026/custom-branded-notebooks-tanzania.webp",
-  "key-holders": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "gift-sets": "/images/packard-2026/luxury-gift-boxes-tanzania.webp",
-  "water-bottles": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "vacuum-flasks": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "umbrellas": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "laptop-bags": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "branded-backpacks": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "usb-flash-drives": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "power-banks": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "wireless-chargers": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "branded-mouse-pads": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "table-calendars": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "desktop-calendars": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "table-organisers": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "exhibition-stands": "/images/packard-2026/exhibition-stands-tanzania.webp",
-  "popup-displays": "/images/packard-2026/exhibition-stands-tanzania.webp",
-  "registration-counters": "/images/packard-2026/exhibition-stands-tanzania.webp",
-  "event-materials": "/images/packard-2026/event-backdrop-branding-tanzania.webp",
-  "conference-bags": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "conference-folders": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "paper-wristbands": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "silicone-wristbands": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "table-talkers": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "promotional-tables": "/images/packard-2026/corporate-stationery-tanzania.webp",
-  "logo-design": "/images/packard-2026/graphic-design-studio-tanzania.webp",
-  "packaging-design": "/images/packard-2026/graphic-design-studio-tanzania.webp",
-  "graphics-designing": "/images/packard-2026/graphic-design-studio-tanzania.webp",
+  "uniforms": "/images/uniform.jpg",
+  "security-uniforms": "/images/security uniform.jpg",
+  "reflector-jackets": "/images/reflector jacket.jpg",
+  "mugs": "/images/coffee mug.jpg",
+  "pens": "/images/branded pen.jpg",
+  "executive-pens": "/images/executive pen.jpg",
+  "diaries": "/images/executive diary.jpg",
+  "key-holders": "/images/keyholder.jpg",
+  "gift-sets": "/images/packard-2026/luxury-gift-box-packaging-tanzania.webp",
+  "water-bottles": "/images/water bottle.jpg",
+  "vacuum-flasks": "/images/vacuum flask.jpg",
+  "umbrellas": "/images/umbrellar.jpg",
+  "laptop-bags": "/images/laptop bag.jpg",
+  "branded-backpacks": "/images/backpack.jpg",
+  "usb-flash-drives": "/images/usb flash drive.jpg",
+  "power-banks": "/images/power bank.jpg",
+  "wireless-chargers": "/images/wireless charger.jpg",
+  "branded-mouse-pads": "/images/mouse pad.jpg",
+  "table-calendars": "/images/desktop calendar.jpg",
+  "desktop-calendars": "/images/table calendar2.jpg",
+  "table-organisers": "/images/table organiser.jpg",
+  "exhibition-stands": "/images/exhibition stand.jpg",
+  "popup-displays": "/images/backdrop banner.jpg",
+  "registration-counters": "/images/promotional table.jpg",
+  "event-materials": "/images/conference folder.jpg",
+  "conference-bags": "/images/conference bag.jpg",
+  "conference-folders": "/images/conference folder.jpg",
+  "paper-wristbands": "/images/paper wristband.jpg",
+  "silicone-wristbands": "/images/silicone wristbands.jpg",
+  "table-talkers": "/images/table talker display.jpg",
+  "promotional-tables": "/images/promotional table.jpg",
+  "logo-design": "/images/logo designing.jpg",
+  "packaging-design": "/images/packard-2026/custom-retail-packaging-tanzania.webp",
+  "graphics-designing": "/images/graphics design service.jpg",
 };
 
 export function appProductImage(product: { slug?: string; name?: string; category?: string }, fallback?: string) {
@@ -100,14 +100,30 @@ export function appProductImage(product: { slug?: string; name?: string; categor
   if (productImageMap[slug]) return productImageMap[slug];
 
   const value = `${slug} ${product.name ?? ""} ${product.category ?? ""}`.toLowerCase();
-  if (/business.?card|flyer|brochure|stationery|receipt|letterhead/.test(value)) return appImages.cards;
-  if (/t.?shirt|polo|uniform|apparel|hoodie/.test(value)) return appImages.tshirt;
-  if (/cap|headwear|hat/.test(value)) return appImages.cap;
-  if (/vehicle|car.?wrap|fleet/.test(value)) return appImages.vehicle;
-  if (/roll.?up|banner|billboard|backdrop|flag/.test(value)) return appImages.banner;
-  if (/sign|signboard|lightbox|led|3d.?sign|wayfinding/.test(value)) return appImages.signage;
-  if (/packag|box|carton|label|bag/.test(value)) return appImages.packaging;
-  if (/mug|tumbler|bottle|flask/.test(value)) return "/images/packard-2026/custom-branded-mug-printing-tanzania.webp";
-  if (/gift|promo|promotional|diary|notebook|pen|calendar|umbrella/.test(value)) return appImages.gift;
-  return fallback ?? appImages.cards;
+  if (/business.?card|stationery|receipt|letterhead/.test(value)) return "/images/business card2.jpg";
+  if (/flyer|leaflet/.test(value)) return "/images/packard-2026/flyer-leaflet-printing-dar-es-salaam-tanzania.webp";
+  if (/brochure|profile|catalogue/.test(value)) return "/images/brochure.jpg";
+  if (/t.?shirt|apparel|hoodie/.test(value)) return "/images/round neck t-shirt.jpg";
+  if (/polo/.test(value)) return "/images/packard-2026/custom-embroidered-polo-shirts-tanzania.webp";
+  if (/cap|headwear|hat/.test(value)) return "/images/cap.jpg";
+  if (/vehicle|car.?wrap|fleet/.test(value)) return "/images/vehicle branding.jpg";
+  if (/roll.?up/.test(value)) return "/images/x-banner.jpg";
+  if (/banner|billboard|backdrop|flag/.test(value)) return "/images/packard-2026/pvc-banner-printing-tanzania.webp";
+  if (/sign|signboard|lightbox|led|3d.?sign|wayfinding/.test(value)) return "/images/packard-2026/shop-signboard-printing-dar-es-salaam.webp";
+  if (/packag|box|carton/.test(value)) return "/images/packard-2026/custom-retail-packaging-tanzania.webp";
+  if (/mug|tumbler/.test(value)) return "/images/coffee mug.jpg";
+  if (/bottle|flask/.test(value)) return "/images/water bottle.jpg";
+  if (/gift|promo|promotional/.test(value)) return "/images/packard-2026/luxury-gift-box-packaging-tanzania.webp";
+  if (/diary|notebook/.test(value)) return "/images/executive diary.jpg";
+  if (/pen/.test(value)) return "/images/branded pen.jpg";
+  if (/calendar/.test(value)) return "/images/desktop calendar.jpg";
+  if (/umbrella/.test(value)) return "/images/umbrellar.jpg";
+  if (/sticker|label/.test(value)) return "/images/stickers.jpg";
+  if (/uniform|workwear/.test(value)) return "/images/uniform.jpg";
+  if (/exhibition|stand|display/.test(value)) return "/images/exhibition stand.jpg";
+  if (/conference|event/.test(value)) return "/images/conference folder.jpg";
+  if (/id.?card|badge|lanyard/.test(value)) return "/images/id card with lanyard.jpg";
+  if (/design|logo|graphic/.test(value)) return "/images/graphics design service.jpg";
+  if (/bag|tote|backpack/.test(value)) return "/images/backpack.jpg";
+  return fallback ?? "/images/business card2.jpg";
 }
