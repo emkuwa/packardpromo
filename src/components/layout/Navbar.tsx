@@ -72,8 +72,8 @@ export default function Navbar() {
                 <img src="/logo.png" alt="Packard Promo" className="w-full h-full object-cover" />
               </div>
               <span className="flex items-baseline gap-0.5 whitespace-nowrap">
-                <span className="text-white font-bold text-sm leading-none group-hover:text-promo-300 transition-colors">Packard</span>
-                <span className="text-promo-400 uppercase text-sm tracking-[0.14em] sm:tracking-[0.18em] font-bold leading-none">Promo</span>
+                <span className="text-white font-bold text-base leading-none group-hover:text-promo-300 transition-colors">Packard</span>
+                <span className="text-promo-400 uppercase text-base tracking-[0.14em] sm:tracking-[0.18em] font-bold leading-none">Promo</span>
               </span>
             </Link>
 
@@ -90,7 +90,7 @@ export default function Navbar() {
                       <Link
                         href={item.href}
                         className={cn(
-                          "px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 inline-flex items-center gap-1.5",
+                          "px-4 py-2 text-base font-medium rounded-lg transition-all duration-300 inline-flex items-center gap-1.5",
                           pathname.startsWith(item.href)
                             ? "text-promo-400 bg-promo-500/10"
                             : "text-silver-400 hover:text-white hover:bg-white/5"
@@ -109,7 +109,7 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      "px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300",
+                      "px-4 py-2 text-base font-medium rounded-lg transition-all duration-300",
                       pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href))
                         ? "text-promo-400 bg-promo-500/10"
                         : "text-silver-400 hover:text-white hover:bg-white/5"
@@ -126,7 +126,7 @@ export default function Navbar() {
                 href={packardLimitedUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden xl:flex items-center gap-1.5 text-xs text-packard-300 hover:text-packard-200 transition-colors border border-packard-500/20 hover:border-packard-400/40 rounded-full px-3 py-1.5"
+                className="hidden xl:flex items-center gap-1.5 text-sm text-packard-300 hover:text-packard-200 transition-colors border border-packard-500/20 hover:border-packard-400/40 rounded-full px-3 py-1.5"
                 title="Visit Packard Limited — Corporate Branding, Communications, PR"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -138,7 +138,7 @@ export default function Navbar() {
               <div className="relative" ref={phoneRef}>
                 <button
                   onClick={() => setPhoneOpen(!phoneOpen)}
-                  className="hidden sm:flex items-center gap-1.5 text-sm text-green-400 hover:text-green-300 transition-colors"
+                  className="hidden sm:flex items-center gap-1.5 text-base text-green-400 hover:text-green-300 transition-colors"
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -194,7 +194,7 @@ export default function Navbar() {
               <Link
                 href="/quote"
                 onClick={() => trackEvent("quote_click", { label: "navbar_desktop" })}
-                className="hidden md:inline-flex px-6 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white hover:from-promo-400 hover:to-promo-300 shadow-lg shadow-promo-500/30 hover:shadow-promo-500/50 transition-all duration-300"
+                className="hidden md:inline-flex px-6 py-2.5 text-base font-semibold rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white hover:from-promo-400 hover:to-promo-300 shadow-lg shadow-promo-500/30 hover:shadow-promo-500/50 transition-all duration-300"
               >
                 Get Instant Quote
               </Link>
@@ -202,7 +202,7 @@ export default function Navbar() {
               <a
                 href="tel:+255716002790"
                 onClick={() => trackEvent("phone_click", { label: "navbar_mobile" })}
-                className="sm:hidden inline-flex items-center gap-1 text-xs font-semibold text-white hover:text-promo-300 transition-colors whitespace-nowrap shrink-0"
+                className="sm:hidden inline-flex items-center gap-1 text-sm font-semibold text-white hover:text-promo-300 transition-colors whitespace-nowrap shrink-0"
                 aria-label="Call Packard Promo at +255 716 002 790"
               >
                 <svg className="w-3 h-3 text-promo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -249,19 +249,19 @@ export default function Navbar() {
                         </svg>
                       </div>
                       <div className="min-w-0">
-                        <div className="text-white text-sm font-semibold group-hover:text-promo-300 transition-colors">{s.title}</div>
-                        <div className="text-silver-500 text-xs mt-0.5 line-clamp-1">{s.shortDescription}</div>
+                        <div className="text-white text-base font-semibold group-hover:text-promo-300 transition-colors">{s.title}</div>
+                        <div className="text-silver-500 text-sm mt-0.5 line-clamp-1">{s.shortDescription}</div>
                       </div>
                     </Link>
                   ))}
                 </div>
                 <div className="mt-6 pt-6 border-t border-white/5 flex items-center justify-between">
-                  <div className="text-silver-500 text-xs">
+                  <div className="text-silver-500 text-sm">
                     Can&apos;t decide? Use our <span className="text-promo-400 font-semibold">AI Print Consultant</span> for personalized recommendations.
                   </div>
                   <Link
                     href="/services"
-                    className="inline-flex items-center gap-1.5 text-promo-400 hover:text-promo-300 text-sm font-semibold transition-colors"
+                    className="inline-flex items-center gap-1.5 text-promo-400 hover:text-promo-300 text-base font-semibold transition-colors"
                   >
                     View All Services
                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -163,7 +163,7 @@ body {
 .bottom-nav { position: fixed; z-index: 50; bottom: 0; left: 50%; transform: translateX(-50%); width: min(100%, 1180px); height: 72px; display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; padding: 6px max(8px, env(safe-area-inset-right)) max(6px, env(safe-area-inset-bottom)); background: rgba(255,255,255,.98); border-top: 1px solid #e5e9ef; backdrop-filter: blur(18px); }
 .commerce-shell .bottom-nav { width: min(100%, 430px); }
 .bottom-nav a { color: #526078; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 3px; font-weight: 600; }
-.bottom-nav small { font-size: 11px; }
+.bottom-nav small { font-size: 12px; }
 .bottom-nav a.active { color: #ff5a00; }
 .ai-nav-icon { width: 25px; height: 25px; display: grid; place-items: center; border-radius: 50%; background: currentColor; color: #fff; }
 .bottom-nav a.active .ai-nav-icon { background: #ff5a00; }
@@ -208,7 +208,7 @@ body {
 .app-header .size-6 { width: 26px; height: 26px; }
 .cart-button em { width: 21px; height: 21px; background: #e52329; font-size: 11px; }
 .bottom-nav { height: 76px; }
-.bottom-nav small { font-size: 11px; }
+.bottom-nav small { font-size: 12px; }
 .bottom-nav a.active .ai-nav-icon,
 .btn-primary,
 .trend-card em,
