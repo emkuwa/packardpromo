@@ -168,7 +168,7 @@ export default function HeroSection({ stats }: { stats: { value: number; suffix:
                 </svg>
               </Link>
               <Link
-                href="https://wa.me/+255716002790?text=Hi%20Packard%20Promo"
+                href="https://wa.me/255658144421?text=Hi%20Packard%20Promo"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackEvent("whatsapp_click", { label: "hero" })}

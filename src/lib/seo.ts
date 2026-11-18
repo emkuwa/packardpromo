@@ -263,7 +263,7 @@ export function homepageFaqSchema() {
     },
     {
       q: "How do I get a printing quote from Packard Promo?",
-      a: "Request a quote through the online quote form at promo.packardltd.com/quote, message on WhatsApp at +255716002790, or use the AI quote generator tool for instant estimates 24/7. Formal quotes are responded to within 2 hours during business hours (Mon-Fri 8AM-6PM, Sat 9AM-2PM).",
+      a: "Request a quote through the online quote form at promo.packardltd.com/quote, message on WhatsApp at +255658144421, or use the AI quote generator tool for instant estimates 24/7. Formal quotes are responded to within 2 hours during business hours (Mon-Fri 8AM-6PM, Sat 9AM-2PM).",
     },
     {
       q: "What payment methods does Packard Promo accept?",

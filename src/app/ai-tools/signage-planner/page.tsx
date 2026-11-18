@@ -379,7 +379,7 @@ export default function SignagePlannerPage() {
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a
-                      href={`https://wa.me/+255716002790?text=${encodeURIComponent(pkg.whatsappText)}`}
+                      href={`https://wa.me/255658144421?text=${encodeURIComponent(pkg.whatsappText)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 text-center px-5 py-3.5 rounded-xl bg-gradient-to-r from-green-600 to-green-500 text-white font-bold text-sm hover:from-green-500 transition-all"

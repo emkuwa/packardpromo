@@ -138,11 +138,11 @@ export default function QuoteContent() {
                   <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Quote Request Sent!</h2>
                   <p className="text-silver-300 text-base mb-7 max-w-md mx-auto">Thank you. Our team will review your project and respond within 2 hours during business hours.</p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "quote_post_submit" })} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-sm hover:from-green-500">
+                    <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "quote_post_submit" })} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-sm hover:from-green-500">
                       💬 Chat on WhatsApp Now
                     </a>
-                    <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "quote_post_submit" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
-                      Call 0716 002 790
+                    <a href="tel:+255658144421" onClick={() => trackEvent("phone_click", { label: "quote_post_submit" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">
+                      Call 0658 144 421
                     </a>
                   </div>
                   <div className="mt-6 pt-6 border-t border-white/10">

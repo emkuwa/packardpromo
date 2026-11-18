@@ -41,7 +41,7 @@ export default function HomePage() {
         <div className="hero-copy">
           <h1>Print.<br/>Brand.<br/><span>Deliver.</span></h1>
           <p>High-quality printing, signage, packaging and promotional products for businesses across Tanzania.</p>
-          <div className="hero-actions"><Link href="/ai-tools/quote-generator" className="btn-primary">Get Instant Quote <span>→</span></Link><a className="btn-whatsapp" href="https://wa.me/255716002790"><AppIcon name="whatsapp" className="size-5" /> Chat on WhatsApp</a></div>
+          <div className="hero-actions"><Link href="/ai-tools/quote-generator" className="btn-primary">Get Instant Quote <span>→</span></Link><a className="btn-whatsapp" href="https://wa.me/255658144421"><AppIcon name="whatsapp" className="size-5" /> Chat on WhatsApp</a></div>
         </div>
       </section>
 

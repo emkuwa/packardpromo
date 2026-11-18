@@ -6,7 +6,7 @@ import { trackEvent } from "@/lib/analytics";
 export default function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/+255716002790?text=Hello%20Packard%20Promo%2C%20I%27d%20like%20to%20discuss%20a%20print%20project."
+      href="https://wa.me/255658144421?text=Hello%20Packard%20Promo%2C%20I%27d%20like%20to%20discuss%20a%20print%20project."
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => trackEvent("whatsapp_click", { label: "floating_button" })}

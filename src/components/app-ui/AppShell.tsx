@@ -41,7 +41,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <nav className="menu-drawer" aria-label="Main navigation" onClick={(event) => event.stopPropagation()}>
             <div className="menu-heading"><span>Menu</span><button className="icon-button" onClick={() => setMenuOpen(false)} aria-label="Close menu"><AppIcon name="close" className="size-6" /></button></div>
             {navItems.map((item) => <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)}><AppIcon name={item.icon as AppIconName} className="size-5" />{item.label}</Link>)}
-            <div className="menu-contact"><strong>Need help?</strong><a href="tel:+255716002790">+255 716 002 790</a></div>
+            <div className="menu-contact"><strong>Need help?</strong><a href="tel:+255658144421">+255 658 144 421</a></div>
           </nav>
         </div>
       )}

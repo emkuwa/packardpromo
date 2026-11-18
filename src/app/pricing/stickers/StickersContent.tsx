@@ -40,8 +40,8 @@ export default function StickersContent() {
 
           <div className="flex flex-wrap gap-3">
             <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "stickers_hero" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm">Get Quote</button>
-            <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "stickers_hero" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm">WhatsApp Us</a>
-            <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "stickers_hero" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm">Call 0716 002 790</a>
+            <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "stickers_hero" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm">WhatsApp Us</a>
+            <a href="tel:+255658144421" onClick={() => trackEvent("phone_click", { label: "stickers_hero" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm">Call 0658 144 421</a>
           </div>
         </div>
       </section>
@@ -132,8 +132,8 @@ export default function StickersContent() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Order Your Stickers</h2>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "stickers_bottom" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm">Get Quote</button>
-            <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "stickers_bottom" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm">Chat on WhatsApp</a>
-            <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "stickers_bottom" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm">Call Now</a>
+            <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "stickers_bottom" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm">Chat on WhatsApp</a>
+            <a href="tel:+255658144421" onClick={() => trackEvent("phone_click", { label: "stickers_bottom" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm">Call Now</a>
           </div>
         </div>
       </section>

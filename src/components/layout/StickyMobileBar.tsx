@@ -62,7 +62,7 @@ export default function StickyMobileBar() {
               </Link>
 
               <a
-                href="https://wa.me/+255716002790?text=Hello%20Packard%20Promo%2C%20I%27d%20like%20a%20quote."
+                href="https://wa.me/255658144421?text=Hello%20Packard%20Promo%2C%20I%27d%20like%20a%20quote."
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackEvent("whatsapp_click", { label: "sticky_mobile_bar" })}

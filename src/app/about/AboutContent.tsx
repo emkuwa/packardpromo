@@ -186,7 +186,7 @@ export default function AboutContent() {
             <div className="absolute inset-0 bg-gradient-to-br from-promo-500/20 via-packard-900 to-packard-900" />
             <div className="relative z-10 p-8 md:p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">How do I get a quote from Packard Promo?</h2>
-              <p className="text-silver-300 text-lg mb-7 max-w-xl mx-auto">Request a free quote through the online form, WhatsApp at +255716002790, or use the AI quote tool for instant estimates. Whether you need a single business card or a national fleet rebrand — Packard Promo handles projects of any size.</p>
+              <p className="text-silver-300 text-lg mb-7 max-w-xl mx-auto">Request a free quote through the online form, WhatsApp at +255658144421, or use the AI quote tool for instant estimates. Whether you need a single business card or a national fleet rebrand — Packard Promo handles projects of any size.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link href="/quote" className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">Get Free Quote</Link>
                 <Link href="/portfolio" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">View Our Work</Link>

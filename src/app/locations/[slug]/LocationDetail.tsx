@@ -36,8 +36,8 @@ export default function LocationDetail({ city }: { city: City }) {
 
           <div className="flex flex-wrap gap-3">
             <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "location_top" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">Get {city.name} Quote</button>
-            <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "location_top" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">WhatsApp Us</a>
-            <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "location_top" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">Call 0716 002 790</a>
+            <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "location_top" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">WhatsApp Us</a>
+            <a href="tel:+255658144421" onClick={() => trackEvent("phone_click", { label: "location_top" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">Call 0658 144 421</a>
           </div>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function LocationDetail({ city }: { city: City }) {
               <p className="text-silver-300 text-lg mb-7">Get a free quote within 2 hours, or chat with our {city.name} team on WhatsApp.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "location_bottom" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">Get Free Quote</button>
-                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "location_bottom" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">WhatsApp</a>
+                <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "location_bottom" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">WhatsApp</a>
               </div>
             </div>
           </motion.div>

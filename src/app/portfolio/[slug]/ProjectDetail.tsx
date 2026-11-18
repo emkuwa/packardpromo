@@ -243,7 +243,7 @@ export default function ProjectDetail({ project }: { project: PortfolioProject }
               <p className="text-silver-300 text-lg mb-7 max-w-xl mx-auto">Whether it&apos;s a 12-branch signage rollout, 50,000 branded notebooks, or 65-vehicle fleet rebrand — we have the capacity to deliver at scale.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link href="/quote" className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">Get Free Quote</Link>
-                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">Chat on WhatsApp</a>
+                <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">Chat on WhatsApp</a>
               </div>
             </div>
           </motion.div>

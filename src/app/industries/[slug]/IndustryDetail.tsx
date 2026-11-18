@@ -55,7 +55,7 @@ export default function IndustryDetail({ industry, caseStudies }: { industry: In
             <Link href="/ai-tools/quote-generator" className="px-7 py-3.5 rounded-full bg-packard-500/20 border border-packard-500/30 text-packard-300 font-semibold text-sm hover:bg-packard-500/30">
               AI Quote Generator
             </Link>
-            <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">
+            <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">
               WhatsApp
             </a>
           </div>
@@ -190,7 +190,7 @@ export default function IndustryDetail({ industry, caseStudies }: { industry: In
               <p className="text-silver-300 text-lg mb-7">Get a free quote and consultation with our {industry.shortName.toLowerCase()} specialists.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link href="/quote" className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">Get Free Quote</Link>
-                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">WhatsApp</a>
+                <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">WhatsApp</a>
               </div>
             </div>
           </motion.div>

@@ -67,7 +67,7 @@ export default function NeedItFast() {
                 </svg>
               </Link>
               <a
-                href="tel:+255716002790"
+                href="tel:+255658144421"
                 onClick={() => trackEvent("phone_click", { label: "need_it_fast" })}
                 className="inline-flex items-center px-8 py-4 rounded-full border-2 border-white text-white font-bold hover:bg-white/10 transition-all"
               >

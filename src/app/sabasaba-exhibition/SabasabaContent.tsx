@@ -74,7 +74,7 @@ export default function SabasabaContent() {
     },
     {
       q: "How can I get a quote for my Sabasaba exhibition needs?",
-      a: "Request a comprehensive quote through our online quote form, WhatsApp (0716 002 790), or by calling our sales team. Provide your exhibition stand size requirements, list of printed materials and quantities, promotional product needs, and desired delivery or installation timeline. We respond within 2 hours during business hours with a consolidated quotation covering all items.",
+      a: "Request a comprehensive quote through our online quote form, WhatsApp (0658 144 421), or by calling our sales team. Provide your exhibition stand size requirements, list of printed materials and quantities, promotional product needs, and desired delivery or installation timeline. We respond within 2 hours during business hours with a consolidated quotation covering all items.",
     },
   ];
 
@@ -126,7 +126,7 @@ export default function SabasabaContent() {
               Request Exhibition Branding Quote
             </Link>
             <a
-              href="https://wa.me/+255716002790"
+              href="https://wa.me/255658144421"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackEvent("whatsapp_click", { label: "sabasaba_hero" })}
@@ -384,8 +384,8 @@ export default function SabasabaContent() {
               <p className="text-silver-300 text-lg mb-7">Call or WhatsApp us for express exhibition branding services in Dar es Salaam. Quick turnaround available.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "sabasaba_urgent" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm">Request Quote</button>
-                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "sabasaba_urgent" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">WhatsApp Now</a>
-                <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "sabasaba_urgent" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">Call 0716 002 790</a>
+                <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "sabasaba_urgent" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">WhatsApp Now</a>
+                <a href="tel:+255658144421" onClick={() => trackEvent("phone_click", { label: "sabasaba_urgent" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">Call 0658 144 421</a>
               </div>
             </div>
           </div>
@@ -486,7 +486,7 @@ export default function SabasabaContent() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "sabasaba_bottom" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">Get Your Sabasaba Branding Ready</button>
             <Link href="/quote" onClick={() => trackEvent("quote_click", { label: "sabasaba_bottom_quote" })} className="px-7 py-3.5 rounded-full bg-packard-500/20 border border-packard-500/30 text-packard-300 font-semibold text-sm hover:bg-packard-500/30">Request Exhibition Branding Quote</Link>
-            <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "sabasaba_bottom" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">Chat on WhatsApp</a>
+            <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "sabasaba_bottom" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">Chat on WhatsApp</a>
           </div>
         </div>
       </section>

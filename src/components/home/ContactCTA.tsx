@@ -26,7 +26,7 @@ export default function ContactCTA() {
               How do I contact Packard Promo in Tanzania?
             </h2>
             <p className="text-silver-300 text-sm md:text-base leading-relaxed mb-5 max-w-md">
-              Call +255 716 002 790, WhatsApp +255716002790, or email promo@packardltd.co.tz. Packard Promo responds within 2 hours during business hours. AI tools provide instant estimates 24/7 at promo.packardltd.com.
+              Call +255 658 144 421, WhatsApp +255658144421, or email promo@packardltd.co.tz. Packard Promo responds within 2 hours during business hours. AI tools provide instant estimates 24/7 at promo.packardltd.com.
             </p>
 
             <div className="space-y-2 mb-6">

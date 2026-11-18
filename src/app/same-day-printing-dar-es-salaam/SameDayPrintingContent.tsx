@@ -48,8 +48,8 @@ export default function SameDayPrintingContent() {
 
           <div className="flex flex-wrap gap-3">
             <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "same_day_hero" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">Get Same-Day Quote</button>
-            <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "same_day_hero" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">WhatsApp Us</a>
-            <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "same_day_hero" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">Call 0716 002 790</a>
+            <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "same_day_hero" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">WhatsApp Us</a>
+            <a href="tel:+255658144421" onClick={() => trackEvent("phone_click", { label: "same_day_hero" })} className="px-7 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20">Call 0658 144 421</a>
           </div>
         </div>
       </section>
@@ -134,8 +134,8 @@ export default function SameDayPrintingContent() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Emergency Printing?</h2>
               <p className="text-silver-300 text-lg mb-7">Need printing today? Call now for urgent same-day service.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="tel:+255716002790" onClick={() => trackEvent("phone_click", { label: "emergency_section" })} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm">Call 0716002790</a>
-                <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "emergency_section" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">WhatsApp Now</a>
+                <a href="tel:+255658144421" onClick={() => trackEvent("phone_click", { label: "emergency_section" })} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm">Call 0658144421</a>
+                <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "emergency_section" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">WhatsApp Now</a>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function SameDayPrintingContent() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Ready for Same-Day Printing?</h2>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button onClick={() => { setQuoteOpen(true); trackEvent("quote_click", { label: "same_day_bottom" }); }} className="px-7 py-3.5 rounded-full bg-gradient-to-r from-promo-500 to-promo-400 text-white font-semibold text-sm hover:from-promo-400">Get Your Quote</button>
-            <a href="https://wa.me/+255716002790" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "same_day_bottom" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">Chat on WhatsApp</a>
+            <a href="https://wa.me/255658144421" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("whatsapp_click", { label: "same_day_bottom" })} className="px-7 py-3.5 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 font-semibold text-sm hover:bg-green-500/30">Chat on WhatsApp</a>
           </div>
         </div>
       </section>

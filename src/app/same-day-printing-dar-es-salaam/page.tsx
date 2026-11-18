@@ -5,7 +5,7 @@ import SameDayPrintingContent from "./SameDayPrintingContent";
 
 export const metadata: Metadata = defaultMetadata(
   "Same-Day Printing in Dar es Salaam | Packard Promo",
-  "Same-day printing in Dar es Salaam for businesses, NGOs, schools, hotels & events. Business cards, flyers, banners & more. Free delivery in DSM. Call 0716 002 790.",
+  "Same-day printing in Dar es Salaam for businesses, NGOs, schools, hotels & events. Business cards, flyers, banners & more. Free delivery in DSM. Call 0658 144 421.",
   "/same-day-printing-dar-es-salaam"
 );
 

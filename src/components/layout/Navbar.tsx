@@ -143,7 +143,7 @@ export default function Navbar() {
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                   </svg>
-                  0716 002 790
+                  0658 144 421
                 </button>
 
                 <AnimatePresence>
@@ -156,7 +156,7 @@ export default function Navbar() {
                       className="absolute right-0 top-full mt-2 w-48 rounded-xl bg-packard-800 border border-white/10 shadow-xl shadow-black/50 overflow-hidden"
                     >
                       <a
-                        href="tel:+255716002790"
+                        href="tel:+255658144421"
                         onClick={() => { setPhoneOpen(false); trackEvent("phone_click", { label: "navbar_dropdown" }); }}
                         className="flex items-center gap-3 px-4 py-3 text-sm text-silver-300 hover:text-white hover:bg-white/5 transition-colors"
                       >
@@ -166,7 +166,7 @@ export default function Navbar() {
                         Call
                       </a>
                       <a
-                        href="https://wa.me/+255716002790"
+                        href="https://wa.me/255658144421"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => { setPhoneOpen(false); trackEvent("whatsapp_click", { label: "navbar_dropdown" }); }}
@@ -178,7 +178,7 @@ export default function Navbar() {
                         WhatsApp
                       </a>
                       <button
-                        onClick={() => { navigator.clipboard.writeText("+255716002790"); setPhoneOpen(false); }}
+                        onClick={() => { navigator.clipboard.writeText("+255658144421"); setPhoneOpen(false); }}
                         className="w-full flex items-center gap-3 px-4 py-3 text-sm text-silver-300 hover:text-white hover:bg-white/5 transition-colors"
                       >
                         <svg className="w-4 h-4 text-packard-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -200,15 +200,15 @@ export default function Navbar() {
               </Link>
 
               <a
-                href="tel:+255716002790"
+                href="tel:+255658144421"
                 onClick={() => trackEvent("phone_click", { label: "navbar_mobile" })}
                 className="sm:hidden inline-flex items-center gap-1 text-sm font-semibold text-white hover:text-promo-300 transition-colors whitespace-nowrap shrink-0"
-                aria-label="Call Packard Promo at +255 716 002 790"
+                aria-label="Call Packard Promo at +255 658 144 421"
               >
                 <svg className="w-3 h-3 text-promo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
-                <span>0716002790</span>
+                <span>0658144421</span>
               </a>
 
               <button
